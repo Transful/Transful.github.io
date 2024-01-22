@@ -1,54 +1,143 @@
 <template>
 <header class="header">
-    
-    <ul class="nav">
-        <li><router-link to="/">Avaleht</router-link></li>
-        <li><router-link to="/seoste-andmebaasid">Seosed</router-link></li>
-        <li><router-link to="/blogi">Blogi</router-link></li>
-        <li><router-link to="/meist">Meist</router-link></li>
-        <li><router-link to="/kontakt">Kontakt</router-link></li>
-    
+    <div class="TransfulJaLogo">
+      <img @click="pealehele()" :src="require('@/assets/logo-transful.png')" alt="Transful logo">
+      <h1 @click="pealehele()">TRANSFUL</h1>
+    </div>  
+    <div>
+      <ul class="nav">
+          <li class="dropdown">
+            <router-link to="/seoste-andmebaasid">Seosed <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
+            <div class="dropdown-menu">
+              <router-link to="/">GEOGRAAFIA</router-link>
+              <router-link to="/">INGLISE KEEL</router-link>
+              <router-link to="/">VENE KEEL</router-link>
+            </div>
+          </li>
+          <li><router-link to="/blogi">Blogi</router-link></li>
+          <li><router-link to="/meist">Meist</router-link></li>
+          <li><router-link to="/kontakt">Kontakt</router-link></li>
+          <li class="dropdown">
+            <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
+            <div class="dropdown-menu">
+              <router-link to="/lippude-mäng">Mäng 1</router-link>
+              <router-link to="/">Mäng 2</router-link>
+              <router-link to="/">Mäng 3</router-link>
+            </div>
+          </li>
       </ul>
-
+    </div>
 </header>
 </template>
 
 <script>
     export default {
     name: "getHeader",
+    methods: {
+      pealehele(){
+        return this.$router.push('/');
+      },
+    },
+    mounted() {
+      // Navigatsioonist klikitud lingi taustavärv muutub mustaks / ei tea kas on vajalik? :) Sest ei tööta ka täiesti korralikult
+      let links = this.$el.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function() {
+          links.forEach(lnk => lnk.style.backgroundColor = '');
+          this.style.backgroundColor = 'black';
+      });
+    });
+  },
 }
+
 </script>
+
+
 <style scoped>
+
+/*Dropdown menu*/
+.dropdown {
+  position: relative;
+}
+.dropdownpicture{
+  width: 18px;
+  height: auto;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  width: 200%;
+  background-color: #55E0E5;
+  display: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #55E0E5;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*****************************/
 .header{
     top: 0;
     position: sticky;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    border: 1px solid #938f8f;
-    margin-top: 0px;
-    background-image: linear-gradient(0,#86A789,#405041);/* #86A789*/
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
-    border-radius: 15px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
     
     
 }
+.TransfulJaLogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding-left: 15ch;
+  padding-top: 2ch;
+}
+.TransfulJaLogo>img:hover{
+  cursor: pointer;
+}
+.TransfulJaLogo>h1:hover{
+  cursor: pointer;
+}
+
+.TransfulJaLogo>img{
+  width: 100px;
+  height: auto;
+  padding-right: 2ch;
+}
+
+.TransfulJaLogo>h1{
+  color: #55E0E5;
+  text-decoration: none;
+  user-select: none;
+
+}
 .nav{
-    margin-top: 5px;
-    margin-bottom: 5px;
+padding-top: 2ch;
     justify-content: center;
     display: flex;
     list-style-type: none;
+    padding-right: 15ch;
 }
 .nav a:hover {
-    background-color: rgb(196, 185, 185);
+    background-color: rgb(0, 0, 0);
+    color: #55E0E5;
 }
 
 .nav a {
     padding: 10px 15px;
     text-align: center;
     display: block;
-    color: #000000;
+    color: #ffffff;
     font-size: .99em;
     text-transform: uppercase;
     text-decoration: none;

@@ -4,7 +4,7 @@ import Blogi from "../views/Blogi.vue";
 import Seosed from "../views/Seosed.vue";
 import Kontakt from "../views/Kontakt.vue";
 import Meist from "../views/Meist.vue";
-
+import LippudeMäng from "../views/LippudeMäng.vue";
 
 
 const routes = [{
@@ -32,6 +32,11 @@ const routes = [{
         path: "/kontakt",
         name: "Kontakt",
         component: Kontakt,
+    },
+    {
+        path: "/lippude-mäng",
+        name: "LippudeMäng",
+        component: LippudeMäng,
     },
     { //will route to Avaleht view if none of the previous routes apply
         path: "/:catchAll(.*)",
