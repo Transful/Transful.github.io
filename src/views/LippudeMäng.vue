@@ -27,8 +27,8 @@
         </div>  <!-- QuestionContainer -->
         <div class="kontrolliJajärgmineNupud">
             <button @click="kontrolliVastust">Kontrolli</button>
-            <button v-if="hasNext" @click="nextQuestion">Järgmine küsimus</button>
-            <button v-if="!hasNext" @click="lõpetaTest">Lõpeta test</button>
+            <button v-if="kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
+            <button v-if="!kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
         </div>
     </div>
    </template>
@@ -75,7 +75,7 @@
        currentQuestion() {
          return this.küsimused[this.praeguseKüsimuseIndeks];
        },
-       hasNext() {
+       kasOnOlemasJärgmineKüsimus() {
          return this.praeguseKüsimuseIndeks < this.küsimused.length - 1;
        }
     },
@@ -91,7 +91,7 @@
 
        },
         /* Kui vajutatakse "Järgmine küsimus" nuppu */
-       nextQuestion() {
+       järgmineKüsimus() {
          this.kontrolliVastust();
          this.praeguseKüsimuseIndeks++;
          this.valitudVastus = "";
