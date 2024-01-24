@@ -54,7 +54,7 @@
 }
 
 footer{
-    position: relative;
+    position: static;
     background-color: rgba(0,0,0,0.5);
     align-items: center;
     text-align: center;

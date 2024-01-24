@@ -1,5 +1,5 @@
 {
-    "name": "wadfront",
+    "name": "TRANSFUL",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -7,7 +7,7 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "deploy": "sh deploy.sh"
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "bcrypt": "^5.1.0",
@@ -27,6 +27,7 @@
         "@vue/cli-plugin-router": "~5.0.0",
         "@vue/cli-plugin-vuex": "~5.0.0",
         "@vue/cli-service": "~5.0.0",
-        "cypress": "^11.1.0"
+        "cypress": "^11.1.0",
+        "gh-pages": "^6.1.1"
     }
 }

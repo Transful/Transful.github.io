@@ -1,8 +1,15 @@
 <template>
     <div class="Test-Pealinnad">
-        <h2>TEST: PEALINNAD</h2>
+        <div class="questionBoxiPeal">
+            <h2>TEST: PEALINNAD</h2>
+            <div class="question-counter">
+                {{ currentQuestionIndex + 1 }} / {{ questions.length }}
+            </div>
+        </div>
         <div class="QuestionContainer">
-            <h2>{{ currentQuestion.question }}</h2>
+            <div class="küsimus">
+                <h2>{{ currentQuestion.question }}</h2>
+            </div>
             <ul class="answer-grid">
                 <li v-for="(choice, index) in currentQuestion.choices" :key="index">
                 <input type="radio" :value="choice" v-model="selectedChoice" />
@@ -81,8 +88,26 @@
    .QuestionContainer{
     background-color: #0B1C24;
     color: #55E0E5;
-    padding: 7ch;
+    padding-right: 7ch;
+    padding-left: 7ch;
+    padding-bottom: 4ch;
     border-radius: 36px;
+   }
+   .küsimus{
+    padding-bottom: 2ch;
+   }
+   .questionBoxiPeal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0;
+   }
+   
+   .question-counter{
+    padding-right: 1ch;
+    font-size: 25px;
    }
    .kontrolliJajärgmineNupud{
     display: flex;

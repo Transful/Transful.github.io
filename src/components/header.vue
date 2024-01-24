@@ -9,9 +9,8 @@
           <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Seosed <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
             <div class="dropdown-menu">
-              <router-link to="/">GEOGRAAFIA</router-link>
-              <router-link to="/">INGLISE KEEL</router-link>
-              <router-link to="/">VENE KEEL</router-link>
+              <router-link to="/">PEALINNAD</router-link>
+              <router-link to="/">LIPUD</router-link>
             </div>
           </li>
           <li><router-link to="/blogi">Blogi</router-link></li>
@@ -86,7 +85,7 @@
 /*****************************/
 .header{
     top: 0;
-    position: sticky;
+    position: static;
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
     width: 100%;
     display: flex;
