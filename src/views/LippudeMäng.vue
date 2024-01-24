@@ -1,12 +1,12 @@
 <template>
     <div class="Test-Pealinnad">
         <div v-if="lõpetatud == true">
-            <h3>Sinu skoor on: {{ score }} / {{ questions.length }}</h3>
+            <h3>Sinu skoor on: {{ skoor }} / {{ küsimused.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
             <h2>TEST: PEALINNAD</h2>
             <div class="question-counter">
-                {{ currentQuestionIndex + 1 }} / {{ questions.length }}
+                {{ praeguseKüsimuseIndeks + 1 }} / {{ küsimused.length }}
             </div>
         </div>
         <div class="QuestionContainer">
@@ -20,7 +20,7 @@
             </div>
             <ul class="answer-grid">
                 <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                    <input type="radio" :value="choice" v-model="selectedChoice" :id="'choice' + index" class="radio-input"/>
+                    <input type="radio" :value="choice" v-model="valitudVastus" :id="'choice' + index" class="radio-input"/>
                     <label :for="'choice' + index" class="radio-label">{{ choice }}</label>
                 </li>
             </ul>
@@ -37,73 +37,92 @@
    export default {
     data() {
        return {
-         questions: [
+         küsimused: [
            {
             question: "Sambia",
-            choices: ["Lusaka", "Harare", "Gaborone", "Nairobi"],
             correctAnswer: "Lusaka"
            },
            {
             question: "Eesti",
-            choices: ["Stockholm", "Riia", "Helsingi", "Tallinn"],
             correctAnswer: "Tallinn"
            },
            {
             question: "Saksamaa",
-            choices: ["Berliin", "Pariis", "Rooma", "Madrid"],
             correctAnswer: "Berliin"
            },
            {
             question: "Fääri Saared",
-            choices: ["Kopenhaagen", "Reykjavik", "Tórshavn", "Oslo"],
             correctAnswer: "Tórshavn"
            },
            {
             question: "Burkina Faso",
-            choices: ["Lomé", "Accra", "Ouagadougou", "Niamey"],
             correctAnswer: "Ouagadougou"
            }
            // Add more questions here
          ],
-         currentQuestionIndex: 0,
-         selectedChoice: "",
-         score: 0,
-         answeredCorrectly: [],
+         praeguseKüsimuseIndeks: 0,
+         valitudVastus: "",
+         skoor: 0,
+         õigestiVastatud: [],
          lõpetatud: false,
+         allChoices: ["Lomé", "Accra", "Ouagadougou", "Niamey", "Kopenhaagen", "Reykjavik", "Tórshavn",
+         "Oslo", "Berliin", "Pariis", "Rooma", "Madrid", "Stockholm", "Riia", "Helsingi", "Tallinn",
+         "Lusaka", "Harare", "Gaborone", "Nairobi", "Tirana", "Podgorica", "Sarajevo", "Skopje", "Vilnius",
+          "Minsk", "Kiiev", "Ankara", "Teheran", "Male", "London", "Kigali"],
        };
     },
     computed: {
        currentQuestion() {
-         return this.questions[this.currentQuestionIndex];
+         return this.küsimused[this.praeguseKüsimuseIndeks];
        },
        hasNext() {
-         return this.currentQuestionIndex < this.questions.length - 1;
+         return this.praeguseKüsimuseIndeks < this.küsimused.length - 1;
        }
     },
     methods: {
        kontrolliVastust() {
-            alert(this.selectedChoice === this.currentQuestion.correctAnswer ? "Correct!" : "Incorrect.");
+            alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
-            if (this.selectedChoice === this.questions[this.currentQuestionIndex].correctAnswer && !this.answeredCorrectly[this.currentQuestionIndex]) {
-                this.score++;
-                this.answeredCorrectly[this.currentQuestionIndex] = true;
+            if (this.valitudVastus === this.küsimused[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
+                this.skoor++;
+                this.õigestiVastatud[this.praeguseKüsimuseIndeks] = true;
             }
-            console.log(this.score);
+            /* console.log(this.skoor);*/
 
        },
         /* Kui vajutatakse "Järgmine küsimus" nuppu */
        nextQuestion() {
          this.kontrolliVastust();
-         this.currentQuestionIndex++;
-         this.selectedChoice = "";
+         this.praeguseKüsimuseIndeks++;
+         this.valitudVastus = "";
        },
        /* Kui vajutatakse "Lõpeta test" nuppu */
        lõpetaTest() {
          this.kontrolliVastust();
          this.lõpetatud = true;
-         console.log("Test on lõpetatud, skoor on: " + this.score);
+         console.log("Test on lõpetatud, skoor on: " + this.skoor);
        },
+       /* Võtan vastusevariantideks suvalised vastused */
+       võtaSuvalisedVastused(correctAnswer) {
+            let choices = [...this.allChoices];
+            choices = choices.filter(choice => choice !== correctAnswer);
+            for (let i = choices.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [choices[i], choices[j]] = [choices[j], choices[i]];
+            }
+            choices = choices.slice(0, 3).concat(correctAnswer);
+            for (let i = choices.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [choices[i], choices[j]] = [choices[j], choices[i]];
+            }
+            return choices;
+        },
     },
+    created() {
+        this.küsimused.forEach(question => {
+            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
+        });
+    }
    };
    </script>
 
