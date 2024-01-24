@@ -1,14 +1,19 @@
 <template>
-    <div class="QuestionContainer">
-       <h2>{{ currentQuestion.question }}</h2>
-       <ul class="answer-grid">
-         <li v-for="(choice, index) in currentQuestion.choices" :key="index">
-           <input type="radio" :value="choice" v-model="selectedChoice" />
-           {{ choice }}
-         </li>
-       </ul>
-       <button @click="submitAnswer">Submit</button>
-       <button v-if="hasNext" @click="nextQuestion">Next Question</button>
+    <div class="Test-Pealinnad">
+        <h2>TEST: PEALINNAD</h2>
+        <div class="QuestionContainer">
+            <h2>{{ currentQuestion.question }}</h2>
+            <ul class="answer-grid">
+                <li v-for="(choice, index) in currentQuestion.choices" :key="index">
+                <input type="radio" :value="choice" v-model="selectedChoice" />
+                {{ choice }}
+                </li>
+            </ul>
+            <div class="kontrolliJajärgmineNupud">
+                <button @click="submitAnswer">Kontrolli</button>
+                <button v-if="hasNext" @click="nextQuestion">Järgmine küsimus</button>
+            </div>
+        </div>
     </div>
    </template>
   
@@ -18,22 +23,22 @@
        return {
          questions: [
            {
-             question: "What is the capital of Sambia?",
+             question: "Mis on Sambia pealinn?",
              choices: ["Lusaka", "Harare", "Gaborone", "Nairobi"],
              correctAnswer: "Lusaka"
            },
            {
-            question: "What is the capital of Estonia?",
+            question: "Mis on Eesti pealinn?",
             choices: ["Tallinn", "Tartu", "Pärnu", "Narva"],
             correctAnswer: "Tallinn"
            },
            {
-            question: "What is the capital of Germany?",
+            question: "Mis on Saksamaa pealinn?",
             choices: ["Berlin", "Hamburg", "Munich", "Frankfurt"],
             correctAnswer: "Berlin"
            },
            {
-            question: "What is the capital of Faroe Islands?",
+            question: "Mis on Fääri Saarte pealinn?",
             choices: ["Tórshavn", "Klaksvík", "Vágur", "Tvøroyri"],
             correctAnswer: "Tórshavn"
            },
@@ -64,12 +69,37 @@
    </script>
 
    <style scoped>
+   .Test-Pealinnad{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 5ch;
+    color: #55E0E5;
+    margin-bottom: 100px;
+   }
    .QuestionContainer{
-    background-color: bisque;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    background-color: #0B1C24;
+    color: #55E0E5;
+    padding: 7ch;
+    border-radius: 36px;
+   }
+   .kontrolliJajärgmineNupud{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+   }
+   .kontrolliJajärgmineNupud>button{
+    background-color:#55E0E5;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-radius: 36px;
+    border:0;
+    font-weight: 700;
+    font-size: 0.8em;
+    display: block;
+    padding: 10px 16px;
+    letter-spacing: 2px;
    }
    .answer-grid {
     display: grid;
@@ -78,5 +108,8 @@
    }
    .answer-grid li {
     list-style: none;
+   }
+   body{
+    padding-bottom: 100px;
    }
    </style>

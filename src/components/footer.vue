@@ -54,12 +54,11 @@
 }
 
 footer{
-    position: absolute;
+    position: relative;
     background-color: rgba(0,0,0,0.5);
     align-items: center;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -135,7 +134,6 @@ footer{
     padding: 0;
     margin-bottom: 20px;
     font-size: 20px;
-    ;
   }
   
   .footer-links li {
