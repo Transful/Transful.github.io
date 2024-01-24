@@ -1,4 +1,4 @@
-# Project w/ Cypress
+# Project
 
 ## Project setup
 ```
@@ -28,6 +28,7 @@ npx cypress open
 ### Compiles and minifies for production
 ```
 npm run build
+npm run deploy (Github pagesi jaoks)
 ```
 
 ### Customize configuration
