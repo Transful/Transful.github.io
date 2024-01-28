@@ -34,7 +34,9 @@
    </template>
   
    <script>
-   export default {
+    import data from '/public/riigid.json';
+    
+    export default {
     data() {
        return {
          küsimused: [],
@@ -44,10 +46,7 @@
          skoor: 0,
          õigestiVastatud: [],
          lõpetatud: false,
-         allChoices: ["Lomé", "Accra", "Ouagadougou", "Niamey", "Kopenhaagen", "Reykjavik",
-         "Oslo", "Berliin", "Pariis", "Rooma", "Madrid", "Stockholm", "Riia", "Helsingi", "Tallinn",
-         "Lusaka", "Harare", "Gaborone", "Nairobi", "Tirana", "Podgorica", "Sarajevo", "Skopje", "Vilnius",
-          "Minsk", "Kiiev", "Ankara", "Teheran", "Male", "London", "Kigali", "Suva", "Ateena"],
+         allChoices: [],
        };
     },
     computed: {
@@ -93,7 +92,9 @@
             this.isLoading = false;
         }
         */
-        const data = require('/public/riigid.json');
+
+
+        //const data = require('/public/riigid.json');
 
         console.log('Data:', data);
 
@@ -101,11 +102,16 @@
             question: item.nimi,
             correctAnswer: item.pealinn,
         }));
+        // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
+        this.allChoices = this.küsimused.map(question => question.correctAnswer);
+        console.log('All choices:', this.allChoices);
 
         console.log('Created lifecycle hook called - Võtan suvalised vastused.');
+
         this.küsimused.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
+
     } catch (error) {
         console.error(error);
     } finally {
