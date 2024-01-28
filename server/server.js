@@ -1,17 +1,18 @@
 const express = require('express');
 const pool = require('./database');
 const cors = require('cors')
-const bcrypt = require('bcrypt');
-const cookieParser = require('cookie-parser');
-const jwt = require('jsonwebtoken');
+//const bcrypt = require('bcrypt');
+//const cookieParser = require('cookie-parser');
+//const jwt = require('jsonwebtoken');
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:8080', credentials: true }));
+app.use(cors({ origin: 'http://localhost:8080', credentials: false }));
 
 app.use(express.json());
+/*
 app.use(cookieParser());
 
 const secret = "gdgdhdbcb770785rgdzqws";
@@ -19,6 +20,11 @@ const maxAge = 60 * 60;
 const generateJWT = (id) => {
     return jwt.sign({ id }, secret, { expiresIn: maxAge })
 }
+*/
+
+/* 
+
+TODO: Võibolla muuta ja saab lisada kuidagi?
 
 app.post('/api/posts', async(req, res) => {
     try {
@@ -32,31 +38,61 @@ app.post('/api/posts', async(req, res) => {
         console.error(err.message);
     }
 });
+*/
+app.get('/', (req, res) => {
+    res.send('Hello, Server is up!');
+});
 
-app.get('/api/posts', async(req, res) => {
+app.get('/api/riigid', async (req, res) => {
     try {
-        console.log("get posts request has arrived");
+        console.log("get riigid request has arrived");
+        const result = await pool.query(
+            "SELECT nimi, pealinn FROM riigid"
+        );
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+/*
+app.get('/api/riigid', async(req, res) => {
+    try {
+        console.log("get Riigid request has arrived");
         const posts = await pool.query(
-            "SELECT * FROM posttable"
+            "SELECT * FROM Riigid"
         );
         res.json(posts.rows);
     } catch (err) {
         console.error(err.message);
     }
 });
+*/
 
-app.get('/api/posts/:id', async(req, res) => {
+
+/*
+
+TODO: Üksikute riikide võtmise jaoks jaoks
+
+app.get('/api/riigid/:nimi', async(req, res) => {
     try {
-        console.log("get a post with route parameter  request has arrived");
-        const { id } = req.params;
+        console.log("get a Riik with route parameter request has arrived");
+        const { nimi } = req.params;
         const posts = await pool.query(
-            "SELECT * FROM posttable WHERE id = $1", [id]
+            "SELECT * FROM Riigid WHERE nimi = $1", [nimi]
         );
         res.json(posts.rows[0]);
     } catch (err) {
         console.error(err.message);
     }
 });
+
+*/
+
+/*
+
+TODO: Võibolla muuta ja saab lisada kuidagi?
 
 app.put('/api/posts/:id', async(req, res) => {
     try {
@@ -72,6 +108,12 @@ app.put('/api/posts/:id', async(req, res) => {
     }
 });
 
+*/
+
+
+/*
+TODO: Vist pole vaja?
+
 app.delete('/api/posts/:id', async(req, res) => {
     try {
         const { id } = req.params;
@@ -85,6 +127,11 @@ app.delete('/api/posts/:id', async(req, res) => {
     }
 });
 
+*/
+
+/*
+
+TODO: Registreerimine, sisse ning välja logimine HILJEM KUNAGI PEAB VIST TEGEMA?
 
 app.post('/auth/signup', async(req, res) => {
     try {
@@ -131,6 +178,7 @@ app.get('/auth/logout', (req, res) => {
     console.log('delete jwt request arrived');
     res.status(202).clearCookie('jwt').json({ "Msg": "cookie cleared" }).send
 });
+*/
 
 app.listen(port, () => {
     console.log("Server is listening to port " + port)

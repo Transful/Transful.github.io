@@ -1,5 +1,5 @@
 <template>
-    <div class="Test-Pealinnad">
+    <div v-if="currentQuestion" class="Test-Pealinnad">
         <div v-if="lõpetatud == true">
             <h3>Sinu skoor on: {{ skoor }} / {{ küsimused.length }}</h3>
         </div>
@@ -37,29 +37,8 @@
    export default {
     data() {
        return {
-         küsimused: [
-           {
-            question: "Sambia",
-            correctAnswer: "Lusaka"
-           },
-           {
-            question: "Eesti",
-            correctAnswer: "Tallinn"
-           },
-           {
-            question: "Saksamaa",
-            correctAnswer: "Berliin"
-           },
-           {
-            question: "Burkina Faso",
-            correctAnswer: "Ouagadougou"
-           },
-           {
-            question: "Kreeka",
-            correctAnswer: "Ateena"
-           }
-           // Add more questions here
-         ],
+         küsimused: [],
+         isLoading: true,
          praeguseKüsimuseIndeks: 0,
          valitudVastus: "",
          skoor: 0,
@@ -72,15 +51,70 @@
        };
     },
     computed: {
-       currentQuestion() {
-         return this.küsimused[this.praeguseKüsimuseIndeks];
-       },
-       kasOnOlemasJärgmineKüsimus() {
-         return this.praeguseKüsimuseIndeks < this.küsimused.length - 1;
-       }
+        currentQuestion() {
+            if (this.küsimused.length > 0) {
+                return this.küsimused[this.praeguseKüsimuseIndeks];
+            }
+            return null;
+        },
+        kasOnOlemasJärgmineKüsimus() {
+            return this.praeguseKüsimuseIndeks < this.küsimused.length - 1;
+        }
     },
+    async created() {
+        console.log('Created lifecycle hook called - Võtan küsimused');
+    
+    try {
+        /*
+        const responseKatse = await fetch('/');
+        console.log('ResponseKatse:', responseKatse); 
+
+        console.log('Fetching data...'); // Add this line
+        const response = await fetch('http://localhost:3000/api/riigid'); // Replace with your actual API endpoint
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        console.log('Response:', response); // Add this line
+
+        const data = await response.json();
+        console.log('Data:', data); // Add this line
+
+        this.küsimused = data.map(item => ({
+            question: item.nimi,
+            correctAnswer: item.pealinn,
+        }));
+        
+        console.log('Transformed data:', this.küsimused); // Add this line
+        } catch (error) {
+            console.error('Error fetching data:', error); // Modify this line
+        } finally {
+            this.isLoading = false;
+        }
+        */
+        const data = require('/public/riigid.json');
+
+        console.log('Data:', data);
+
+        this.küsimused = data.map(item => ({
+            question: item.nimi,
+            correctAnswer: item.pealinn,
+        }));
+
+        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
+        this.küsimused.forEach(question => {
+            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
+        });
+    } catch (error) {
+        console.error(error);
+    } finally {
+        this.isLoading = false;
+    }
+},
     methods: {
        kontrolliVastust() {
+            if (this.isLoading) return;
             alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
             if (this.valitudVastus === this.küsimused[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
@@ -92,6 +126,7 @@
        },
         /* Kui vajutatakse "Järgmine küsimus" nuppu */
        järgmineKüsimus() {
+        if (this.isLoading) return;
          this.kontrolliVastust();
          this.praeguseKüsimuseIndeks++;
          this.valitudVastus = "";
@@ -104,6 +139,7 @@
        },
        /* Võtan vastusevariantideks suvalised vastused */
        võtaSuvalisedVastused(correctAnswer) {
+            if (this.isLoading) return;
             let choices = [...this.allChoices];
             choices = choices.filter(choice => choice !== correctAnswer);
             for (let i = choices.length - 1; i > 0; i--) {
@@ -118,11 +154,6 @@
             return choices;
         },
     },
-    created() {
-        this.küsimused.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
-        });
-    }
    };
    </script>
 

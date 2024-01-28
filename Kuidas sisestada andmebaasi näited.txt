@@ -1,0 +1,33 @@
+NB: Ülakoma (') lisamiseks pane neid lihtsalt 2 tükki. ''
+
+
+******************************************
+TABELISSE LISAMINE
+******************************************
+
+INSERT INTO "riigid" ("nimi","pealinn")
+VALUES('Eesti','Tallinn')
+
+INSERT INTO "riigid" (nimi,"pealinn")
+VALUES('Läti','Riia')
+
+INSERT INTO "riigid" (nimi, pealinn)
+VALUES('Saksamaa','Berliin')
+
+INSERT INTO "riigid" (nimi, pealinn, "seosPealinn")
+VALUES('Afganistan','Kabul', 'Afgaani kaabul oli liiva.')
+
+INSERT INTO "riigid" ("nimi", "pealinn", "seosPealinn")
+VALUES('Albaania','Tirana', 'Lipul olev vapp meenutab nagu mõnd luksuslikku tiaarat.')
+
+INSERT INTO "riigid" ("nimi", "pealinn", "seosPealinn")
+VALUES('Austraalia','Canberra', 'Austraalia on ainus riik, mis on ka manner. Kuigi tihti pakutakse riigi pealinnaks Melbourne''i 
+või Sydney''t, valiti kompromissina pealinnaks Canberra juba aastal 1908. Riigis on palju kuulsuseid: kängurud, Hemsworthid, Margot Robbie (Barbie) jne.')
+
+*******************************************
+TABELI MUUTMINE
+*******************************************
+
+UPDATE "riigid"
+SET "seosPealinn" = 'Erinevatel ajalooperioodidel väga tähtsat rolli mänginud linn. Enim on näiteks tuntud Berliini müür, mis eraldas Berliini idaosa lääneosast 28 aastaks.'
+WHERE nimi = 'Saksamaa';
