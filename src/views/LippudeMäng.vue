@@ -51,12 +51,12 @@
             correctAnswer: "Berliin"
            },
            {
-            question: "Fääri Saared",
-            correctAnswer: "Tórshavn"
-           },
-           {
             question: "Burkina Faso",
             correctAnswer: "Ouagadougou"
+           },
+           {
+            question: "Kreeka",
+            correctAnswer: "Ateena"
            }
            // Add more questions here
          ],
@@ -65,10 +65,10 @@
          skoor: 0,
          õigestiVastatud: [],
          lõpetatud: false,
-         allChoices: ["Lomé", "Accra", "Ouagadougou", "Niamey", "Kopenhaagen", "Reykjavik", "Tórshavn",
+         allChoices: ["Lomé", "Accra", "Ouagadougou", "Niamey", "Kopenhaagen", "Reykjavik",
          "Oslo", "Berliin", "Pariis", "Rooma", "Madrid", "Stockholm", "Riia", "Helsingi", "Tallinn",
          "Lusaka", "Harare", "Gaborone", "Nairobi", "Tirana", "Podgorica", "Sarajevo", "Skopje", "Vilnius",
-          "Minsk", "Kiiev", "Ankara", "Teheran", "Male", "London", "Kigali"],
+          "Minsk", "Kiiev", "Ankara", "Teheran", "Male", "London", "Kigali", "Suva", "Ateena"],
        };
     },
     computed: {

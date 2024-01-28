@@ -148,7 +148,7 @@ ul.nav-list {
   margin: 0;
   display: flex;
 }
-@media(min-width: 768px){
+@media(min-width: 921px){
   .header, .nav{
     display: flex;
   }
@@ -158,7 +158,7 @@ ul.nav-list {
   }
 }
 
-@media(max-width: 767px){
+@media(max-width: 920px){
   .logoButton{
     display: none;
   }
