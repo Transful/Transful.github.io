@@ -40,7 +40,7 @@
     data() {
        return {
          küsimused: [],
-         isLoading: true,
+         kasAndmedOnLaetud: true,
          praeguseKüsimuseIndeks: 0,
          valitudVastus: "",
          skoor: 0,
@@ -64,6 +64,9 @@
         console.log('Created lifecycle hook called - Võtan küsimused');
     
     try {
+       
+        //ANDMEBAASIGA ANDMETE VÕTMINE
+        
         /*
         const responseKatse = await fetch('/');
         console.log('ResponseKatse:', responseKatse); 
@@ -84,19 +87,28 @@
             question: item.nimi,
             correctAnswer: item.pealinn,
         }));
-        
+        this.allChoices = this.küsimused.map(question => question.correctAnswer);
+
+        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
+
+        this.küsimused.forEach(question => {
+            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
+        });
         console.log('Transformed data:', this.küsimused); // Add this line
         } catch (error) {
             console.error('Error fetching data:', error); // Modify this line
         } finally {
-            this.isLoading = false;
+            this.kasAndmedOnLaetud = true;
         }
+        
         */
-
 
         //const data = require('/public/riigid.json');
 
-        console.log('Data:', data);
+        // ANDMED TULEVAD JSON FAILIST
+
+
+        console.log('Fetching data... Data:', data);
 
         this.küsimused = data.map(item => ({
             question: item.nimi,
@@ -115,8 +127,9 @@
     } catch (error) {
         console.error(error);
     } finally {
-        this.isLoading = false;
+        this.kasAndmedOnLaetud = true;
     }
+
 },
     methods: {
        kontrolliVastust() {
