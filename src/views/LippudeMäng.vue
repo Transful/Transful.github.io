@@ -10,20 +10,28 @@
             </div>
         </div>
         <div class="QuestionContainer">
-            <div class="küsimusJaNäitaSeost">
-                <div class="küsimuseDiv">
-                    <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}?</h2>
+            <div>
+                <div class="küsimusJaVastusevariandid">
+                        <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}</h2>
                 </div>
-                <div class="näitaseost">
-                    <button class="näitaSeostNupp">Näita seost</button>
+                <div class="pealinnaAsukoht">
+                    <img src="" alt="Siia tuleb pilt :)">
+                </div>
+                <div class="valikuVariandid">
+                    <ul class="answer-grid">
+                        <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
+                            <button class="radio-button" @click="valitudVastus = choice">{{ choice }}</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <ul class="answer-grid">
-                <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                    <input type="radio" :value="choice" v-model="valitudVastus" :id="'choice' + index" class="radio-input"/>
-                    <label :for="'choice' + index" class="radio-label">{{ choice }}</label>
-                </li>
-            </ul>
+            <div class="vihjeDiv">
+                <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
+                <div v-if="vihje" class="vihjeContainer">
+                    <h2>Afgaani <strong>kaabul</strong> oli liiva.</h2>
+                    <img class="vihjePilt" src="@\assets\seosed\kabul.jpg" alt="Siia tuleb pilt :)">
+                </div>
+            </div>
         </div>  <!-- QuestionContainer -->
         <div class="kontrolliJajärgmineNupud">
             <button @click="kontrolliVastust">Kontrolli</button>
@@ -47,6 +55,7 @@
          õigestiVastatud: [],
          lõpetatud: false,
          allChoices: [],
+         vihje: false,
        };
     },
     computed: {
@@ -105,9 +114,9 @@
 
         //const data = require('/public/riigid.json');
 
+
         // ANDMED TULEVAD JSON FAILIST
-
-
+        
         console.log('Fetching data... Data:', data);
 
         this.küsimused = data.map(item => ({
@@ -132,6 +141,12 @@
 
 },
     methods: {
+        /* Kui vajutatakse "Vihje" nuppu */
+        näitaVihjet() {
+            if (this.isLoading) return;
+            this.vihje = true;
+        },
+        /* Kui vajutatakse "Kontrolli" nuppu */
        kontrolliVastust() {
             if (this.isLoading) return;
             alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
@@ -185,49 +200,74 @@
     padding-top: 5ch;
     color: #55E0E5;
     margin-bottom: 100px;
+    user-select: none;
    }
-   .QuestionContainer{
+   .QuestionContainer {
+     display: grid;
+    grid-template-columns: 1fr auto;
     background-color: #0B1C24;
     color: #55E0E5;
-    padding-bottom: 6ch;
-    padding-top: 2ch;
-    padding-left: 6ch;
-    padding-right: 6ch;
     border-radius: 36px;
-
-    }
-   .küsimus{
-    /*padding-bottom: 2ch;*/
-   }
-   .näitaSeostNupp{
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding-left: 10ch;
+  }
+  .küsimus {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  h2.küsimus {
     background-color: #55E0E5;
-    border-radius: 36px;
-    border:0;
+    color: black;
+    border-radius: 15px; 
+    text-transform: uppercase;
+    padding: 8px;
+    user-select: none;
+  }
+  .näitaVihjetNupp {
+    background-color: #55E0E5;
+    border-radius: 10px;
+    border: 0;
     font-weight: 700;
-    font-size: 0.6em;
+    font-size: 0.8em;
     display: block;
     padding: 10px 16px;
     letter-spacing: 1px;
     align-items: right;
-   }
-   .küsimusJaNäitaSeost{
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .näitaVihjetNupp:hover {
+    background-color: #33d9ff;
+  }
+  .vihjeContainer{
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid #55E0E5;
+    padding: 20px;
+}
+  .vihjePilt{
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+  }
+  .küsimusJaVastusevariandid {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     gap: 2ch;
-}
-    .näitaseost{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-    .küsimuseDiv{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-    }
+    border-radius: 15px;
+    background-color: #0B1C24;
+    color: #55E0E5;
+    font-size: 16px;
+  }
+  .vihjeDiv{
+    margin-left: 20px;
+  }
    .questionBoxiPeal{
     display: flex;
     flex-direction: row;
@@ -248,63 +288,67 @@
     justify-content: center;
     width: 100%;
    }
-   .kontrolliJajärgmineNupud>button{
-    background-color:#55E0E5;
+   .kontrolliJajärgmineNupud > button {
+    background-color: #55E0E5;
     margin-right: 20px;
     margin-top: 30px;
     border-radius: 36px;
-    border:0;
+    border: 0;
     font-weight: 700;
     font-size: 0.8em;
     display: block;
     padding: 10px 16px;
     letter-spacing: 2px;
-   }
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .kontrolliJajärgmineNupud > button:hover {
+    background-color: #33d9ff;
+  }
+
    .answer-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    row-gap: 1ch; /* vertical gap */
+    column-gap: 4ch; /* horizontal gap */
    }
+   ul.answer-grid {
+    padding-left: 0;
+  }
+  
    .answer-option{
     display: flex;
     align-items: center;
-   }
-   .answer-grid li {
-    list-style: none;
-   }
-   body{
-    padding-bottom: 100px;
+    text-align: center;
    }
 
-/* Radio buttonid*/
-.radio-input {
-    display: none;
+
+   /* Vastusevalikute nupud*/
+   .radio-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /*
+    margin-bottom: 10px;
+    */
+    border: 2px solid #55E0E5;
+    border-radius: 15px;
+    background-color: black;
+    color: #55E0E5;
+    font-size: 16px;
+    cursor: pointer;
   }
-  
-  .radio-label {
-    position: relative;
-    padding-left: 25px;
+
+  .radio-button:hover {
+    background-color: #55E0E5;
+    color: black;
   }
-  
-  .radio-label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #55E0E5;
-    border-radius: 50%;
+  .radio-button:focus {
+    background-color: #55E0E5;
+    color: black;
   }
-  
-  .radio-input:checked + .radio-label:after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    width: 8px;
-    height: 8px;
-    background: #55E0E5;
-    border-radius: 50%;
+  .radio-button:checked {
+    background-color: #55E0E5;
+    color: black;
   }
    </style>

@@ -1,7 +1,11 @@
 [
     {
         "nimi": "Afganistan",
-        "pealinn": "Kabul"
+        "pealinn": "Kabul",
+        "seosPealinn": "Afgaani <strong>kaabul</strong> oli liiva.",
+        "seosPealinnPilt": "@../src/assets/seosed/kabul.jpg",
+        "lipp": "@../src/assets/lipud/afganistan.jpg",
+        "seosLipp": "TODO lipu seos"
     },
     {
         "nimi": "Albaania",
