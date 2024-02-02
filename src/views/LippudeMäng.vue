@@ -163,6 +163,7 @@
         if (this.isLoading) return;
          this.kontrolliVastust();
          this.praeguseKüsimuseIndeks++;
+         this.vihje = false;
          this.valitudVastus = "";
        },
        /* Kui vajutatakse "Lõpeta test" nuppu */
