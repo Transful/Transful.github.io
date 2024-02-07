@@ -6,16 +6,19 @@
     </div>  
     <div>
       <ul class="nav">
-          <li class="dropdown">
+          <!--
+            <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Seosed <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
             <div class="dropdown-menu">
               <router-link to="/">PEALINNAD</router-link>
               <router-link to="/">LIPUD</router-link>
             </div>
           </li>
-          <li><router-link to="/blogi">Blogi</router-link></li>
-          <li><router-link to="/meist">Meist</router-link></li>
-          <li><router-link to="/kontakt">Kontakt</router-link></li>
+        -->
+          <li><router-link to="/pealinnad">PEALINNAD</router-link></li>
+          <li><router-link to="/lipud">LIPUD</router-link></li>
+          <li><router-link to="/tehnikad">TEHNIKAD</router-link></li>
+          <li><router-link to="/meie">MEIE</router-link></li>
           <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
             <div class="dropdown-menu">
@@ -86,11 +89,11 @@
 .header{
     top: 0;
     position: static;
-    box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
     width: 100%;
     display: flex;
     flex-direction: row;
-    
+    font-family: Raleway-Bold, sans-serif;
+
     
 }
 .TransfulJaLogo{

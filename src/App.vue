@@ -26,22 +26,31 @@ export default {
 @font-face {
   font-family: 'Raleway';
   src: url('@/assets/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
-  /* Add similar lines for other font styles if available (e.g., Bold, Italic) */
 }
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('@/assets/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+}
+  /* Add similar lines for other font styles if available (e.g., Bold, Italic) */
+
 .background{
-  background-image: url("/src/assets/Veebilehe-taust.png");
-  background-repeat: repeat;
-  background-size: auto;
-  background-position: center;
-  height: 100%;
-  min-height:100vh;
+  background-image: url("@/assets/Veebilehe-taust.png");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  width: 100%;
 }
 #app {
+  text-align: center;
+}
+body{
   font-family: Raleway, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Raleway-Bold, sans-serif;
+  color: #55E0E5;
 }
 html, body {
   height: 100%;

@@ -23,10 +23,8 @@
                 </div>
                 <div class="col2">
                     <ul class="footer-links">
-                        <li><router-link to="/seoste-andmebaasid">Seosed</router-link></li>
-                        <li><router-link to="/blogi">Blogi</router-link></li>
-                        <li><router-link to="/meist">Meie</router-link></li>
-                        <li><router-link to="/kontakt">Kontakt</router-link></li>
+                        <li><router-link to="/tehnnikad">Tehnikad</router-link></li>
+                        <li><router-link to="/meie">Meie</router-link></li>
                     </ul>
                 </div>
               </div>
@@ -55,6 +53,7 @@
 
 footer{
     position: static;
+    font-family: Raleway-Bold, sans-serif;
     background-color: rgba(0,0,0,0.5);
     align-items: center;
     text-align: center;

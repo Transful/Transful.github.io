@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Avaleht from "../views/Avaleht.vue";
-import Blogi from "../views/Blogi.vue";
-import Seosed from "../views/Seosed.vue";
-import Kontakt from "../views/Kontakt.vue";
-import Meist from "../views/Meist.vue";
+import Pealinnad from "../views/Pealinnad.vue";
+import Lipud from "../views/Lipud.vue";
+import Tehnikad from "../views/Tehnikad.vue";
+import Meie from "../views/Meie.vue";
 import LippudeMäng from "../views/LippudeMäng.vue";
 
 
@@ -14,24 +14,24 @@ const routes = [{
             import ("../views/Avaleht.vue")
     },
     {
-        path: "/blogi",
-        name: "Blogi",
-        component: Blogi,
+        path: "/pealinnad",
+        name: "Pealinnad",
+        component: Pealinnad,
     },
     {
-        path: "/seoste-andmebaasid",
-        name: "Seosed",
-        component: Seosed,
+        path: "/lipud",
+        name: "Lipud",
+        component: Lipud,
     },
     {
-        path: "/meist",
-        name: "Meist",
-        component: Meist,
+        path: "/tehnikad",
+        name: "Tehnikad",
+        component: Tehnikad,
     },
     {
-        path: "/kontakt",
-        name: "Kontakt",
-        component: Kontakt,
+        path: "/meie",
+        name: "Meie",
+        component: Meie,
     },
     {
         path: "/lippude-mäng",

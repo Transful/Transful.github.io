@@ -1,5 +1,5 @@
 <template>
-    <p>Seosed</p>
+    <p>Pealinnad</p>
 </template>
 
 <script>

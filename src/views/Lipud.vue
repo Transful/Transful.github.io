@@ -1,5 +1,5 @@
 <template>
-    <p>Blogi</p>
+    <p>Lipud</p>
 </template>
 
 <script>
