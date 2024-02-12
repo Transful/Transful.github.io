@@ -2,57 +2,105 @@
     {
         "nimi": "Afganistan",
         "pealinn": "Kabul",
-        "seosPealinn": "Afgaani <strong>kaabul</strong> oli liiva.",
+        "seosPealinn": "Afgaani kaabul oli liiva.",
         "seosPealinnPilt": "@/assets/seosed/kabul.jpg",
         "lipp": "@/assets/lipud/afganistan.jpg",
         "seosLipp": "TODO lipu seos"
     },
     {
         "nimi": "Albaania",
-        "pealinn": "Tirana"
+        "pealinn": "Tirana",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"
     },
     {
         "nimi": "Alžeeria",
-        "pealinn": "Alžiir"
+        "pealinn": "Alžiir",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"
     },
     {
         "nimi": "Ameerika Ühendriigid",
-        "pealinn": "Washington"        
+        "pealinn": "Washington",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"      
     },
     {
         "nimi": "Andorra",
-        "pealinn": "Andorra la Vella"        
+        "pealinn": "Andorra la Vella",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"      
     },
     {
         "nimi": "Angola",
-        "pealinn": "Luanda"        
+        "pealinn": "Luanda",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"     
     },
     {
         "nimi": "Antigua ja Barbuda",
-        "pealinn": "Saint John's"        
+        "pealinn": "Saint John's",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"        
     },
     {
         "nimi": "Araabia Ühendemiraadid",
-        "pealinn": "Abu Dhabi"        
+        "pealinn": "Abu Dhabi",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"        
     },
     {
         "nimi": "Argentiina",
-        "pealinn": "Buenos Aires"        
+        "pealinn": "Buenos Aires",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"        
     },
     {
         "nimi": "Armeenia",
-        "pealinn": "Jerevan"        
+        "pealinn": "Jerevan",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"        
     },
     {
         "nimi": "Aserbaidžaan",
-        "pealinn": "Bakuu"        
+        "pealinn": "Bakuu",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"       
     },
     {
         "nimi": "Austraalia",
-        "pealinn": "Canberra"        
+        "pealinn": "Canberra",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"        
     },
     {
         "nimi": "Austria",
-        "pealinn": "Viin"        
+        "pealinn": "Viin",
+        "seosPealinn": "Puudu",
+        "seosPealinnPilt": "Puudu",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"      
     }
   ]

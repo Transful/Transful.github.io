@@ -1,76 +1,93 @@
 <template>
-    <div v-if="currentQuestion" class="Test-Pealinnad">
+    <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Pealinnad">
         <div v-if="lõpetatud == true">
-            <h3>Sinu skoor on: {{ skoor }} / {{ küsimused.length }}</h3>
+            <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
             <h2>TEST: PEALINNAD</h2>
             <div class="question-counter">
-                {{ praeguseKüsimuseIndeks + 1 }} / {{ küsimused.length }}
+                {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
         </div>
-        <div class="QuestionContainer">
-            <div>
-                <div class="küsimusJaVastusevariandid">
-                        <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}</h2>
+        <div class="KeskmineContainer">
+            <div class="QuestionContainer">
+                <div>
+                    <div class="küsimusJaVastusevariandid">
+                            <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}</h2>
+                    </div>
+                    <div class="pealinnaAsukoht">
+                        <img src="" alt="Siia tuleb pilt :)">
+                    </div>
+                    <div class="valikuVariandid">
+                        <ul class="answer-grid">
+                            <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
+                                <button 
+                                    class="radio-button" 
+                                    @click="valitudVastus = choice"
+                                    :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
+                                            'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
+                                    :disabled="kontrollitud">{{ choice }}</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="pealinnaAsukoht">
-                    <img src="" alt="Siia tuleb pilt :)">
+                <div class="vihjeDiv">
+                    <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
+                    <div v-if="vihje" class="vihjeContainer">
+                        <h2>{{currentQuestion.seosJutt}}</h2>
+                        <img class="vihjePilt" :src="currentQuestion.seosPilt" alt="Seose pilt">
+                    </div>
                 </div>
-                <div class="valikuVariandid">
-                    <ul class="answer-grid">
-                        <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                            <button class="radio-button" @click="valitudVastus = choice">{{ choice }}</button>
-                        </li>
-                    </ul>
-                </div>
+            </div>  <!-- QuestionContainer -->
+            <div class="kontrolliJajärgmineNupud">
+                <button v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
+                <button v-if="kontrollitud && kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
+                <button v-if="!kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
             </div>
-            <div class="vihjeDiv">
-                <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
-                <div v-if="vihje" class="vihjeContainer">
-                    <h2>Afgaani <strong>kaabul</strong> oli liiva.</h2>
-                    <img class="vihjePilt" src="@\assets\seosed\kabul.jpg" alt="Siia tuleb pilt :)">
-                </div>
-            </div>
-        </div>  <!-- QuestionContainer -->
-        <div class="kontrolliJajärgmineNupud">
-            <button @click="kontrolliVastust">Kontrolli</button>
-            <button v-if="kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
-            <button v-if="!kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
         </div>
     </div>
    </template>
   
    <script>
-    import data from '/public/riigid.json';
-    
-    export default {
+export default {
     data() {
        return {
-         küsimused: [],
-         kasAndmedOnLaetud: true,
+         andmed: null,
+         kasAndmedOnLaetud: false,
+         lõpetatud: false,
+         vihje: false,
+         kontrollitud: false,
          praeguseKüsimuseIndeks: 0,
          valitudVastus: "",
          skoor: 0,
          õigestiVastatud: [],
-         lõpetatud: false,
          allChoices: [],
-         vihje: false,
+         seosJutt: 'ei ole seost',
+         seosPilt: '',
+
        };
     },
     computed: {
         currentQuestion() {
-            if (this.küsimused.length > 0) {
-                return this.küsimused[this.praeguseKüsimuseIndeks];
+            if (this.andmed != null && this.andmed.length > 0) {
+                return this.andmed[this.praeguseKüsimuseIndeks];
             }
             return null;
         },
         kasOnOlemasJärgmineKüsimus() {
-            return this.praeguseKüsimuseIndeks < this.küsimused.length - 1;
+            if (this.andmed != null)
+                return this.praeguseKüsimuseIndeks < this.andmed.length - 1;
+        },
+        kasOnÕigeVastus(){
+            if(this.valitudVastus === this.currentQuestion.correctAnswer){
+                return true;
+            }else{
+                return false;
+            }
         }
     },
     async created() {
-        console.log('Created lifecycle hook called - Võtan küsimused');
+        console.log('Created lifecycle hook called - Võtan andmed');
     
     try {
        
@@ -92,18 +109,18 @@
         const data = await response.json();
         console.log('Data:', data); // Add this line
 
-        this.küsimused = data.map(item => ({
+        this.andmed = data.map(item => ({
             question: item.nimi,
             correctAnswer: item.pealinn,
         }));
-        this.allChoices = this.küsimused.map(question => question.correctAnswer);
+        this.allChoices = this.andmed.map(question => question.correctAnswer);
 
         console.log('Created lifecycle hook called - Võtan suvalised vastused.');
 
-        this.küsimused.forEach(question => {
+        this.andmed.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
-        console.log('Transformed data:', this.küsimused); // Add this line
+        console.log('Transformed data:', this.andmed); // Add this line
         } catch (error) {
             console.error('Error fetching data:', error); // Modify this line
         } finally {
@@ -115,21 +132,37 @@
         //const data = require('/public/riigid.json');
 
 
-        // ANDMED TULEVAD JSON FAILIST
-        
-        console.log('Fetching data... Data:', data);
+        // ANDMED TULEVAD JSON FAILIST läbi store'i
+        let ajutineData = this.$store.getters.getAndmed;
+        this.andmed = ajutineData;
+        console.log('Fetching data... Data:', this.andmed);
 
-        this.küsimused = data.map(item => ({
-            question: item.nimi,
-            correctAnswer: item.pealinn,
-        }));
+
+        // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
+        // Aga mitte json korral, sest see on kohe olemas.
+        
+        this.andmed = this.andmed.map(item => {
+            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.lipp || !item.seosLipp) {
+                console.log('Andmed on puudulikud');
+            }
+            return{
+                question: item.nimi,
+                correctAnswer: item.pealinn,
+                seosJutt: item.seosPealinn,
+                seosPilt: item.seosPealinnPilt,
+                lipp: item.lipp,
+                seosLipp: item.seosLipp
+            }
+
+        });
+
         // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
-        this.allChoices = this.küsimused.map(question => question.correctAnswer);
+        this.allChoices = this.andmed.map(question => question.correctAnswer);
         console.log('All choices:', this.allChoices);
 
         console.log('Created lifecycle hook called - Võtan suvalised vastused.');
 
-        this.küsimused.forEach(question => {
+        this.andmed.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
 
@@ -149,29 +182,34 @@
         /* Kui vajutatakse "Kontrolli" nuppu */
        kontrolliVastust() {
             if (this.isLoading) return;
-            alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
+
+            //TODO ÜMBER TEHA NII, ET KUI VASTUS ON ÕIGE, SIIS VÄRVIB ROHELISTEKS VASTUSEVARIANTIDEKS
+            
+            //alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
+            
+            this.kontrollitud = true;
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
-            if (this.valitudVastus === this.küsimused[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
+            if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
                 this.skoor++;
                 this.õigestiVastatud[this.praeguseKüsimuseIndeks] = true;
             }
-            /* console.log(this.skoor);*/
-
        },
+
         /* Kui vajutatakse "Järgmine küsimus" nuppu */
        järgmineKüsimus() {
         if (this.isLoading) return;
-         this.kontrolliVastust();
          this.praeguseKüsimuseIndeks++;
          this.vihje = false;
          this.valitudVastus = "";
+         this.kontrollitud = false;
        },
+
        /* Kui vajutatakse "Lõpeta test" nuppu */
        lõpetaTest() {
-         this.kontrolliVastust();
          this.lõpetatud = true;
          console.log("Test on lõpetatud, skoor on: " + this.skoor);
        },
+
        /* Võtan vastusevariantideks suvalised vastused */
        võtaSuvalisedVastused(correctAnswer) {
             if (this.isLoading) return;
@@ -215,6 +253,9 @@
     max-width: 600px;
     padding-left: 10ch;
   }
+  .keskmineContainer {
+    display: inline-flex;
+}
   .küsimus {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -312,6 +353,8 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1ch; /* vertical gap */
     column-gap: 4ch; /* horizontal gap */
+    list-style-type: none;
+
    }
    ul.answer-grid {
     padding-left: 0;
@@ -329,15 +372,20 @@
     display: block;
     width: 100%;
     padding: 10px;
-    /*
-    margin-bottom: 10px;
-    */
     border: 2px solid #55E0E5;
     border-radius: 15px;
     background-color: black;
     color: #55E0E5;
     font-size: 16px;
     cursor: pointer;
+  }
+  .green{
+    background-color: green;
+    border: 2px solid black;
+  }
+  .red{
+    background-color: red;
+    border: 2px solid black;
   }
 
   .radio-button:hover {
@@ -351,5 +399,9 @@
   .radio-button:checked {
     background-color: #55E0E5;
     color: black;
+  }
+  li::marker{
+    visibility: hidden;
+    position: absolute;
   }
    </style>

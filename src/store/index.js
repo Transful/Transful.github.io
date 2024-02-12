@@ -1,14 +1,18 @@
-import { createStore } from 'vuex'
+import andmed from '/public/riigid.json';
+import { createStore } from 'vuex';
 
-export default createStore({
+const store = createStore({
   state: {
+    andmed: andmed,
   },
+  mutations: {},
+  actions: {},
+  modules: {},
   getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
+    getAndmed: state =>{
+      return state.andmed;
+    }
   }
-})
+});
+
+export default store;

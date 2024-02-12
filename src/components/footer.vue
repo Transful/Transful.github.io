@@ -23,8 +23,8 @@
                 </div>
                 <div class="col2">
                     <ul class="footer-links">
-                        <li><router-link to="/tehnnikad">Tehnikad</router-link></li>
-                        <li><router-link to="/meie">Meie</router-link></li>
+                        <li><router-link to="/tehnnikad">TEHNIKAD</router-link></li>
+                        <li><router-link to="/meie">MEIE</router-link></li>
                     </ul>
                 </div>
               </div>

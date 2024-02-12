@@ -62,5 +62,6 @@ html, body {
   display: flex;
   justify-content: center;
   flex: 1;
+
 }
 </style>

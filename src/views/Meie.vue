@@ -24,13 +24,11 @@
                         <h2>Sander Truu</h2>
                         <p>Arendaja</p>
                     </div>
-                    <!--
                     <div class="meeskonnaLiige">
                         <img src="@/assets/jaanis.png" alt="Jaanis" width="200" height="200">
                         <h2>Jaanis Soosaar</h2>
                         <p>Arendaja</p>
                     </div>
-                -->
                 </div>
             </div>
             <div class="juttJaPilt">
