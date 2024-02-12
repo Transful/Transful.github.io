@@ -3,15 +3,17 @@
         "nimi": "Afganistan",
         "pealinn": "Kabul",
         "seosPealinn": "Afgaani kaabul oli liiva.",
-        "seosPealinnPilt": "@/assets/seosed/kabul.jpg",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "@/assets/lipud/afganistan.jpg",
         "seosLipp": "TODO lipu seos"
     },
     {
         "nimi": "Albaania",
         "pealinn": "Tirana",
-        "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku tiaarat.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "tirana.png",
         "lipp": "Puudu",
         "seosLipp": "Puudu"
     },
@@ -19,7 +21,8 @@
         "nimi": "Alžeeria",
         "pealinn": "Alžiir",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"
     },
@@ -27,7 +30,8 @@
         "nimi": "Ameerika Ühendriigid",
         "pealinn": "Washington",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"      
     },
@@ -35,7 +39,8 @@
         "nimi": "Andorra",
         "pealinn": "Andorra la Vella",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"      
     },
@@ -43,7 +48,8 @@
         "nimi": "Angola",
         "pealinn": "Luanda",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"     
     },
@@ -51,7 +57,8 @@
         "nimi": "Antigua ja Barbuda",
         "pealinn": "Saint John's",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"        
     },
@@ -59,7 +66,8 @@
         "nimi": "Araabia Ühendemiraadid",
         "pealinn": "Abu Dhabi",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"        
     },
@@ -67,7 +75,8 @@
         "nimi": "Argentiina",
         "pealinn": "Buenos Aires",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"        
     },
@@ -75,7 +84,8 @@
         "nimi": "Armeenia",
         "pealinn": "Jerevan",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"        
     },
@@ -83,7 +93,8 @@
         "nimi": "Aserbaidžaan",
         "pealinn": "Bakuu",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"       
     },
@@ -91,7 +102,8 @@
         "nimi": "Austraalia",
         "pealinn": "Canberra",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"        
     },
@@ -99,7 +111,8 @@
         "nimi": "Austria",
         "pealinn": "Viin",
         "seosPealinn": "Puudu",
-        "seosPealinnPilt": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"      
     }

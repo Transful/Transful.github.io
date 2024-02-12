@@ -16,7 +16,9 @@
                             <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}</h2>
                     </div>
                     <div class="pealinnaAsukoht">
-                        <img src="" alt="Siia tuleb pilt :)">
+                        <img :src="require(`@/assets/asukohad/${currentQuestion.pealinnAsukoht}`)" alt="pealinna asukoht">                        <!--
+                        <img src="../assets/seosed/kabul.jpg" alt="seose pilt">
+                        -->
                     </div>
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
@@ -33,9 +35,9 @@
                 </div>
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
-                    <div v-if="vihje" class="vihjeContainer">
+                        <div v-if="vihje" class="vihjeContainer">
                         <h2>{{currentQuestion.seosJutt}}</h2>
-                        <img class="vihjePilt" :src="currentQuestion.seosPilt" alt="Seose pilt">
+                        <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
                 </div>
             </div>  <!-- QuestionContainer -->
@@ -64,7 +66,6 @@ export default {
          allChoices: [],
          seosJutt: 'ei ole seost',
          seosPilt: '',
-
        };
     },
     computed: {
@@ -134,15 +135,14 @@ export default {
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
         let ajutineData = this.$store.getters.getAndmed;
-        this.andmed = ajutineData;
         console.log('Fetching data... Data:', this.andmed);
 
 
         // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
         // Aga mitte json korral, sest see on kohe olemas.
         
-        this.andmed = this.andmed.map(item => {
-            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.lipp || !item.seosLipp) {
+        this.andmed = ajutineData.map(item => {
+            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
                 console.log('Andmed on puudulikud');
             }
             return{
@@ -150,6 +150,7 @@ export default {
                 correctAnswer: item.pealinn,
                 seosJutt: item.seosPealinn,
                 seosPilt: item.seosPealinnPilt,
+                pealinnAsukoht: item.pealinnAsukoht,
                 lipp: item.lipp,
                 seosLipp: item.seosLipp
             }
@@ -176,18 +177,19 @@ export default {
     methods: {
         /* Kui vajutatakse "Vihje" nuppu */
         näitaVihjet() {
+            console.log('Vihje nuppu vajutati');
+            console.log(this.currentQuestion.pealinnAsukoht)
             if (this.isLoading) return;
             this.vihje = true;
         },
         /* Kui vajutatakse "Kontrolli" nuppu */
        kontrolliVastust() {
             if (this.isLoading) return;
-
-            //TODO ÜMBER TEHA NII, ET KUI VASTUS ON ÕIGE, SIIS VÄRVIB ROHELISTEKS VASTUSEVARIANTIDEKS
             
             //alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
             
             this.kontrollitud = true;
+
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
             if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
                 this.skoor++;
@@ -306,6 +308,10 @@ export default {
     background-color: #0B1C24;
     color: #55E0E5;
     font-size: 16px;
+  }
+  .pealinnaAsukoht > img{
+    width: 250px;
+    height: auto;
   }
   .vihjeDiv{
     margin-left: 20px;
