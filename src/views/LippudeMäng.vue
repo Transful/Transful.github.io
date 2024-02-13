@@ -13,21 +13,17 @@
             <div class="QuestionContainer">
                 <div>
                     <div class="küsimusJaVastusevariandid">
-                            <h2 class="küsimus" v-if="currentQuestion">{{ currentQuestion.question }}</h2>
+                            <h2 class="küsimus" v-if="currentQuestion">{{currentQuestion.question }}</h2>
                     </div>
                     <div class="pealinnaAsukoht">
-                        <img :src="require(`@/assets/asukohad/${currentQuestion.pealinnAsukoht}`)" alt="pealinna asukoht">                        <!--
-                        <img src="../assets/seosed/kabul.jpg" alt="seose pilt">
-                        -->
+                        <img :src="require(`@/assets/asukohad/${currentQuestion.pealinnAsukoht}`)" alt="pealinna asukoht">
                     </div>
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
                             <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                                <button 
-                                    class="radio-button" 
-                                    @click="valitudVastus = choice"
+                                <button class="radio-button" @click="valitudVastus = choice"
                                     :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
-                                            'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
+                                             'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
                                     :disabled="kontrollitud">{{ choice }}</button>
                             </li>
                         </ul>
@@ -35,7 +31,7 @@
                 </div>
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
-                        <div v-if="vihje" class="vihjeContainer">
+                    <div v-if="vihje" class="vihjeContainer">
                         <h2>{{currentQuestion.seosJutt}}</h2>
                         <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
@@ -135,7 +131,7 @@ export default {
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
         let ajutineData = this.$store.getters.getAndmed;
-        console.log('Fetching data... Data:', this.andmed);
+        //console.log('Fetching data... Data:', this.ajutineData);
 
 
         // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
@@ -156,6 +152,8 @@ export default {
             }
 
         });
+        console.log('Andmed:', this.andmed);
+
 
         // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
         this.allChoices = this.andmed.map(question => question.correctAnswer);
@@ -311,7 +309,8 @@ export default {
   }
   .pealinnaAsukoht > img{
     width: 250px;
-    height: auto;
+    height: 250px;
+    border-radius: 25px; 
   }
   .vihjeDiv{
     margin-left: 20px;

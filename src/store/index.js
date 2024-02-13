@@ -1,17 +1,22 @@
-import andmed from '/public/riigid.json';
+import kõikRiigid from '/public/riigid.json';
+import euroopaRiigid from '/public/euroopaRiigid.json';
 import { createStore } from 'vuex';
 
 const store = createStore({
   state: {
-    andmed: andmed,
+    kõikRiigid: kõikRiigid,
+    euroopaRiigid: euroopaRiigid,
   },
   mutations: {},
   actions: {},
   modules: {},
   getters: {
     getAndmed: state =>{
-      return state.andmed;
-    }
+      return state.kõikRiigid;
+    },
+    getEuroopaAndmed: state =>{
+      return state.euroopaRiigid;
+    },
   }
 });
 
