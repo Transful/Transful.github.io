@@ -25,6 +25,7 @@
               <router-link to="/lippude-mäng">Mäng 1</router-link>
               <router-link to="/">Mäng 2</router-link>
               <router-link to="/">Mäng 3</router-link>
+              <router-link to="/testmäng">TestMäng</router-link>
             </div>
           </li>
       </ul>

@@ -5,6 +5,7 @@ import Lipud from "../views/Lipud.vue";
 import Tehnikad from "../views/Tehnikad.vue";
 import Meie from "../views/Meie.vue";
 import LippudeMäng from "../views/LippudeMäng.vue";
+import testmäng from "../views/testmäng.vue";
 
 
 const routes = [{
@@ -37,6 +38,11 @@ const routes = [{
         path: "/lippude-mäng",
         name: "LippudeMäng",
         component: LippudeMäng,
+    },
+    {
+        path: "/testmäng",
+        name: "testmäng",
+        component: testmäng,
     },
     { //will route to Avaleht view if none of the previous routes apply
         path: "/:catchAll(.*)",
