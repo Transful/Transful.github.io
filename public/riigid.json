@@ -3,8 +3,8 @@
         "nimi": "Afganistan",
         "pealinn": "Kabul",
         "seosPealinn": "Afgaani kaabul oli liiva.",
-        "pealinnAsukoht": "eesti.png",
-        "seosPealinnPilt": "kabul.jpg",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Afganistan - Kabul.png",
         "lipp": "@/assets/lipud/afganistan.jpg",
         "seosLipp": "TODO lipu seos"
     },
@@ -13,23 +13,23 @@
         "pealinn": "Tirana",
         "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku tiaarat.",
         "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "tirana.png",
+        "seosPealinnPilt": "Afganistan - Kabul.png",
         "lipp": "Puudu",
         "seosLipp": "Puudu"
     },
     {
         "nimi": "Alžeeria",
         "pealinn": "Alžiir",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Aafrika suurim riik, mis sai nime pealinna järgi. Riigi rahvusloom on fennekrebane, mis on väikseim rebase liik maailmas. Väike nagu hiir (as hiir).",
         "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "kabul.jpg",
+        "seosPealinnPilt": "Alžeeria - Alžiiri.png",
         "lipp": "Puudu",
         "seosLipp": "Puudu"
     },
     {
         "nimi": "Ameerika Ühendriigid",
         "pealinn": "Washington",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "USA esimene president oli George Washington.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -38,7 +38,7 @@
     {
         "nimi": "Andorra",
         "pealinn": "Andorra la Vella",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Andorra la Vella tähendab \"Andorra the town\", mis eristab pealinna riigist.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -47,7 +47,7 @@
     {
         "nimi": "Angola",
         "pealinn": "Luanda",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Angolas mängitakse saalihokit luuaga, sest vaid siis saab anGOALa (vaja teada lippu).",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -56,7 +56,7 @@
     {
         "nimi": "Antigua ja Barbuda",
         "pealinn": "Saint John's",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Püha John Lennon grillib barbecued antiikses Kreekas.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -65,7 +65,7 @@
     {
         "nimi": "Araabia Ühendemiraadid",
         "pealinn": "Abu Dhabi",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Riigis asub maailma kõige kõrgem hoone - Burj Khalifa (828m). Häbis Apu on sinna torni lõksu jäänud. Lisainfo: Murj Khalifa ei asu mitte pealinnas, vaid Dubais.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -74,7 +74,7 @@
     {
         "nimi": "Argentiina",
         "pealinn": "Buenos Aires",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Messi ja Maradona kodumaa pealinn lõhnab hästi, sest Buenos Aires tähendab inglise keeles \"good airs\".",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -83,7 +83,7 @@
     {
         "nimi": "Armeenia",
         "pealinn": "Jerevan",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Eesti tuntuim armeenlane on laulja Stefan, kellel on nüüd pere.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -92,7 +92,7 @@
     {
         "nimi": "Aserbaidžaan",
         "pealinn": "Bakuu",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Paku, mis aastal võitis arvuti esimest korda inimest males? 1997. aastal, kui Deep Blue tegi pähe azerbadžaanlasest male maailmameistrile Garry Kasparovile.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -101,7 +101,7 @@
     {
         "nimi": "Austraalia",
         "pealinn": "Canberra",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Austraalia on ainus riik, mis on ka manner. Kuigi tihti pakutakse riigi pealinnaks Melbourne'i või Sydney't, valiti kompromissina pealinnaks Canberra juba aastal 1908. Riigis on palju kuulsuseid: kängurud, Hemsworthid, Margot Robbie (Barbie) jne.",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
@@ -110,10 +110,37 @@
     {
         "nimi": "Austria",
         "pealinn": "Viin",
-        "seosPealinn": "Puudu",
+        "seosPealinn": "Austriast pärit märulistaar Arnold Schwarzenegger mägede vahel poseerimas, viin musklil (pilt oluline).",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"      
-    }
+    },
+    {
+        "nimi": "Bahama",
+        "pealinn": "Nassau",
+        "seosPealinn": "Bahamal on notsude rand ja notsud on NASA-kostüümides.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Bahrein",
+        "pealinn": "Manama",
+        "seosPealinn": "Preester Rein peab kummituse hoonest välja manama.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Bangladesh",
+        "pealinn": "Dhaka",
+        "seosPealinn": "Ithaka Maria Bangladeshi riidevabrikus külastust tegemas.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    } 
   ]

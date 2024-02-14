@@ -25,5 +25,14 @@
         "seosPealinnPilt": "kabul.jpg",
         "lipp": "Puudu",
         "seosLipp": "Puudu"      
+    },
+    {
+        "nimi": "Eesti",
+        "pealinn": "Tallinn",
+        "seosPealinn": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu" 
     }
   ]
