@@ -152,6 +152,10 @@ ul.nav-list {
   margin: 0;
   display: flex;
 }
+@media(min-width: 250px){
+
+}
+
 @media(min-width: 921px){
   .header, .nav{
     display: flex;
