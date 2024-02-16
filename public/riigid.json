@@ -220,7 +220,7 @@
         "pealinn": "Gaborone",
         "seosPealinn": "Botswanas on ruutkilomeetri kohta kõige rohkem elevante Aafrikas. Ehk sel juhul pakutakse seal ka potis elevandi karbonaadi?",
         "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "Bostwana - Gaborone.png",
+        "seosPealinnPilt": "Botswana - Gaborone.png",
         "lipp": "Puudu",
         "seosLipp": "Puudu"  
     }, 
@@ -658,7 +658,7 @@
     },
     {
         "nimi": "Jeemen",
-        "pealinn": "Aden, Sana*a",
+        "pealinn": "Aden, Sanaa",
         "seosPealinn": "Araabia poolsaare ainus vabariik, mis ei ole samas väga demokraatlik (9/100). Riigis toimuva kodusõja tõttu on lahvatanud üks rängimaid inimkatastroofe: ligi 20 miljonit inimest on nälga suremise äärel. ",
         "pealinnAsukoht": "kabul.png",
         "seosPealinnPilt": "Jeemen - Aden, Sanaa.png",
@@ -826,7 +826,932 @@
         "seosPealinnPilt": "Küpros - Nikosia.png",
         "lipp": "Puudu",
         "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Laos",
+        "pealinn": "Vientiane",
+        "seosPealinn": "Kommunistlik Laos tõlkub kui \"miljoni elevandi maa\". Seda peetakse ka enim pommitatud riigiks maailmas Vietnami sõja tõttu (2 miljonit tonni pomme ehk rohkem kui 2. maailmasõja jooksul üldse kokku), mille tagajärjed on ka tänapäeval tunda, sest ligi 35% visatud pommidest ei lõhkenud. Riigi laos hoitakse suuruses \"Venti\" (Starbucks) kohvitopse.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Laos - Vientiane.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Leedu",
+        "pealinn": "Vilnius",
+        "seosPealinn": "Merevaigujuveelide ja kettaheitesangarite poolest tuntud Leedu, mille rahvusport on korvpall. Mängijate jalad on suurest mängimisest tihti villis. Leedu keel on üks maailma vanimaid säilinud keeli maailmas.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Leedu - Vilnius.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Lesotho",
+        "pealinn": "Maseru",
+        "seosPealinn": "Merepiirita üks kolmest maailma enklaavriikidest (teised kaks Itaaliast ümbritsetud San Marino ja Vatikani linnriik), mida tuntakse ka \"taeva kuningriigina\", sest selle madalaim punkt on maailma kõige kõrgem madalam punkt. Lesothos on maailma kõige kõrgem suitsiidimäär per capita (72,4 inimest 100 000 kohta, järgmisel kohal  Guyana 40,3ga). Riigis puuduvad ressursid ning inimestel on masendus.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Lesotho - Maseru.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Libeeria",
+        "pealinn": "Monrovia",
+        "seosPealinn": "Ameerika kontrolli all olnud \"koloniaalmaa\", mille tulemusel oldi üks kahest Aafrika riigist (lisaks Etioopiale), mida eurooplased ei koloniseerinud. Aafrika vanim vabariik (1847) ja esimene Aafrika riik, mis valis endale naispresidendi, 2006. aastal valitud Ellen Johnson Sirleaf, kes sai 2011. aastal ka Nobeli rahupreemia. Ameeriklanna Marilyn Monroe kleit oli vabas (\"liber\" kui vaba ladina k) hõljumises..",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Libeeria - Monrovia.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Liechtenstein",
+        "pealinn": "Vaduz",
+        "seosPealinn": "Riik 40 000 elaniku ja ühe miljardäriga (hambaravitooted), kelle väärtus on pool riigi SKP-st. Viimane Euroopa riik, mis andis naistele valmisõiguse (1984. aastal). 2001. aastal ähvardas riigi prints riigi Bill Gatesile maha müüa, kui avalikkus ei toetanud tema põhiseaduslikke reforme tema volituste suurendamiseks: \"Te vanad ussid!\"",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Liechtenstein - Vaduz.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Liibanon",
+        "pealinn": "Beirut",
+        "seosPealinn": "Ligi 5,5 miljoni elanikuga väike Lähis-Ida riik, mille pealinnas Beirutis (asub by Vahemeri) toimus 2020. aastal tohutu vähemalt 200 inimest tapnud plahvatus, mille põhjustas sadama laos hoitud kemikaalide süttimine. Riik on tugevas majanduskrahhis. Tuntuimad liibanonlased on Amal Clooney (vandeadvokaat), Mika (laulja) ja Mia Khalifa (veebikaamera modell).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Liibanon - Beirut.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Liibüa",
+        "pealinn": "Tripoli",
+        "seosPealinn": "Riigis asuvad Aafrika suurimad naftareservid, millest saadavaid tulusid kasutas ametnike lojaalsuse võitmiseks ära kurikuulus diktaator Gaddafi (oli võimul üle 40 aasta). Kolm täpitähte: i-i-ü ehk tripoli.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Liibüa - Tripoli.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Luksemburg",
+        "pealinn": "Luxembourg",
+        "seosPealinn": "5x Eurovisiooni võitnud riigi motoks on \"Tahame jääda selleks, kes oleme\". Riigi tollasest peaministrist Xavier Bettelist sai esimene EL-i liider, kes astus samasoolisse abiellu. Tegu on ühe maailma rikkaima riigiga, mille miinimumpalk on 2571€ kuus (2023) ja mille pool tööjõust on piiriülesed \"pendelrändurid\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Luxembourg - Luxembourg.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Lõuna-Aafrika Vabariik",
+        "pealinn": "Pretoria, Bloemfontein, Kaplinn",
+        "seosPealinn": "Ainus maailma riik, millel on kolm pealinna. 2006. aastal sai Lõuna-Aafrikast esimene Aafrika riik, mis tunnustas samasooliste abielu. Tuntuimateks lõuna-aafriklasteks on Elon Musk (ärimagnaat), Nelson Mandela (president, kes viibis 27 aastat vangis), Desmond Tutu (apartheidivastane inimõiguslane ja vaimulik) ja Charlize Theron (näitleja). Kapp, mis viib sind lilledega (\"Blumen\" saksa k) ümbritsetud purskkaevu (\"fontain\" ingl k) ja kiskjateni (\"predator\" ingl k).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Lõuna-Aafrika Vabariik - Pretoria, Kaplinn, Bloemfontein.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Lõuna-Korea",
+        "pealinn": "Soul",
+        "seosPealinn": "K-Popi (BTS, Blackpink, \"Gangnam Style\"), Samsungi ja \"Squid Game'i\" kodumaa, kus näeb habemega mehi pigem harva (\"ebapuhas\"), kus sündides ollakse üheaastane (uue aasta tulekuga tõuseb ka su vanus) ja kus ligi 70% elanikkonnast on kõrgharitud. Kui inimene tahab endasse uut \"hinge\" (soul ingl k) sisse puhuda, võib ta minna riiki iluoperatsioonile, sest seal tehakse neid kõige rohkem per capita.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Lõuna-Korea - Soul.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Lõuna-Sudaan",
+        "pealinn": "Juba",
+        "seosPealinn": "Maailma noorim riik, mis iseseisvus 2011. aastal. Riigis on ulatuslik humanitaarkriis, mis on tekkinud kodusõja ja järjestikuliste üleujutuste tulemusel. Kuigi Sudaanist lahku löömine oli rahumeelne, on riik juba jälle võimuvõitlusest alguse saanud konfliktis.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Lõuna-Sudaan - Juba.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    }, 
+    {
+        "nimi": "Läti",
+        "pealinn": "Riia",
+        "seosPealinn": "Lido (restoranikett), Jelena Ostapenko (tennisist) ja Mark Rothko (kunstnik, kelle kallim maal müüdi 186 miljoni dollari eest) sünnimaa. Riigis sündis ka teksapükste leiutaja Jacob William Davis. Kui Lätit külastada, tuleb ka Riia palsamit proovida.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Läti - Riia.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Madagaskar",
+        "pealinn": "Antananarivo",
+        "seosPealinn": "Suuruselt maailma neljas saar, kus elab üle 70 leemurlase liigi ja mis on tuntud oma vanilje poolest. \"Madagaskari\" multika semudele antagu narivoodi.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Madagaskar - Antananarivo.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Malaisia",
+        "pealinn": "Kuala Lumpur",
+        "seosPealinn": "Riik, kus kuningas valitakse viieks aastaks ning kus asub maailma suurim ringtee (diameetriga 3,5km), suurim lill (\"laibalill\") ja kõrgeimad kaksiktornid. Kuala Lumpur tähendab \"mudast kahe jõe ühinemiskohta.\"",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Malaisia - Kuala Lumpur.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Malawi",
+        "pealinn": "Lilongwe",
+        "seosPealinn": "Riigi kogupindalast moodustab Malawi järv enam kui viiendiku ja riigi nimi tähendab \"leegitsevat vett\", mis viitab Malawi järve kohal loojuvale päiksele. Riiki tuntakse ka kui \"Aafrika sooja südant\" selle inimeste vastutuleliku loomuse tõttu. Popstaar Madonna adopteeris riigist neli last. Ma laavin Lilot veel (\"Lilo ja Stitch\", mis leidis küll aset Hawail.)",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Malawi - Lilongwe.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Maldiivid",
+        "pealinn": "Malé",
+        "seosPealinn": "Maailma lamedaim ja madalaim riik, mille saarte asetus ja tunnushotellid on malelaua mustriga. Saareriigis peetakse nädalavahetust hoopis reedeti-laupäeviti ning riigis on kollase liiva randade asemel valged. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Maldiivid - Male.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mali",
+        "pealinn": "Bamako ",
+        "seosPealinn": "Malis elas 13. sajandil kõigi aegade rikkaim inimene, Timbuktu kuningas Mansa Musa, kelle varandus oli tänapäeva vääringus umbes 400 miljardit dollarit. Rikkus tuli riigi soola- ja kullavarudest. Barack Obama tütre nimi on Malia. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mali pealinn - Bamako.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Malta",
+        "pealinn": "Valletta",
+        "seosPealinn": "Riik oli Briti võimu all 150 aastat, mille mõjud on näha ka tänapäeval: üheks ametlikuks keeleks on inglise keel (lisaks malta keelele), toimib vasakpoolne liiklus ning linnapildis on näha punaseid telefonikaste. Lisaks oli Malta 2. maailmasõja pommitatuim riik ning Eurovisioon on sisuliselt riigi rahvuspüha, kuigi nad pole võistlust kordagi võitnud. Samas on nad olnud valmis ostma Eurovisiooni korraldamisõigusi, sest neil on paks wallet. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Malta - Valletta.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Maroko",
+        "pealinn": "Rabat",
+        "seosPealinn": "Põhja-Aafrika ainus kuningriik, mis on kodumaaks French Montanale (\"Unforgettable\") ja arvatavasti maailma vanimale ülikoolile (Al-Qarawiyyin), mis asutati 859 pKr. Jalgpall on riigis ülipopulaarne: 2022. aasta MMil saavutati ajalooline 4. koht (esimene Araabia ja Aafrika rahvus, kel õnnestus saada MMil poolfinaali). Riigi suurim linn on Casablanca. Riigis on rabade asemel kõrb, aga jäneseid leidub ikka (rabbit ingl k).  ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Maroko - Rabat.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Marshalli saared",
+        "pealinn": "Majuro ",
+        "seosPealinn": "Veetaseme tõusu pärast ohus olev saareriik, mille julgeolekut ja kaitset kontrollib endiselt USA, kes kasutas aastaid Marshalli saari tuumakatsetusteks (kokku lõhati 67 aatomipommi, muuhulgas esimene vesinikupomm, mis oli 1000x võimsam kui Hiroshima \"Little Boy\"). Maailmas toimuv jura on põhjus, miks seda riiki peagi ei eksisteeri.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Marshalli Saared - Majuro.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mauritaania",
+        "pealinn": "Nouakchott",
+        "seosPealinn": "Viimane riik maailmas, mis kaotas orjuse, kuid väidetavalt elab sadu tuhandeid inimesi endiselt orjana. Valitsus väidab, et orjus on kaotatud ja seega no action nende poolt. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mauritaania - Nouakchott.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mauritius",
+        "pealinn": "Port Louis",
+        "seosPealinn": "Saaremaa suurune riik, kus elab peaaegu sama palju inimesi kui Eestis ja mille sümboliks on dodo - Mauritiusele endeemiline lennuvõimetu lind, kes suri välja 17. sajandil. Mark Twain ütles riigi kohta: \"Kõigepealt tehti Mauritius ja seejärel taevas ning taevas kopeeriti Mauritiuse järgi.\" Mõtle, kui mõnus oleks sealses sadamas (rannas), taustaks Louis Armstrongi trompetimuusika. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mauritius - Port Louis.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mehhiko",
+        "pealinn": "México",
+        "seosPealinn": "Kunstnik Frida Kahlo ja näitleja Salma Hayeki kodumaa, mis tutvustas maailmale šokolaadi, chillit, maisi, Corona õlu, tekiilat ja värvilist televisiooni. Pealinn Mexico City ehitati keset järve asuvale saarele, mis-tõttu linn vajub, tekitades sellega mitmeid probleeme. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mehhiko - Mexico City.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mikroneesia",
+        "pealinn": "Palikir",
+        "seosPealinn": "Neljast suuremast saarest (Chuuk, Kosrae, Pohnpei, Yap) koosnev riik, mis on sukeldujate paradiis ja mille Yapi saarel on näha sadu hiiglaslikke kividest kettaid, mida kasutati sajandeid valuutana. Mikroneesia on nii pisike, et kaardilt selle \"pealkirja\" leidmine võib keeruliseks osutuda. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mikroneesia - Palikir.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Moldova",
+        "pealinn": "Chișinău",
+        "seosPealinn": "Üks Euroopa vähim külastatud riike, mis on tuntud oma veinide poolest ja mis sai nime tänapäeva Rumeenia aladel voolava jõe järgi. Riigis on esinenud ka maavärinaid - tugevaim (7,7 Richteri skaalal) 1940. aastal. Hallitusega toas (mold ingl k) on juustune (cheesy) njäu (cat).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Moldova - Chisinau.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Monaco",
+        "pealinn": "Monaco",
+        "seosPealinn": "Vatikani järel väiksuselt teine riik maailmas, mis on tuntud oma kuulsa Monte Carlo kasiino (kohalikel on seadusega keelatud seal mängida), Vormel-1 etapi ja maksuparadiisi staatuse poolest. Iga kolmas Monaco elanik on miljonär ja 75% elanikest on välismaal sündinud. Riigi printsiga abiellus 1956. aastal Hollywoodi staar Grace Kelly. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Monaco - Monaco.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mongoolia",
+        "pealinn": "Ulaanbaatar",
+        "seosPealinn": "Riik, mille asutajaisaks peetakse tuurt Tšingis-khaani ja mille nomaadid on üks viimaseid rändrahvaid maailmas. Riigi naaberriigid on Venemaa ja Hiina, kes on oma poliitika poolest tihti nagu ulakad pahatarid.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mongoolia - Ulaanbataar.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Montenegro",
+        "pealinn": "Podgorica",
+        "seosPealinn": "Serbiast 2006. aastal iseseisvunud populaarne turismi riik, mille nimi tähendab \"musta mäge\". Riigis asub Euroopa sügavaim kanjon - Tara kanjon ning selle pealinn on üks euroopa päiksepaistelisemaid. Musta mäe juures asuv pood, kuhu lähed (go ingl k) ikka.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Montenegro - Podgorica.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Mosambiik",
+        "pealinn": "Maputo",
+        "seosPealinn": "Ainus ühesõnaline riik maailmas, milles on kõik vokaalid (ingliskeelne versioon: Mosambique). Mosambiigi poliitik Graca Machel on modernse ajaloo ainus naine, kes on olnud kahe riigi esileedi (lisaks ka Lõuna-Aafrika Vabariik). Riigi ametlikuks keeleks on portugali keel. Kääbusplaneet Pluuto, mis on tehtud mosaiigist.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Mosambiik - Pluuto.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Myanmar (Birma)",
+        "pealinn": "Naypyidaw",
+        "seosPealinn": "Kahe nimega riik (aastani 1989 Birma, mil valitsev sõjaväehunta muutis nime Myanmariks, mida mitmed valitsused keeldusid tunnustamast), kus toimus 2021. aastal sõjaväeline riigipööre ja kus kiusatakse süsteemselt taga rohingjasid (islamivähemuslased, keda peetakse maailma suurimaks riigita elanikkonnaks, sest neile on kodakondsust keelatud alates aastast 1982). Rohingja mehi ja naisi mitteinimesteks pidav riik.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Myanmar (Birma) - Naypyidaw.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Namiibia",
+        "pealinn": "Windhoek",
+        "seosPealinn": "Namiibias asub maailma vanim kõrb, Namibi kõrb, ja maailma kõrgeim liivadüün. Selle juures seistes tunned tuult (wind ingl k) ja ütled \"What the hoek?\" Namiibia on kõige hõredamalt asustatud riikide seas teine (Mongoolia järel), kuna riigis elab vaid alla 3 miljoni inimese.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Namiibia pealinn - Windhoek.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Nauru",
+        "pealinn": "Yaren",
+        "seosPealinn": "Maailma kõige vähem külastatud riik, mis on suurem vaid Vatikanist ja Monacost ning mille ülemäärane fosfaadi kaevandamine viis riigi sisuliselt pankrotti. Riigi elanikest on üle 60% ülekaalulised (nad järavad süüa), mis teeb neist paksimate inimestega rahva.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Nauru - Yaren.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Nepal",
+        "pealinn": "Katmandu",
+        "seosPealinn": "Hiina ja India vahel asuv Buddha sünnimaa, kus asuvad 8/10st maailma kõrgeimast mäest (sh Mount Everest) ning kust on pärit kuulus legend Jeti kohta. Nepalis kasutatav kalender on Gregooriuse kalendrist ligi 57 aastat ees. Kassiga (cat) Mees (man) kassiga sind (du). ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Nepal - Katmandu.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Nicaragua",
+        "pealinn": "Managua",
+        "seosPealinn": "Seitsmest Kesk-Ameerika riigist suurim, mis sai oma nime, kui Hispaania kolonistid ühendasid põlisrahvad \"Nicarao\" sõnaga vesi (aqua). Nicaraquas asub maailma üks aktiivsemaid vulkaane  - Telica. Vulkaan on nagu nõia pott, kus nõid, nina raagus, keedab võlujooki ja manab needusi. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Nicaragua - Managua.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Nigeeria",
+        "pealinn": "Abuja",
+        "seosPealinn": "Suurima rahvaarvuga Aafrika riik (umbes 201 miljonit inimest), mis on koduks maailma suuruselt teisele filmitööstusele (tehtud filmide arvu mõistes: 50 filmi nädalas), Nollywoodile, ja rahvaarvult suurimale Aafrika linnale Lagosele, mis kaotas oma pealinna tiitli Abujale 1991. aastal.  Eelmine pealinn oli ülerahvastatud, saastunud, ei võimaldanud laienemist ja ei esindanud rahvuslikku mitmekesisust ehk asi oli hapu. Tuntuimateks nigeerlasteks on kirjanik Chimamanda Adichie, räpparid Burna Boy ja Wizkid (\"One Dance\"). ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Nigeeria - Abuja.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Niger",
+        "pealinn": "Niamey",
+        "seosPealinn": "No way, et riigi nimi on...Niger. Riiki elanikkond on maailma noorim (mediaanvanus 15 aastat) ning naise kohta sünnib keskmiselt 6,9 last. Niger on ka üks maailma kuumimaid riike, sest 4/5 riigist on kõrb.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Niger - Niamey.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Norra",
+        "pealinn": "Oslo",
+        "seosPealinn": "Fjordide, suusatamise, lõhe, virmaliste ja naftast saadud rikkuse poolest tuntud riik, milles asub ka vulkaan (Jan Mayeni saarel). Kuidas end Norras slow'na tunda? Mine norrakatega suusatama. Maailma tuntuimad norrakad on Jo Nesbø, Erling Haaland, Edvar Grieg, Edvard Munch, Magnus Carlsen, Astrid S, Karsten Warholm.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Norra - Oslo.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Omaan",
+        "pealinn": "Masqaţ",
+        "seosPealinn": "Sultani juhitud naftariik, kus suri kuulus rootsi DJ Avicii, kelle surmast sai riigi jaoks justkui \"maskott\", sest paljud polnud varem sellest riigist kuulnudki. Riigis on sündis ka näiteks tuntud näitleja Isla Fisher. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Omaan - Masqat.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Paapua Uus-Guinea",
+        "pealinn": "Port Moresby",
+        "seosPealinn": "Paapua Uus-Linguea - linguistiliselt kõige mitmekesisem riik maailmas. Koduks vähemalt 840 eluskeelele: Tok Pisin, Hiri Motu, Underdeutsch, aga more to be. Lisaks elab riigis üks maailma vähestest mürgistest lindudest. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Paapua Uus-Guinea - Port Moresby.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Pakistan",
+        "pealinn": "Islamabad",
+        "seosPealinn": "Riik, mis on koduks maailma noorimale Nobeli rahupreemia võitjale (võites 17aastane), Malala Yousafzaile, kes sai Talibanilt kuuli, kui seisis vapralt tüdrukute õiguse eest haridust omandada. Pakistanis asub suuruselt teine moslemite kogukond maailmas (Indoneesia järel). Islam leiab, et naiste peakatteta olek on bad, seega nad takistavad ilmaolekut. Pakistanis on suureks probleemiks \"aumõrvad\", kus lähisugulased võtavad noorte naiste elusid, kui nad ei abiellu neile määratud mehega vms.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Pakistan - Islamabad.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Panama",
+        "pealinn": "Panamá",
+        "seosPealinn": "Panama kanal (valmis 1914. aastal) genereerib riigi 1/3st riigi majanduse kogu sissetulekust. Panama on kui vanama, kellel on ilmselt ka nimi, aga keda kõik kutsuvad ikka vanamaks.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Panama - Panama.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Paraguay",
+        "pealinn": "Asunción",
+        "seosPealinn": "Riigis on lubatud püstoliduellid, kui mõlemad osalised on registreeritud veredoonoritena. Kui asuksid Eesti südames, asuksid Paides. Kui asuksid Lõuna-Ameerika südames, asuksid siin - Paraguays.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Paraguay - Asuncion.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Peruu",
+        "pealinn": "Lima",
+        "seosPealinn": "Macchu Picchu (inkad), laamade ja alpakde poolest tuntud riik. Neil loomadel on kombeks aga sülitada ja seega lima eritada.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Peruu - Lima.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Poola",
+        "pealinn": "Varssavi",
+        "seosPealinn": "Koperniku, Chopini, Curie ja Lewandowski kodumaa, kus nimepäevade tähistamine on tähtsam kui sünnipäevade oma. Varssavi (War-savi) tehti 2. maailmasõja ajal natsi pommide poolt maatasa ja riik sisuliselt lõppes eksisteerimast.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Poola - Varssavi.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Portugal",
+        "pealinn": "Lissabon",
+        "seosPealinn": "Rebane (лиса) Portugali jalgpallimeeskonna võistlusvormis.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Portugal - Lissabon.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Prantsusmaa",
+        "pealinn": "Pariis",
+        "seosPealinn": "Armastuse ja valguse linn Pariis, kus asub maailma suurim kunstimuuseum (Louvre) ja Notre-Dame ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Prantsusmaa - Pariis.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Põhja-Korea",
+        "pealinn": "Pyongyang",
+        "seosPealinn": "2018. aasta taliolümpiamängud toimusid Lõuna-Koreas, PyeongChangis. Väike viga trükkimisel ja oleksid omadega suusatanud Põhja-Koreas, Pyongyangis.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Pohja-Korea - Pyongyang.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Põhja-Makedoonia",
+        "pealinn": "Skopje",
+        "seosPealinn": "Lipul olevad päiksekiired oleks nagu tiirlevad skjopteri tiivikud.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Põhja-Makedoonia - Skopje.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Rootsi",
+        "pealinn": "Stockholm",
+        "seosPealinn": "Eestis on pisut Stockholmi - Stockmann.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Rootsi - Stockholm.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Rumeenia",
+        "pealinn": "Bukarest",
+        "seosPealinn": "Riigis asub maailma suuruselt teine hoone (Pentagoni järel), mille lasi ehitada kurikuulus kommunistlik diktaator Ceausescu, kes keelustas omal ajal riigis muuhulgas abordid ja rasestumisvastased vahendid elanikkonna suurendamiseks. Aastaks 1989 oli lastekodudues 170 000 orbu. Riigis (Transilvaanias) puhkab (restib) väidetavalt ka Dracula. Riigist on pärit ka tennisist Simona Halep ja laulja Alexandra Stan (\"Mr. Saxobeat\").",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Rumeenia - Bukarest.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Rwanda",
+        "pealinn": "Kigali",
+        "seosPealinn": "Verandal kiigel pikali.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Rwanda - Kigali.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saalomoni saared",
+        "pealinn": "Honiara",
+        "seosPealinn": "Umbes 1000 saarest koosnev riik, mille ametlikuks keeleks on inglise keel, mida räägib vaid 1-2% rahvastikust. Saartele pani nime Hispaania meresõitja Alvaro de Mendana, kes arvas, et see oli see piirkond, kust kuningas Saalomon sai kulla, mida kasutad Jeruusalemma templi ehitamiseks. Kala oma naisele nagu: \"Ma lähen Saalomoni kulda otsima!\" Naine: \"Honey, ära mine!\"",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saalomoni Saared - Honiara.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saint Kitts ja Nevis",
+        "pealinn": "Basseterre",
+        "seosPealinn": "Alexander Hamiltoni (USA asutaja) sünnimaa, mis on Ameerika(te) väikseim riik pindalalt ja rahvaarvult. Riigi pealinn Bassetere tähendab \"Madalat maad\". Pealinnas viibides võid kohata püha kitse, Lewise teksades, kes sõidab ringi passatiga ja ütleb kõigile \"Tere!\". ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saint Kitts ja Nevis - Basseterre.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saint Lucia",
+        "pealinn": "Castries",
+        "seosPealinn": "Esimene riik, millele pandi nimi naise järgi. Kui muidu kantakse Lucia auks peas küünlatest krooni, siis pealinnas hoopis kast riisi.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saint Lucia - Castries.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saint Vincent ja Grenadiinid",
+        "pealinn": "Kingstown",
+        "seosPealinn": "1979. aastal iseseisvunud riigis filmiti kolme \"Kariibi mere piraatide\" filmi stseene. Riigis asub ka aktiivne vulkaan, mis purskas viimati 2021. aastal. Pealinn nimetati 1763. aastal kuningas George III auks (võrdluseks: Jamaika pealinn on Kingston).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saint Vincent ja Grenadiinid - Kingstown.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saksamaa",
+        "pealinn": "Berliin",
+        "seosPealinn": "Erinevatel ajalooperioodidel väga tähtsat rolli mänginud linn. Enim on näiteks tuntud Berliini müür, mis eraldas Berliini idaosa lääneosast 28 aastaks.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saksamaa - Berliin.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sambia",
+        "pealinn": "Lusaka",
+        "seosPealinn": "1964. aastal iseseisvunud ja Zambezi jõe järgi nime saanud riik, mis on Aafrikas üks poliitilisemalt stabiilsemaid. Sambia etnilistele rühmadele on omased omapärased tantsud: \"Tegu on lustaka tantsuga. Samm ja hopp.\"",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sambia - Lusaka.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Samoa",
+        "pealinn": "Apia",
+        "seosPealinn": "Samoa on tuntud oma tätoveeringute poolest, kusjuures sõna \"tattoo\" tulebki samoa sõnast \"tatau\". Kuna neid tätoveeringuid ei tehta tavapärase püstoliga, vaid toksides, võid tätoveeringut saades karjuda: \"Appi, ai!\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Samoa - Apia.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "San Marino",
+        "pealinn": "San Marino",
+        "seosPealinn": "Merepiirita kääbusriik, mille maismaapiiri kogupikkus on 37 kilomeetrit. Riik sai nime asutaja Püha Marinuse järgi.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "San Marino - San Marino.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sao Tome ja Principe",
+        "pealinn": "São Tomé",
+        "seosPealinn": "Väiksuselt teine riik Aafrikas, mis asub São Tome ja Principe saartel. \"São Tome\" tähendab portugali keeles \"Pühak Toomast\". Portugallased avastasid 15. sajandil selle saare just selle pühaku päeval.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sao Tome ja Principe - Sao Tome.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Saudi Araabia",
+        "pealinn": "Ar-Riyāḑ",
+        "seosPealinn": "Maailma kõige kõrgemat hoonet ehitav riik, mille jalgpalli klubis mängib hetkel Ronaldo ning mida peetakse islami sünnikohaks. Saudi kultuuris on kaamlitel väga oluline koht, alustades transpordist, lõpetades toiduks olemisega. Kas sa ikka harjad oma kaamlit?",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Saudi Araabia - Riyadh.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Seišellid",
+        "pealinn": "Victoria",
+        "seosPealinn": "Aafrika väikseim riik, mille üle võttis 1756. aastal kontrolli Prantsusmaa, nimetades selle tollase rahandusministri Jean Moreau De Sechellesi järgi. Siis algas brittide võim, kes nimetasid pealinna kuninganna Victoria järgi. Ainsaid riike, kus matriarhaalne ühiskond ehk pealinnaks naise nimi.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Seisellid - Victoria.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Senegal",
+        "pealinn": "Dakar",
+        "seosPealinn": "Kõige jälgitum tiktokker, Khaby Lame, on Senegalist pärit. Dakaris toimub maailmakuulus Dakari ralli. Miks mitte panna tema ühe auto rooli?",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Senegal - Dakar.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Serbia",
+        "pealinn": "Belgrad",
+        "seosPealinn": "Kõige kuulsam serblane number üks, Nikola Tesla, pelgas pisikuid ja pärle. Kõige kuulsam number kaks, Novak Djokovic, pelgab karjääri lõpetamist.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Serbia - Belgrad.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sierra Leone",
+        "pealinn": "Freetown",
+        "seosPealinn": "Legend räägib, et portugali maadeavastaja koges seal viibides suurt tormi, mis tekitasid tunde nagu mäed mõirgaksid. Sealt ka Sierra Leone ehk tõlkes \"Lõvimäed\". Freetown asutati pakkumaks uut asundust vabastatud Aafrika orjadele. Vabaks saanud orjad, kes möirgavad rõõmust.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sierra Leone - Freetown.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Singapur",
+        "pealinn": "Singapur",
+        "seosPealinn": "Üks kolmest linnriigist (lisaks Monaco ja Vatikan), kus elab ligi 6 miljonit inimest. Linna peetakse üheks maailma kõige kallimaks, aga ka kõige jätkusuutlikumaks ja roheliseks linnaks Aasias. Singapur tähendab \"lõvi linna\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Singapur - Singapur.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Slovakkia",
+        "pealinn": "Bratislava",
+        "seosPealinn": "Juutuuber David Dobrik on pärit Slovakkiast. Tema videod on eriilmelised. Näiteks mängib ta ühes oma vennaga (brat vene k) mängu \"Floor is lava\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Slovakkia - Bratislava.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sloveenia",
+        "pealinn": "Ljubljana",
+        "seosPealinn": "Ljubov on vene keeles armastus ehk siis sLOVEenia ja LJUBljana.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sloveenia - Ljubljana.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Somaalia",
+        "pealinn": "Muqdisho",
+        "seosPealinn": "Somaaliast on pärit UK kergejõustiklane, olümpiavõitjast jooksumees Mo Farah ning kurikuulsad Somaalia piraadid (tüütud nagu moskiitod).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Somaalia Muqdishho.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Soome",
+        "pealinn": "Helsingi",
+        "seosPealinn": "Maailma kõige õnnelikumaks riigiks ja \"tuhande järve maaks\" peetav Soome on kuulus saunakultuuri, kalevipoegade, Sibeliuse, Muumide, \"Angry Birds'i\", Kimi Räikkoneni ja Käärijä (\"Cha-cha-cha\") poolest. Kui juba Soomes, siis ikka heledat sinki.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Soome - Helsingi.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sri Lanka",
+        "pealinn": "Sri Jayewardenepura Kotte, Colombo",
+        "seosPealinn": "India pisaraks kutsutav 22 miljoni elanikuga riik, mis on üks maailma suurimaid tee eksportijaid. Oled lennujaamas, et lennata Sri Lankale, aga märkad kahte kuulsust möödumas ja käratad oma giidile, et ta ootaks: \"Sir, Jay ja E(d)ward enne puure-kotte!\" #estonglish",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sri Lanka - Sri Jayewardenepura Kotte.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Sudaan",
+        "pealinn": "Hartum",
+        "seosPealinn": "Sudaanis toimuva peale ei ole hard tummaks jääda. Suudad sa seda kõike uskuda?",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sudaan - Hartum.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Suriname",
+        "pealinn": "Paramaribo",
+        "seosPealinn": "Kui suitsetad Marlborot, käivad kehast läbi surinad.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Suriname - Paramaribo.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Suurbritannia",
+        "pealinn": "London",
+        "seosPealinn": "Kes see blond on? Boris Johnson, UK endine peaminister.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Suurbritannia - London.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Süüria",
+        "pealinn": "Damaskus",
+        "seosPealinn": "Süüria sepad on Damaskuse terase spetsialistid.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Süüria - Damaskus.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Šveits",
+        "pealinn": "Bern",
+        "seosPealinn": "Multika \"Kuidas taltsutada lohet\" tegevuspaik on Berkis. Linn sarnaneb ülesehituselt Bernile.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Sveits - Bern.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Zimbabwe",
+        "pealinn": "Harare",
+        "seosPealinn": "Simba isa Mustafa haare lõdvenes (\"Lõvikuningas\") ja ta kukkus surma.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Zimbabwe - Harare.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Taani",
+        "pealinn": "Kopenhaagen",
+        "seosPealinn": "Open hagen ('aed' norra keeles) ehk mittemägine avatud aiake, mida iseloomustavad näiteks hygge, jalgratturid, tudengid ja värvikad majad.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Taani - Kopenhaagen.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tadžikistan",
+        "pealinn": "Dušanbe",
+        "seosPealinn": "Ütle \"Taa-džihh-kistan\" ja sult jäätist lipsida soovinud mesilane on nüüd tusane bee.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tadzikistan - Dusanbe.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tai",
+        "pealinn": "Bangkok",
+        "seosPealinn": "Tailihast tehtud pannkook. Njämm.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tai - Bangkok.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tansaania",
+        "pealinn": "Dodoma",
+        "seosPealinn": "Tansaanias on albinismi määr maailma üks kõrgemaid. Albinismi põdevad inimesed langevad kohutavate rünnakute ohvriks. Nad peaksid rahus tuduma, aga ei saa.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tansaania - Todoma.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Togo",
+        "pealinn": "Lomé",
+        "seosPealinn": "Härra Togo president, millega tegeleme?",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Togo - Lome.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tonga",
+        "pealinn": "Nuku'alofa",
+        "seosPealinn": "Legendaarne Tonga suusataja nägi olümpia avatseremoonial välja nagu nukk, aloha (vihje: Tongal on keskmine temperatuur 26 kraadi).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tonga - Nukualofa.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Trinidad ja Tobago",
+        "pealinn": "Port of Spain",
+        "seosPealinn": "Tobago territooriumi kuju on nagu part of Spain.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Trinidad ja Tobago - Port of Spain.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tšaad",
+        "pealinn": "N'Djamena",
+        "seosPealinn": "Chad, man, (kuulus meem Chad, mis viitab populaarsele, enesekindlale ja valgele isasele) on selle riigi kujuga.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tsaad - Ndjamena.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tšehhi",
+        "pealinn": "Praha",
+        "seosPealinn": "\"Et Tšehhi siis odav riik?\" \"P-raha-hahahah-ahaha.\"",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tsehhi - Praha.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tšiili",
+        "pealinn": "Santiago",
+        "seosPealinn": "Nagu Lõuna-Ameerika Chicago. Et Tšiili ühest otsast teise jõuda, anti hagu autole (roolis kuulsaim santiagolane, näitleja Pedro Pascal).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tsiili - Santiago.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tuneesia",
+        "pealinn": "Tunis",
+        "seosPealinn": "Tuneesiale pandi nimi Tunise järgi. Tuneeslannast tennisist Ons Jabeur on Anett Kontaveidi hea sõber.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tuneesia - Tunis.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Tuvalu",
+        "pealinn": "Funafuti",
+        "seosPealinn": "Maailma väikseim riik, millel on pealinn. nii riigi nimes kui ka pealinnas on kaks u-d. Vutimuna on väikseim muna, mida Eestis sööme. ",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Tuvalu - Funafuti.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Türgi",
+        "pealinn": "Ankara",
+        "seosPealinn": "Türgi suurim linn on Istanbul. Aastal 1923 viidi pealinn Istanbulist sisemaale Ankarasse, et kaitsta seda vallutajate eest, olles riigi ankruks ('ancyra' on kreeka keeles 'ankur').",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Türgi - Ankara.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Türkmenistan",
+        "pealinn": "Aşgabat",
+        "seosPealinn": "Riigi presidendist diktaator väärib kohta Azkabani vanglas.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Türkmenistan - Asgabat.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Uganda",
+        "pealinn": "Kampala",
+        "seosPealinn": "Ugandalasest näitleja Daniel Kaluuyaga campimisalal telkimas.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Uganda - Kampala.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Ukraina",
+        "pealinn": "Kiiev",
+        "seosPealinn": "Ukraina president Zelenskõi Kiievi kotletti söömas.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Ukraina - Kiiev.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Ungari",
+        "pealinn": "Budapest",
+        "seosPealinn": "Laulja George Ezra laulmas Budapestis oma hittlaulu \"Budapest\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Ungari - Budapest.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Uruguay",
+        "pealinn": "Montevideo",
+        "seosPealinn": "Monteerin videosid tavaliselt oma urus.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Uruguay - Montevideo.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Usbekistan",
+        "pealinn": "Taškent",
+        "seosPealinn": "Kui Superman tahab end uuena tunda, on ta taas Kent (filmis kandis tavainimesena Clarke Kenti nime).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Usbekistan - Taskent.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Uus-Meremaa",
+        "pealinn": "Wellington",
+        "seosPealinn": "Et reisida Uus-Meremaale, peas sul olema well income, sest riik asub nii kaugel Eestist.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Uus-Merema - Wellington.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Valgevene",
+        "pealinn": "Minsk",
+        "seosPealinn": "Lukašenka on kui mink, kes on oma tegevusega välja söönud euroopa naaritsa.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Valgevene - Minsk.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Vanuatu",
+        "pealinn": "Port Vila",
+        "seosPealinn": "Vannu, et järgmine \"Villa\" hooaeg toimuks sadamas (port ingl k).",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Vanuatu - Port Vila.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Vatikan",
+        "pealinn": "Vatikan",
+        "seosPealinn": "Tegu on väga väikese riigiga (Euroopa väikseim). Eraldi pealinnale poleks lihtsalt ruumi.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Vatikan - Vatikan.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Venemaa",
+        "pealinn": "Moskva",
+        "seosPealinn": "Pika ajalooga pindalalt maailma suurim riik, mida tuntakse praegusel ajal enim kui agressorriiki. Kuulsamad venelased on Juri Gagarin, Stalin, Putin, Maria Šarapova, Tšaikovski. Ansambel Meie Mees laulis kord: \"Moskva, Moskva, Kremli müürid punased..\".",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Venemaa - Moskva.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Venezuela",
+        "pealinn": "Caracas",
+        "seosPealinn": "Venezuelas lokkab korruptsioon ja varastavad riigijuhid käivad ringi nagu harakad.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Venezuela - Caracas.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
+    },
+    {
+        "nimi": "Vietnam",
+        "pealinn": "Hanoi",
+        "seosPealinn": "Hiina keeles on tere 'ni hao', Vietnamis räägitakse aga vietnami keelt ehk tähti tuleb pisut ümber tõsta.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "Vietnam - Hanoi.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"  
     }
-
-
   ]
