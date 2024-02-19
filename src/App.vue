@@ -3,7 +3,8 @@
     <getHeader />
     <div class="container">
 
-      <RouterView/>
+      
+      <router-view></router-view>
 
     </div>
     <getFooter />
