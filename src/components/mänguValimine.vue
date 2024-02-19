@@ -3,17 +3,36 @@
     <!-- Game Menu Container -->
     <div class="mänguMenüüContainer">
         <div class="mänguMenüü">
-            <h1>TEST: Pealinnad</h1>
-
+            <h1>TESTID</h1>
+            <!-- Game  Mode Selector -->
+            <div class="radio-container">
+                <div>
+                    <input type="radio" id="pealinnadeMäng" value="pealinnadeMäng" v-model="selectedGame" class="hidden-radio">
+                    <label for="pealinnadeMäng" class="radio-label">
+                        <span class="custom-radio"></span>
+                        Pealinnade mäng
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="lippudeMäng" value="lippudeMäng" v-model="selectedGame" class="hidden-radio">
+                    <label for="lippudeMäng" class="radio-label">
+                        <span class="custom-radio"></span>
+                        Lippude mäng
+                    </label>
+                </div>
+            </div>
             <!-- Question Count Selector -->
             <div>
-                <label id="küsimusteArvLabel" for="questionCount">Küsimuste arv:</label>
+                <label id="labeliteTekst" for="questionCount">Küsimuste arv:</label>
                 <select id="questionCount" v-model="questionCount">
                     <option v-for="n in 50" :key="n" :value="n">{{ n }}</option>
                 </select>
             </div>
 
             <!-- Continent Selector -->
+            <div>
+                <label class="valiRiigidLabel" id="labeliteTekst" for="questionCount">Vali riigid:</label>
+            </div>
             <div class="mänguMenüüNupud">
                 <div class="checkbox-container" v-for="continent in continents" :key="continent">
                     <label :for="continent" class="checkbox-label">
@@ -38,13 +57,20 @@
             return {
                 questionCount: 10,
                 continents: ['Põhja-Ameerika', 'Lõuna-Ameerika', 'Euroopa','Aafrika', 'Aasia', 'Kõik riigid'],
-                selectedContinents: []
+                selectedContinents: [],
+                selectedGame: '',
+                mängValitud: false
             };
         },
         methods: {
             startGame() {
-                console.log(`Starting game with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
-                //TODO emit event to parent and start the game with specific chosen data.
+                console.log(`\nStarting ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
+                this.$store.commit('startGame', {
+                    selectedGame: this.selectedGame,
+                    questionCount: this.questionCount,
+                    selectedContinents: this.selectedContinents,
+                    mängValitud: this.mängValitud
+            });
             }
         },
     }
@@ -80,16 +106,18 @@
 
     .mänguMenüüNupud {
         flex-direction: column;
+        padding-top: 1ch;
     }
-
 
     .mänguMenüü label {
         color: #55E0E5;
-        padding-right: 5px;
+        padding-right: 2ch;
     }
-    #küsimusteArvLabel{
+    #labeliteTekst{
         font-size: 22px;
         align-self: flex-start;
+        text-decoration: none;
+        user-select: none;
     }
 
     .mänguMenüü > button {
@@ -110,7 +138,60 @@
         background-color: #33d9ff;
     }
 
-       /* Custom Checkbox */
+    .valiRiigidLabel {
+        padding-top: 1ch;
+    }
+
+    
+    /* Radio nupud */
+    .radio-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden-radio {
+        display: none;
+    }
+
+    .radio-label {
+        font-size: 22px;
+        position: relative;
+        padding-left: 35px;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .custom-radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid #55E0E5;
+        text-decoration: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .hidden-radio:checked ~ .radio-label .custom-radio {
+        background-color: #55E0E5;
+    }
+
+    .hidden-radio:checked ~ .radio-label .custom-radio::after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+        background: #fff;
+    }
+
+    /* Custom Checkbox */
     .checkbox-container {
         display: block;
         position: relative;
@@ -135,18 +216,20 @@
     }
     /* checkmark kastid */
     .checkmark {
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
+        padding-right: 0px;
+        margin-right: 1ch;
         height: 25px;
         width: 25px;
-        background-color: #eee;
+        background-color: white;
         border-radius: 4px;
     }
 
     .checkbox-container:hover input ~ .checkmark,
     .checkbox-container input:focus ~ .checkmark {
-        background-color: #ccc;
+        background-color: white;
     }
 
     .checkbox-container input:checked ~ .checkmark {

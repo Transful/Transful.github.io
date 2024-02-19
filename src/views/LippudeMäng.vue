@@ -32,7 +32,7 @@
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje" class="vihjeContainer">
-                        <h2>{{currentQuestion.seosJutt}}</h2>
+                      <p v-html="currentQuestion.seosJutt"></p>
                         <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
                 </div>
@@ -130,14 +130,13 @@ export default {
 
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
-        let ajutineData = this.$store.getters.getAndmed;
-        //console.log('Fetching data... Data:', this.ajutineData);
+        let imporditudAndmed = this.$store.getters.getAndmed;
 
 
         // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
         // Aga mitte json korral, sest see on kohe olemas.
         
-        this.andmed = ajutineData.map(item => {
+        this.andmed = imporditudAndmed.map(item => {
             if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
                 console.log('Andmed on puudulikud');
             }

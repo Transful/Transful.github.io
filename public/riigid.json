@@ -2,9 +2,9 @@
     {
         "nimi": "Afganistan",
         "pealinn": "Kabul",
-        "seosPealinn": "Afgaani kaabul oli liiva.",
-        "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "Afganistan - Kabul.png",
+        "seosPealinn": "Afgaani <b>kaabul</b> oli liiva.",
+        "pealinnAsukoht": "katsetus2.png",
+        "seosPealinnPilt": "AKabul.png",
         "lipp": "@/assets/lipud/afganistan.jpg",
         "seosLipp": "TODO lipu seos"
     },
