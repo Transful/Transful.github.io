@@ -1,10 +1,10 @@
 <template>
-    <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Lipud">
+    <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Pealinnad">
         <div v-if="lõpetatud == true">
             <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
-            <h2>TEST: LIPUD</h2>
+            <h2>TEST: PEALINNAD</h2>
             <div class="question-counter">
                 {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
@@ -15,15 +15,16 @@
                     <div class="küsimusJaVastusevariandid">
                             <h2 class="küsimus" v-if="currentQuestion">{{currentQuestion.question }}</h2>
                     </div>
+                    <div class="pealinnaAsukoht">
+                        <img :src="require(`@/assets/asukohad/${currentQuestion.pealinnAsukoht}`)" alt="pealinna asukoht">
+                    </div>
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
-                            <li v-for="(lipp, index) in currentQuestion.choices" :key="index" class="answer-option">
-                                <button class="radio-button" @click="valitudVastus = lipp"
-                                    :class="{'green': kontrollitud && lipp === this.currentQuestion.lipp,
-                                             'red': kontrollitud && lipp !== this.currentQuestion.lipp }"
-                                    :disabled="kontrollitud">
-                                    <img :src="require(`@/assets/lipud/${lipp}`)" :alt="lipp">
-                                  </button>
+                            <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
+                                <button class="radio-button" @click="valitudVastus = choice"
+                                    :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
+                                             'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
+                                    :disabled="kontrollitud">{{ choice }}</button>
                             </li>
                         </ul>
                     </div>
@@ -31,7 +32,7 @@
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje" class="vihjeContainer">
-                        <h2>{{currentQuestion.seosJutt}}</h2>
+                      <p v-html="currentQuestion.seosJutt"></p>
                         <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
                 </div>
@@ -129,14 +130,13 @@ export default {
 
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
-        let ajutineData = this.$store.getters.getAndmed;
-        //console.log('Fetching data... Data:', this.ajutineData);
+        let imporditudAndmed = this.$store.getters.getAndmed;
 
 
         // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
         // Aga mitte json korral, sest see on kohe olemas.
         
-        this.andmed = ajutineData.map(item => {
+        this.andmed = imporditudAndmed.map(item => {
             if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
                 console.log('Andmed on puudulikud');
             }
@@ -155,13 +155,13 @@ export default {
 
 
         // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
-        this.allChoices = this.andmed.map(question => question.lipp);
+        this.allChoices = this.andmed.map(question => question.correctAnswer);
         console.log('All choices:', this.allChoices);
 
         console.log('Created lifecycle hook called - Võtan suvalised vastused.');
 
         this.andmed.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.lipp);
+            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
 
     } catch (error) {
@@ -188,7 +188,7 @@ export default {
             this.kontrollitud = true;
 
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
-            if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].lipp && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
+            if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].correctAnswer && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
                 this.skoor++;
                 this.õigestiVastatud[this.praeguseKüsimuseIndeks] = true;
             }
@@ -210,15 +210,15 @@ export default {
        },
 
        /* Võtan vastusevariantideks suvalised vastused */
-       võtaSuvalisedVastused(lipp) {
+       võtaSuvalisedVastused(correctAnswer) {
             if (this.isLoading) return;
             let choices = [...this.allChoices];
-            choices = choices.filter(choice => choice !== lipp);
+            choices = choices.filter(choice => choice !== correctAnswer);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
             }
-            choices = choices.slice(0, 3).concat(lipp);
+            choices = choices.slice(0, 3).concat(correctAnswer);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
@@ -230,7 +230,7 @@ export default {
    </script>
 
    <style scoped>
-   .Test-Lipud{
+   .Test-Pealinnad{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -306,9 +306,9 @@ export default {
     color: #55E0E5;
     font-size: 16px;
   }
-  .lipupilt > img{
-    width: 150px;
-    height: 75;
+  .pealinnaAsukoht > img{
+    width: 250px;
+    height: 250px;
     border-radius: 25px; 
   }
   .vihjeDiv{
@@ -364,13 +364,10 @@ export default {
     padding-left: 0;
   }
   
-   .answer-option img{
+   .answer-option{
     display: flex;
     align-items: center;
     text-align: center;
-    width: 300;
-    height: 150;
-    border-radius: 15px;
    }
 
 
@@ -381,7 +378,7 @@ export default {
     padding: 10px;
     border: 2px solid #55E0E5;
     border-radius: 15px;
-    background-color: #0B1C24;
+    background-color: black;
     color: #55E0E5;
     font-size: 16px;
     cursor: pointer;
