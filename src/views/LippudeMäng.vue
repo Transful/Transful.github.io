@@ -31,8 +31,8 @@
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje" class="vihjeContainer">
-                      <p v-html="currentQuestion.seosJutt"></p>
-                        <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
+                      <p v-html="currentQuestion.seosLipp"></p>
+                        <img class="vihjePilt" :src="require(`@/assets/lipuseosed/${currentQuestion.seosLippPilt}`)" alt="Seose pilt">
                     </div>
                 </div>
             </div>  <!-- QuestionContainer -->
@@ -59,8 +59,9 @@ export default {
          skoor: 0,
          õigestiVastatud: [],
          allChoices: [],
-         seosJutt: 'ei ole seost',
+         seosLipp: 'ei ole seost',
          seosPilt: '',
+         seosLippPilt: '',
        };
     },
     computed: {
@@ -137,7 +138,7 @@ export default {
         // Aga mitte json korral, sest see on kohe olemas.
         
         this.andmed = ajutineData.map(item => {
-            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
+            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp || !item.seosLippPilt) {
                 console.log('Andmed on puudulikud');
             }
             return{
@@ -147,7 +148,8 @@ export default {
                 seosPilt: item.seosPealinnPilt,
                 pealinnAsukoht: item.pealinnAsukoht,
                 lipp: item.lipp,
-                seosLipp: item.seosLipp
+                seosLipp: item.seosLipp,
+                seosLippPilt: item.seosLippPilt,
             }
 
         });
