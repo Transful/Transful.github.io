@@ -1,0 +1,38 @@
+[
+    {
+        "nimi": "Albaania",
+        "pealinn": "Tirana",
+        "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku tiaarat.",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "tirana.png",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"
+    },
+    {
+        "nimi": "Andorra",
+        "pealinn": "Andorra la Vella",
+        "seosPealinn": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"      
+    },
+    {
+        "nimi": "Austria",
+        "pealinn": "Viin",
+        "seosPealinn": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu"      
+    },
+    {
+        "nimi": "Eesti",
+        "pealinn": "Tallinn",
+        "seosPealinn": "Puudu",
+        "pealinnAsukoht": "kabul.png",
+        "seosPealinnPilt": "kabul.jpg",
+        "lipp": "Puudu",
+        "seosLipp": "Puudu" 
+    }
+  ]
