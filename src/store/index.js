@@ -10,6 +10,7 @@ const store = createStore({
     questionCount: 0,
     selectedContinents: [],
     mängValitud: false,
+    imporditudAndmed: []
   },
   mutations: {
     startGame(state, { selectedGame, questionCount, selectedContinents }) {
@@ -18,10 +19,16 @@ const store = createStore({
       state.selectedContinents = selectedContinents;
       state.mängValitud = true;
   },
+  impordiAndmed(state, imporditudAndmed){
+    state.imporditudAndmed = imporditudAndmed;
+  }
   },
   actions: {},
   modules: {},
   getters: {
+    getImporditudAndmed: state => {
+      return state.imporditudAndmed;
+    },
     getAndmed: state =>{
       return state.kõikRiigid;
     },

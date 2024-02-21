@@ -31,7 +31,7 @@
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje" class="vihjeContainer">
-                        <h2>{{currentQuestion.seosJutt}}</h2>
+                      <p v-html="currentQuestion.seosJutt"></p>
                         <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
                 </div>

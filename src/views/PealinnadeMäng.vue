@@ -1,6 +1,6 @@
 <template>
     <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Pealinnad">
-        <div v-if="lõpetatud == true">
+        <div v-if="kasTestOnLõpetatud">
             <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
@@ -21,8 +21,9 @@
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
                             <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                                <button class="radio-button" @click="valitudVastus = choice"
-                                    :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
+                              <button class="radio-button"
+                              @click="valitudVastus = choice"
+                              :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
                                              'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
                                     :disabled="kontrollitud">{{ choice }}</button>
                             </li>
@@ -52,7 +53,7 @@ export default {
        return {
          andmed: null,
          kasAndmedOnLaetud: false,
-         lõpetatud: false,
+         kasTestOnLõpetatud: false,
          vihje: false,
          kontrollitud: false,
          praeguseKüsimuseIndeks: 0,
@@ -67,24 +68,19 @@ export default {
     computed: {
         currentQuestion() {
             if (this.andmed != null && this.andmed.length > 0) {
-                return this.andmed[this.praeguseKüsimuseIndeks];
+                return this.andmed[this.praeguseKüsimuseIndeks] || null;
             }
-            return null;
         },
         kasOnOlemasJärgmineKüsimus() {
             if (this.andmed != null)
                 return this.praeguseKüsimuseIndeks < this.andmed.length - 1;
         },
         kasOnÕigeVastus(){
-            if(this.valitudVastus === this.currentQuestion.correctAnswer){
-                return true;
-            }else{
-                return false;
-            }
+            return this.valitudVastus === this.currentQuestion.correctAnswer;
         }
     },
     async created() {
-        console.log('Created lifecycle hook called - Võtan andmed');
+        console.log('Created, jõudsin pealinnadeMängu');
     
     try {
        
@@ -129,42 +125,56 @@ export default {
         //const data = require('/public/riigid.json');
 
 
-        // ANDMED TULEVAD JSON FAILIST läbi store'i
-        let imporditudAndmed = this.$store.getters.getAndmed;
+        //let imporditudAndmed = this.$store.getters.getAndmed;
+        //let imporditudAndmed = this.$store.state.imporditudAndmed;
+        let imporditudAndmed = require('/public/riigid.json');
+        console.log('Imporditud andmed:', imporditudAndmed);
 
+        //if (imporditudAndmed && imporditudAndmed.imporditudAndmed && Array.isArray(imporditudAndmed.imporditudAndmed)) {
+          //const andmeteKoopia = imporditudAndmed;
+          //console.log("Andmete koopia:", andmeteKoopia)
 
-        // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
-        // Aga mitte json korral, sest see on kohe olemas.
-        
-        this.andmed = imporditudAndmed.map(item => {
-            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
-                console.log('Andmed on puudulikud');
-            }
-            return{
-                question: item.nimi,
-                correctAnswer: item.pealinn,
-                seosJutt: item.seosPealinn,
-                seosPilt: item.seosPealinnPilt,
-                pealinnAsukoht: item.pealinnAsukoht,
-                lipp: item.lipp,
-                seosLipp: item.seosLipp
-            }
+          // Unwrap the proxy object to access the actual array
+          //const unwrappedAndmeteKoopia = Array.from(andmeteKoopia);
+            //console.log("Unwrapped andmete koopia:", unwrappedAndmeteKoopia)
+          //if (Array.isArray(unwrappedAndmeteKoopia)&& unwrappedAndmeteKoopia.length > 0) {
+            //.andmed = unwrappedAndmeteKoopia.map(item => {
+              this.andmed = imporditudAndmed.map(item => {  
+                if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
+                    console.log('Andmed on puudulikud');
+                }
+                return{
+                    question: item.nimi,
+                    correctAnswer: item.pealinn,
+                    seosJutt: item.seosPealinn,
+                    seosPilt: item.seosPealinnPilt,
+                    pealinnAsukoht: item.pealinnAsukoht,
+                    lipp: item.lipp,
+                    seosLipp: item.seosLipp
+                }
 
-        });
-        console.log('Andmed:', this.andmed);
+            });
+            console.log('Andmed:', this.andmed);
+          //}else{
+            //console.error('unwrappedAndmeteKoopia is not an array:', unwrappedAndmeteKoopia);
+          //}
+        //} else {
+          //console.error('Imporditud andmed is not in the expected format:', imporditudAndmed);
+        //}
 
 
         // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
         this.allChoices = this.andmed.map(question => question.correctAnswer);
-        console.log('All choices:', this.allChoices);
+        console.log('Võimalikud vastusevariandid:', this.allChoices);
 
-        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
+        console.log('Created - Võtan suvalised vastused.');
 
         this.andmed.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
 
     } catch (error) {
+        console.log("Tekkis error")
         console.error(error);
     } finally {
         this.kasAndmedOnLaetud = true;
@@ -205,7 +215,7 @@ export default {
 
        /* Kui vajutatakse "Lõpeta test" nuppu */
        lõpetaTest() {
-         this.lõpetatud = true;
+         this.kasTestOnLõpetatud = true;
          console.log("Test on lõpetatud, skoor on: " + this.skoor);
        },
 

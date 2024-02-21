@@ -58,19 +58,20 @@
                 questionCount: 10,
                 continents: ['Põhja-Ameerika', 'Lõuna-Ameerika', 'Euroopa','Aafrika', 'Aasia', 'Kõik riigid'],
                 selectedContinents: [],
-                selectedGame: '',
+                selectedGame: null,
                 mängValitud: false
             };
         },
         methods: {
             startGame() {
-                console.log(`\nStarting ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
+                console.log(`\Alustan ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
                 this.$store.commit('startGame', {
                     selectedGame: this.selectedGame,
                     questionCount: this.questionCount,
                     selectedContinents: this.selectedContinents,
                     mängValitud: this.mängValitud
             });
+            this.$emit('start-game');
             }
         },
     }
