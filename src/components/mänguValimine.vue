@@ -25,7 +25,7 @@
             <div>
                 <label id="labeliteTekst" for="questionCount">Küsimuste arv:</label>
                 <select id="questionCount" v-model="questionCount">
-                    <option v-for="n in 50" :key="n" :value="n">{{ n }}</option>
+                    <option v-for="n in 186" :key="n+9" :value="n+9">{{ n+9 }}</option>
                 </select>
             </div>
 

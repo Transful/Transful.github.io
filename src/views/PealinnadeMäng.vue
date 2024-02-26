@@ -39,9 +39,9 @@
                 </div>
             </div>  <!-- QuestionContainer -->
             <div class="kontrolliJajärgmineNupud">
-                <button v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
+                <button class="kontrolliNupp" v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
                 <button v-if="kontrollitud && kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
-                <button v-if="!kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
+                <button v-if="kontrollitud && !kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
 export default {
     data() {
        return {
-         andmed: null,
+         andmed: [],
          kasAndmedOnLaetud: false,
          kasTestOnLõpetatud: false,
          vihje: false,
@@ -121,54 +121,48 @@ export default {
         }
         
         */
+  
+        //IMPORDITUD ANDMETEGA MÄNGIMINE
 
-        //const data = require('/public/riigid.json');
-
-
-        //let imporditudAndmed = this.$store.getters.getAndmed;
-        //let imporditudAndmed = this.$store.state.imporditudAndmed;
-        let imporditudAndmed = require('/public/riigid.json');
+        let kõikAndmed = require('/public/riigid.json');
+        
+        let imporditudAndmed = this.$store.getters.getMuudetudAndmed;
         console.log('Imporditud andmed:', imporditudAndmed);
 
-        //if (imporditudAndmed && imporditudAndmed.imporditudAndmed && Array.isArray(imporditudAndmed.imporditudAndmed)) {
-          //const andmeteKoopia = imporditudAndmed;
-          //console.log("Andmete koopia:", andmeteKoopia)
+        //Unwrappin proxy objecti, et pääseda ligi arrayle
+        imporditudAndmed = JSON.parse(JSON.stringify(imporditudAndmed));
+        
+        let ajutineData = imporditudAndmed.muudetudAndmed;
 
-          // Unwrap the proxy object to access the actual array
-          //const unwrappedAndmeteKoopia = Array.from(andmeteKoopia);
-            //console.log("Unwrapped andmete koopia:", unwrappedAndmeteKoopia)
-          //if (Array.isArray(unwrappedAndmeteKoopia)&& unwrappedAndmeteKoopia.length > 0) {
-            //.andmed = unwrappedAndmeteKoopia.map(item => {
-              this.andmed = imporditudAndmed.map(item => {  
-                if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
-                    console.log('Andmed on puudulikud');
-                }
-                return{
-                    question: item.nimi,
-                    correctAnswer: item.pealinn,
-                    seosJutt: item.seosPealinn,
-                    seosPilt: item.seosPealinnPilt,
-                    pealinnAsukoht: item.pealinnAsukoht,
-                    lipp: item.lipp,
-                    seosLipp: item.seosLipp
-                }
+        this.andmed = ajutineData.map(item => {  
+          if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
+            console.log('Andmed on puudulikud');
+          }
+          return{
+          question: item.nimi,
+          correctAnswer: item.pealinn,
+          seosJutt: item.seosPealinn,
+          seosPilt: item.seosPealinnPilt,
+          pealinnAsukoht: item.pealinnAsukoht,
+          lipp: item.lipp,
+          seosLipp: item.seosLipp
+          }
+        });
 
-            });
-            console.log('Andmed:', this.andmed);
-          //}else{
-            //console.error('unwrappedAndmeteKoopia is not an array:', unwrappedAndmeteKoopia);
-          //}
-        //} else {
-          //console.error('Imporditud andmed is not in the expected format:', imporditudAndmed);
-        //}
-
+        console.log('Andmed:', this.andmed);
 
         // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
-        this.allChoices = this.andmed.map(question => question.correctAnswer);
-        console.log('Võimalikud vastusevariandid:', this.allChoices);
 
-        console.log('Created - Võtan suvalised vastused.');
+        for (let i = this.andmed.length - 1; i > 0; i--) {
+            kõikAndmed.forEach(item => {
+                this.allChoices.push(item.pealinn);
+            });
+        }
 
+        // Märgin ära iga "küsimuse" õige vastuse
+        this.andmed.map(question => question.correctAnswer);
+
+        // Panen paika iga küsimuse vastusevariandid (mis sisaldab õiget vastust ja kolme suvalist vale vastust)
         this.andmed.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
         });
@@ -251,15 +245,13 @@ export default {
     user-select: none;
    }
    .QuestionContainer {
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr auto;
     background-color: #0B1C24;
     color: #55E0E5;
     border-radius: 36px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
     padding-left: 10ch;
   }
   .keskmineContainer {
@@ -298,6 +290,10 @@ export default {
     background-color: black;
     border: 2px solid #55E0E5;
     padding: 20px;
+    max-width: 300px;
+    /*
+    HARDCODED WIDTH, KUNI EI OLE PAREMAT LAHENDUST
+    */ 
 }
   .vihjePilt{
     width: 200px;
@@ -342,7 +338,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
    }
    .kontrolliJajärgmineNupud > button {
     background-color: #55E0E5;
@@ -357,6 +353,7 @@ export default {
     letter-spacing: 2px;
     cursor: pointer;
     transition: background-color 0.3s;
+    align-items: center;
   }
   .kontrolliJajärgmineNupud > button:hover {
     background-color: #33d9ff;

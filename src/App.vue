@@ -60,9 +60,8 @@ html, body {
 }
 
 .container {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  flex: 1;
-
+  align-items: center;
 }
 </style>
