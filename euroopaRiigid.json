@@ -2,37 +2,71 @@
     {
         "nimi": "Albaania",
         "pealinn": "Tirana",
-        "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku tiaarat.",
-        "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "tirana.png",
-        "lipp": "Puudu",
-        "seosLipp": "Puudu"
+        "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku <b>tiaarat</b>.",
+        "pealinnAsukoht": "albaania.png",
+        "seosPealinnPilt": "Albaania - Tirana.png",
+        "lipp": "albaania.png",
+        "seosLipp": "Maailma kõige kuulsam albaanlane on hetkeseisuga poplaulja <b>Dua Lipa</b>, kes on <b>brünett</b> nagu lipul olev lind.",
+        "seosLippPilt": "Albaania.png"
     },
     {
         "nimi": "Andorra",
         "pealinn": "Andorra la Vella",
-        "seosPealinn": "Puudu",
-        "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "kabul.jpg",
-        "lipp": "Puudu",
-        "seosLipp": "Puudu"      
+        "seosPealinn": "Andorra la Vella tähendab \"<b>Andorra the town</b>\", mis eristab pealinna riigist.",
+        "pealinnAsukoht": "andorra.png",
+        "seosPealinnPilt": "Andorra - Andorra la Vella.png",
+        "lipp": "andorra.png",
+        "seosLipp": "Andorra asub <b>Hispaania ja Prantsusmaa vahel</b> ning riigi lipp on segu mõlemast. Riiki valitseb kaks printsi (piiskop ja Prantsusmaa president).",
+        "seosLippPilt": "Andorra.png"   
     },
     {
         "nimi": "Austria",
         "pealinn": "Viin",
-        "seosPealinn": "Puudu",
-        "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "kabul.jpg",
-        "lipp": "Puudu",
-        "seosLipp": "Puudu"      
+        "seosPealinn": "Austriast pärit märulistaar Arnold Schwarzenegger mägede vahel poseerimas, <b>viin</b> musklil.",
+        "pealinnAsukoht": "austria.png",
+        "seosPealinnPilt": "Austria - Viin.png",
+        "lipp": "austria.png",
+        "seosLipp": "Kui Austria hertsog Leopold V lahingust saabus, oli ta rüü verest läbi imbunud. Kui ta aga <b>rüü ära võttis</b>, oli riie selle alt <b>valge</b>.",
+        "seosLippPilt": "Austria.png"
+    },
+    {
+        "nimi": "Belgia",
+        "pealinn": "Brüssel",
+        "seosPealinn": "Belgias söövad tähtsad poliitikud tihti <b>Brüsseli kapsast</b>.",
+        "pealinnAsukoht": "belgia.png",
+        "seosPealinnPilt": "Belgia - Brüssel.png",
+        "lipp": "belgia.png",
+        "seosLipp": "Belgia vahvli tegemisel on kolm etappi: esimese <b>kõrvetad</b> ära, teine tuleb <b>perfektselt kuldne</b> ja kolmandale lisad ka <b>moosi</b>.",
+        "seosLippPilt": "Belgia.png"
+    }, 
+    {
+        "nimi": "Bosnia ja Hertsegoviina",
+        "pealinn": "Sarajevo",
+        "seosPealinn": "28. juunil 1914. aastal lasti Sarajevos maha Austria-Ungari troonipärija <b>Franz Ferdinand</b>, mis oli otseselt ajend I maailmasõja puhkemiseks.",
+        "pealinnAsukoht": "bosnia ja hertsegoviina.png",
+        "seosPealinnPilt": "Bosnia ja Hertsegoviina - Sarajevo.png",
+        "lipp": "bosnia_ja_hertsegoviina.png",
+        "seosLipp": "Lipu sinine ja tähed tähistavad <b>Euroopat</b> ning kolmnurk <b>kolme etnilist gruppi</b>: horvaate, moslemeid ja serblasi. Riik ei ole veel osa Euroopa Liidust.",
+        "seosLippPilt": "BosniaJaHertsegoviina.png"
+    },
+    {
+        "nimi": "Bulgaaria",
+        "pealinn": "Sofia",
+        "seosPealinn": "Kujuta ette Bulgaaria rahvusriietes <b>Sofiat</b>, näiteks \"Moodsast perekonnast\" tuntud Sofia Vergarat.",
+        "pealinnAsukoht": "bulgaaria.png",
+        "seosPealinnPilt": "Bulgaaria - Sofia.png",
+        "lipp": "bulgaaria.png",
+        "seosLipp": "Bulgaaria lipp on nagu <b>pleekunud</b> Venemaa lipp, mille sinisest on saanud roheline.",
+        "seosLippPilt": "Bulgaaria.png"
     },
     {
         "nimi": "Eesti",
         "pealinn": "Tallinn",
-        "seosPealinn": "Puudu",
-        "pealinnAsukoht": "kabul.png",
-        "seosPealinnPilt": "kabul.jpg",
-        "lipp": "Puudu",
-        "seosLipp": "Puudu" 
+        "seosPealinn": "Digiriik ja startuppide maa, mis on ühtlasi ka üks kõige vähem usklikke riike maailmas. Tallinna vanalinn on kõige paremini säilinud <b>keskaegne linn</b> Põhja-Euroopas. Tallinn kui <b>talvlinn</b>, sest seal on alati nii külm.",
+        "pealinnAsukoht": "eesti.png",
+        "seosPealinnPilt": "Eesti - Tallinn.png",
+        "lipp": "eesti.png",
+        "seosLipp": "Pilt talvisest Eestist: sinine <b>taevas</b>, must <b>mets</b> ja lumine <b>maa</b>.",
+        "seosLippPilt": "Eesti.png"
     }
   ]
