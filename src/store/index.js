@@ -1,5 +1,5 @@
 import kõikRiigid from '/public/riigid.json';
-import euroopaRiigid from '/public/euroopaRiigid.json';
+import euroopaRiigid from '/public/euroopa.json';
 import { createStore } from 'vuex';
 
 const store = createStore({

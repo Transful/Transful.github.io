@@ -342,6 +342,8 @@ export default {
    }
    .kontrolliJajärgmineNupud > button {
     background-color: #55E0E5;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
     margin-top: 30px;
     border-radius: 36px;
