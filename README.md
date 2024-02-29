@@ -1,6 +1,8 @@
 # Transful webpage development
 This is a webpage that is in development for a University of Tartu's startup called Transful, which is a memory-techniques based platform that provides the students with the "keys" for long-term memorisation.
 
+NB! Currently developing in estonian. :)
+
 ## Project setup
 ```
 npm install
