@@ -8,5 +8,455 @@
         "lipp": "afganistan.png",
         "seosLipp": "Sündmused: toimus <b>9/11</b>, algas <b>verine</b> Afganistani sõda (2001. aastal tungisid USA ja liitlasväed riiki, et kukutada Talibani režiim, kes keeldus Osama bin Ladenit üle andmast), 2021. aastal sai Talibani režiimi taassünd <b>rohelise tule</b>.",
         "seosLippPilt": "Afganistan.png"
+    },
+    {
+        "nimi": "Araabia Ühendemiraadid",
+        "pealinn": "Abu Dhabi",
+        "seosPealinn": "Riigis (Dubais) asub maailma kõrgeim hoone - Burj Khalifa (828m). <b>Häbis Apu</b> on sinna lõksu jäänud.",
+        "pealinnAsukoht": "araabia ühend emiraadid.png",
+        "seosPealinnPilt": "Araabia Ühendemiraadid - Abu Dhabi.png",
+        "lipp": "araabia_ühendemiraadid.png",
+        "seosLipp": "Pan-Araabia värve kasutav lipp, mille vertikaalne punane võiks sümboliseerida <b>Burj Khalifat</b> (maailma kõrgeim hoone) ja teised kolm horisontaalselt asetsevat värvi sealt avanevat vaadet.",
+        "seosLippPilt": "AraabiaÜhendemiraadid.png" 
+    },
+    {
+        "nimi": "Armeenia",
+        "pealinn": "Jerevan",
+        "seosPealinn": "Eesti tuntuim armeenlane on laulja Ste<b>fan</b>, kellel on ka noor <b>pere</b>.",
+        "pealinnAsukoht": "armeenia.png",
+        "seosPealinnPilt": "Armeenia - Jerevan.png",
+        "lipp": "armeenia.png",
+        "seosLipp": "Peaaegu sarnane ülesehitus Lõuna-Ameerika kolla-sini-punastele. <b>Armee</b>nia on olnud tegus vahelduva eduga toimunud lahenduseta mägi-Karabahhi konfliktis.",
+        "seosLippPilt": "Armeenia.png"
+    },
+    {
+        "nimi": "Aserbaidžaan",
+        "pealinn": "Bakuu",
+        "seosPealinn": "<b>Paku</b>, mis aastal võitis arvuti esimest korda inimest males? 1997. aastal, kui Deep Blue tegi pähe azerbadžaanlasest male maailmameistrile Garry Kasparovile.",
+        "pealinnAsukoht": "aserbaitsaan.png",
+        "seosPealinnPilt": "Aserbaijan - Bakuu.png",
+        "lipp": "aserbaidžaan.png",
+        "seosLipp": "Poolkuu sümboliseerib islamit, aga lipp üldiselt aser<b>bajaani</b> (akordionist suurema ulatusega vene lõõtspill).",
+        "seosLippPilt": "Aserbaidžaan.png"
+    },
+    {
+        "nimi": "Bahrein",
+        "pealinn": "Manama",
+        "seosPealinn": "Preester Rein peab kummituse hoonest välja <b>manama</b>.",
+        "pealinnAsukoht": "bahrein.png",
+        "seosPealinnPilt": "Bahrein - Manama.png",
+        "lipp": "bahrein.png",
+        "seosLipp": "Alla miljoni elanikuga väike saareriik, mille naaberriik on Katar, kellega on Bahreinil väga sarnase ülesehitusega riigilipp. Bahreini lipp on kui paha Rein (zombie), kel on <b>säravvalged ja teravad hambad</b>.",
+        "seosLippPilt": "Bahrein.png"
+    }, 
+    {
+        "nimi": "Bangladesh",
+        "pealinn": "Dhaka",
+        "seosPealinn": "<b>Ithaka</b> Maria Bangladeshi <b>riidevabrikus</b> külastust tegemas.",
+        "pealinnAsukoht": "bangadesh.png",
+        "seosPealinnPilt": "Bangladesh - Dhaka.png",
+        "lipp": "bangladesh.png",
+        "seosLipp": "Nagu rohelise taustaga Jaapani lipp. 1971. aastal iseseisvunud kunagises Pakistani provintsis elab ligi 170 miljonit inimest, olles linnriikide ja Malta järel seega üks suurima rahvastikutihedusega riike. Nii suur hulk inimesi tõmbab <b>pankadelt <i>fleshi</i></b> (liha ingl k) maha.",
+        "seosLippPilt": "Bangladesh.png"
+    },
+    {
+        "nimi": "Bhutan",
+        "pealinn": "Thimphu",
+        "seosPealinn": "Maailma ainus süsiniknegatiivne riik, mis oli maailmast eraldatud 1970ndateni kuniks avati uks peavoolumeediale. Esimesed televiisorid jõudsid Bhutanisse alles aastal 1999. Mõni väidab, et telekast tuli ka \"Tegus <b>Timmu</b>\". ",
+        "pealinnAsukoht": "bhutan.png",
+        "seosPealinnPilt": "Bhutan - Thimphu.png",
+        "lipp": "bhutan.png",
+        "seosLipp": "Lipul on kujutatud Bhutani mütoloogiast tuntud <b>Hiina draakonit</b> (Bhutan on Hiina naaberriik). Oranž sumboliseerib <b>budismi</b> (munkade rüü värv) ja kollane <b>kuningriiki</b> (kollast on alati peetud kuninglikuks värviks).",
+        "seosLippPilt": "Bhutan.png"
+    }, 
+    {
+        "nimi": "Brunei",
+        "pealinn": "Bandar Seri Begawan",
+        "seosPealinn": "Bruneist, kus näiteks homoseksuaalsus on karistatav kividega surnuks loopimise läbi, on pärit Youtube'i trennisensatsioon Chloe Ting. <b>Pandad segi segavad</b> tema trenniveo filmimist.",
+        "pealinnAsukoht": "brunei.png",
+        "seosPealinnPilt": "Brunei - Bandar Seri Begawan.png",
+        "lipp": "brunei.png",
+        "seosLipp": "Brunei on üks väheseid järelejäänud absoluutseid monarhiaid maailmas, mida valitseb üks planeedi kõige rikkamaid inimesi Hassanal Bolkiah (valitsenud üle 50 aasta). Valitsejaga ollakse rahul, sest tänu naftarahadele on elatustase väga kõrge ning paljud asjad lihtrahvale tasuta. Lipu <b>kuninglik kollane viitabki sultanile</b> ja poolkuu <b>islamit</b>.",
+        "seosLippPilt": "Brunei.png"
+    }, 
+    {
+        "nimi": "Filipiinid",
+        "pealinn": "Manila",
+        "seosPealinn": "Filipiinide kuju on nagu pikalt lippuv <b>ila</b>. Igal <b><i>man'il</i></b> (ka Filipil) paneks <i>money</i> ila tilkuma.",
+        "pealinnAsukoht": "filipiinid.png",
+        "seosPealinnPilt": "Filipiinid - Manila.png",
+        "lipp": "filipiinid.png",
+        "seosLipp": "Lipu põhivärvid on samad nagu Haiti ja Liechtensteini lipul. Kolm tähte sümboliseerivad riigi kolme põhirajooni. Riigist on pärit maailmakuulus <b>poksija Manny Pacquiao</b> (\"The PacMan\"), kes on ainus, kes on võitnud maailmameistrivõistlused kaheksas erinevas kaaluklassis. ",
+        "seosLippPilt": "Filipiinid.png"
+    }, 
+    {
+        "nimi": "Gruusia",
+        "pealinn": "Thbilisi",
+        "seosPealinn": "Veini sünniriik, kus sündis ka Ioseb Džugašvili, tuntud ka kui Jo<b>ssif Stalin</b> (oli NSVLi riigi- ja parteijuht 30 aastat). Diktaatori ümber ringles palju <b>tibisid</b> ja armukesi.",
+        "pealinnAsukoht": "gruusia.png",
+        "seosPealinnPilt": "Gruusia - Thibilisi.png",
+        "lipp": "gruusia.png",
+        "seosLipp": "Ühelgi teisel riigilipul pole <b>nii palju riste</b> kui on Gruusia omal. Ristkülikukujuline ja neli väikest risti valgel taustal on üldised kristlikud sümbolid, mis kehastavad Päästja Jeesust Kristust ja nelja evangelisti. Riigi kuulsaim sportlane on maailmarekordi omanikust <b>jõutõstja Lasha Talahhadze</b>, kes suudaks neid kõiki riste vabalt korraga üles tõsta.",
+        "seosLippPilt": "Gruusia.png"
+    },
+    {
+        "nimi": "Hiina RV",
+        "pealinn": "Peking",
+        "seosPealinn": "Maailma <b>suurima rahvaarvuga riik</b> ja pandade kodumaa. Pekingis toimusid 2022. aastal taliolümpiamängud. Hiinas toodetakse kõige imetabasemaid tooteid, näiteks <b>pekist kingi</b>.",
+        "pealinnAsukoht": "hiina.png",
+        "seosPealinnPilt": "Hiina - Peking.png",
+        "lipp": "hiina.png",
+        "seosLipp": "Suur <b>punane kommunistlik</b> Hiina ja nende inimeste <b>ühtsus</b>.",
+        "seosLippPilt": "Hiina.png"
+    }, 
+    {
+        "nimi": "Iisrael",
+        "pealinn": "Jeruusalemm",
+        "seosPealinn": "<b>3000aastase ajalooga</b> linn, mis oli kesksel kohal nii vanas kui ka uues testamendis ning kus põimuvad nii juutide, kristlaste kui ka moslemite religioonid. Linna üle kontrolli saamiseks on ajaloos peetud üle 100 lahingu.",
+        "pealinnAsukoht": "israel.png",
+        "seosPealinnPilt": "Iisrael - Jeruusalemm.png",
+        "lipp": "iisrael.png",
+        "seosLipp": "Riigi lipu keskel asub sinine kahest kolmnurgast moodustatud kuusnurkne täht (heksagramm) ehk <b>Taaveti täht</b>, mis on juudi rahvuslik sümbol.",
+        "seosLippPilt": "Iisrael.png"
+    },
+    {
+        "nimi": "India",
+        "pealinn": "New Delhi",
+        "seosPealinn": "Riik, mis on muuhulgas tuntud male, Bollywoodi, pühade lehmade, Gandhi ja Ema Teresa poolest. New Delhi ja Delhi (teisel kohal suurima rahvaarvuga linnade seas Tokyo järel) on <b>kaks eraldi linna</b>. New Delhi ehitati pealinnaks 20. sajandi alguses. ",
+        "pealinnAsukoht": "india.png",
+        "seosPealinnPilt": "India - New Delhi.png",
+        "lipp": "india.png",
+        "seosLipp": "India kuulsaim hoone - valge <b>Taj Mahal</b>, mille taga on oranž <b>taevas</b> ja ees roheline <b>muru</b>.",
+        "seosLippPilt": "India.png"
+    },
+    {
+        "nimi": "Indoneesia",
+        "pealinn": "Jakarta",
+        "seosPealinn": "Vulkaanilisele aktiivsusele vaatamata pole Indoneesiat vaja vältida <b>ja karta</b>.",
+        "pealinnAsukoht": "indoneesia.png",
+        "seosPealinnPilt": "Indoneesia - Jakarta.png",
+        "lipp": "indoneesia.png",
+        "seosLipp": "Indoneesia lippu <b>eristab</b> Monaco lipust vaid väike erinevus mõõtmete vahekorras.",
+        "seosLippPilt": "Indoneesia.png"
+    },
+    {
+        "nimi": "Iraak",
+        "pealinn": "Bagdad",
+        "seosPealinn": "Ajalootunnist tuntud Mesopotaamia aladel asuv riik, mis taastub sõjast. 2003. aastal tungis USA Iraaki põhjusel teha Iraak tuumarelvadest \"puhtaks\" ja võtta võimult Saddam Hussein. <b>Jaak</b> (Roosaare) <b>isale omase kotiga</b> Iraagis reisil.",
+        "pealinnAsukoht": "iraak.png",
+        "seosPealinnPilt": "Iraak - Bagdad.png",
+        "lipp": "iraak.png",
+        "seosLipp": "Riik, mida räsis 21. sajandi alguses sõda, mis päädis riigi diktaator Saddam Husseini mõrvaga. Sarnaseid <b>panaraabia värvides</b> lippe on samas rajoonis mitmeid, aga Iraagi lippu eristab araabiakeelne fraas \"<b>Allahu akbar</b>\", mis on ka naaberriigi Iraani lipul.",
+        "seosLippPilt": "Iraak.png"
+    },
+    {
+        "nimi": "Iraan",
+        "pealinn": "Teheran",
+        "seosPealinn": "Matemaatikatunnis arvutustega kaklemas: Mina jooksin (<b><i>I ran</i></b>) ja tehe ka jooksis (<b>tehe <i>ran</i></b>). Lahe fakt: riigil on läbi ajaloo olnud kokku 59 erinevat pealinna.",
+        "pealinnAsukoht": "iraan.png",
+        "seosPealinnPilt": "Iraani - Teheran.png",
+        "lipp": "iraan.png",
+        "seosLipp": "Riik, kus toimusid 2022.-2023. aastal suured massimeeleavaldused peale seda, kui \"kombluspolitsei\" vahi all suri noor iraanlanna Mahsa Amini, kes oli vahistatud \"ebakorrektse riietuse pärast\". Protesti märgiks kasutati vana lippu, millel oli lõvi ja päike, mitte täna kehtiv <b>punane tulp ja 22x</b>  \"<b>Allahu Akbar</b>\". Riigi lippu muudeti 1980. aastal peale Iraani revolutsiooni, kui võimult kukutati monarh  ja asemele tuli äärmuslik teokraatia.",
+        "seosLippPilt": "Iraan.png"
+    },
+    {
+        "nimi": "Jaapan",
+        "pealinn": "Tōkyō prefektuur",
+        "seosPealinn": "Linn, kus toimusid 2020. aasta <b>suveolümpiamängud</b>, kus on enim Micheline tärnidega restorane ja kus pakutakse originaalset sushit. ",
+        "pealinnAsukoht": "jaapan.png",
+        "seosPealinnPilt": "Jaapan - Tokyo.png",
+        "lipp": "jaapan.png",
+        "seosLipp": "Jaapanit kutsutakse tihti ka <b>tõusva päikese maaks</b>, mida sümboliseerib ka lipp.",
+        "seosLippPilt": "Jaapan.png"
+    },
+    {
+        "nimi": "Jeemen",
+        "pealinn": "Aden, Sanaa",
+        "seosPealinn": "Araabia poolsaare ainus vabariik, mis ei ole samas väga demokraatlik (9/100). Riigis toimuva kodusõja tõttu on lahvatanud üks rängimaid inimkatastroofe: ligi 20 miljonit inimest on nälga suremise äärel. ",
+        "pealinnAsukoht": "jeemen.png",
+        "seosPealinnPilt": "Jeemen - Aden, Sanaa.png",
+        "lipp": "jeemen.png",
+        "seosLipp": "Sarnased lipud naaberriikidega, aga <b>valgel</b> ei ole midagi (pole süüa ega midagi).",
+        "seosLippPilt": "Jeemen.png"
+    },
+    {
+        "nimi": "Jordaania",
+        "pealinn": "Amman",
+        "seosPealinn": "Riigis asub Maa kõige madalam punkt (kõrgus merepinnast -430m) - soolajärv Surnumeri. Oma kõrbemaastike tõttu on riik populaarne võttepaik (\"Düün\", \"Star Wars\"). Näiteks filmis \"Marslane\" oli <b>a (M</b>ars) <b>man</b>, kes pidi üksinda ellu jääma.",
+        "pealinnAsukoht": "jordaania.png",
+        "seosPealinnPilt": "Jordaania - Amman.png",
+        "lipp": "jordaania.png",
+        "seosLipp": "Jordaania naaberriik on Iisrael, kes on sõjas <b>Palestiinaga (Hamasiga)</b>, kelle lipp on sisuliselt identne Jordaania omaga. Kasutusel on tavapärased Araabia värvid: must, valge, punane ja roheline. Jordaania seitsme punktiga täht viitab seitsmele künkale, millele Jordaania rajati.",
+        "seosLippPilt": "Jordaania.png"
+    },
+    { 
+        "nimi": "Kambodža",
+        "pealinn": "Phnom Penh",
+        "seosPealinn": "1980ndatel valitses riiki kurikuulus Pol Pot, kes mõrvas riigi ekstreemse kollektiviseerimise raames ligi 2 miljon inimest (veerandi riigi elanikkonnast). Riigis süüakse isukalt putukaid (\"<b>Mnjom</b>\") pastakate (\"<b>Pen</b>\") vahelt.",
+        "pealinnAsukoht": "kambodsa.png",
+        "seosPealinnPilt": "Kambodža - Phnom Penh.png",
+        "lipp": "kambodža.png",
+        "seosLipp": "See on üks lipp viiest, millel on kujutatud hoonet, kuid teistega võrreldes kindlasti palju suuremalt. Lipul on massiivne hinduistlik tempel <b>Angkor Wat</b>, mis on maailma kõige suurem religioosne struktuur.",
+        "seosLippPilt": "Kambodža.png"
+    },
+    {
+        "nimi": "Kasahstan",
+        "pealinn": "Astana",
+        "seosPealinn": "Maailma suurim merepiirita riik, mille nimi tähendab rändurite maad. Pealinna nimi muudeti 2019. aastal Astanast Nur-Sultaniks, et avaldada austust 30 aastat riiki juhtinud president Nursultanile, kes <b>astus</b> lõpuks tagasi. 2022. aastal muudeti nimi tagasi Astanaks.",
+        "pealinnAsukoht": "kasastan.png",
+        "seosPealinnPilt": "Kasasthan - Astana.png",
+        "lipp": "kasasthan.png",
+        "seosLipp": "Kasasthani riigi lipuvärvides sõitev Rein Taaramäe.",
+        "seosLippPilt": "Kasasthan.png"
+    },
+    {
+        "nimi": "Katar",
+        "pealinn": "Doha",
+        "seosPealinn": "Maailma üks rikkamaid riike, mis korraldas 2022. aastal esimese Araabia riigina jalgpalli MM-i. Kataris on palju asju seadusega keelatud. Näiteks ei <b>doha</b> sa olla homoseksuaalne. ",
+        "pealinnAsukoht": "katar.png",
+        "seosPealinnPilt": "Katar - Doha.png",
+        "lipp": "katar.png",
+        "seosLipp": "Qatari Airways'i loetakse üheks maailma parimaks <b>lennufirmaks</b>, mille osaliselt pruunikaspunased lennukid viitavad riigilipule. Sarnane lipu ülesehitus on ka Bahreinil (asub Katarist loodes), mis kasutab punast värvi ja kus on vähem valgeid kolmnurki.",
+        "seosLippPilt": "Katar.png"
+    }, 
+    {
+        "nimi": "Kuveit",
+        "pealinn": "Al-Kuveit",
+        "seosPealinn": "Väike Araabia poolsaarel asuv riik, mille elanikest 70% moodustavad välisriigi kodanikud. Lisaks on seal maailma suuruselt 6ndad naftavarud ning kasutatav valuuta on kõige kõrgema väärtusega maailmas - 1 dinaar on peaaegu 3€. Riik ei ole demokraatlik, seega rahvas <b>olgu vait</b>.",
+        "pealinnAsukoht": "kuveit.png",
+        "seosPealinnPilt": "Kuveit.png",
+        "lipp": "kuveit.png",
+        "seosLipp": "Lipu kujundus tekitab kohati ruumika optilise illusiooni efekti, milles olev vari teatab \"Keep quiet!\" ehk \"<b>Olgu vait!</b>\".",
+        "seosLippPilt": "Kuveit.png"
+    },
+    {
+        "nimi": "Kõrgõzstan",
+        "pealinn": "Biškek",
+        "seosPealinn": "Maailma üks kõige mägisemaid riike, mille nimi tähendab \"40 hõimu maad\". Riigis kütitakse koos kotkastega ning süüakse ka hobuseliha, aga et sellest saaks küps <b>biifstek</b>, pead seda <b>kõrgel</b> temperatuuril praadima.",
+        "pealinnAsukoht": "kõrgõstan.png",
+        "seosPealinnPilt": "Kõrgõzstan - Biškek.png",
+        "lipp": "kõrgõzstan.png",
+        "seosLipp": "Endise NSV liidu maana on lipule jäänud alles rohkelt punast (sarnasus Vietnami lipuga). Lipul on kujutatud kollast päikest ning <b>kõrgetel</b> temperatuuridel muutuvad asjad punaseks (tuleks). ",
+        "seosLippPilt": "Kõrgõzstan.png"
+    }, 
+    {
+        "nimi": "Laos",
+        "pealinn": "Vientiane",
+        "seosPealinn": "Kommunistlik Laos tõlkub kui \"miljoni elevandi maa\". Seda peetakse ka enim pommitatud riigiks maailmas Vietnami sõja tõttu (2 mlj tonni pomme ehk rohkem kui 2. MS jooksul kokku). Riigi <b>laos</b> hoitakse suuruses \"<b>Venti</b>\" (Starbucks) kohvitopse.",
+        "pealinnAsukoht": "laos.png",
+        "seosPealinnPilt": "Laos - Vientiane.png",
+        "lipp": "laos.png",
+        "seosLipp": "Sinine sümboliseerib <b>Mekangi jõge</b> ja valge ühtsust ning täiskuud. Selliseid ringe on veel Jaapani, Bangladeshi ja Belau lippudel. <b>Riigist läänepool asub Tai</b>, mille lipp on ülesehituselt sarnane Laose lipule.",
+        "seosLippPilt": "Laos.png"
+    }, 
+    {
+        "nimi": "Liibanon",
+        "pealinn": "Beirut",
+        "seosPealinn": "Ligi 5,5 miljoni elanikuda väike Lähis-Ida riik, mille pealinnas Beirutis toimus 2020. aastal tohutu, vähemalt 200 inimest tapnud <b>plahvatus</b>. Tuntuimad liibanonlased on Amal Clooney, Mika ja Mia Khalifa.",
+        "pealinnAsukoht": "liibanon.png",
+        "seosPealinnPilt": "Liibanon - Beirut.png",
+        "lipp": "liibanon.png",
+        "seosLipp": "Jõukust tähistavale seedripuule võib lisaks leida lipult ka <b>liba-konna</b>.",
+        "seosLippPilt": "Liibanon.png"
+    },
+    {
+        "nimi": "Lõuna-Korea",
+        "pealinn": "Soul",
+        "seosPealinn": "K-Popi, Samsungi ja \"Squid Game'i\" kodumaa, mille elanikkonnast on 70% kõrgharitud. Kui inimene tahab endasse uut \"<b>hinge</b>\" (soul ingl k) sisse puhuda, võib ta minna Lõuna-Koreasse iluopile, sest seal tehakse neid enim per capita.",
+        "pealinnAsukoht": "lõuna korea.png",
+        "seosPealinnPilt": "Lõuna-Korea - Soul.png",
+        "lipp": "lõuna-korea.png",
+        "seosLipp": "Lõuna-Korea lipu nimi on taegeukgi. Lipp tähistab rahva kolme komponenti: maad (valge taust), inimesi (punane ja sinine ring) ja valitsust (neli mustade ribade komplekti). Üks kahest riigist (teine on Mongoolia), millel on <b>yin-yangi element</b> (nagu pulgakomm).",
+        "seosLippPilt": "LõunaKorea.png"
+    },
+    {
+        "nimi": "Malaisia",
+        "pealinn": "Kuala Lumpur",
+        "seosPealinn": "Riik, kus kuningas valitakse viieks aastaks ning kus asub maailma suurim ringtee (diameetriga 3,5km), suurim lill (\"laibalill\") ja kõrgeimad kaksiktornid. Kuala Lumpur tähendab \"<b>mudast kahe jõe ühinemiskohta.</b>\"",
+        "pealinnAsukoht": "malaisia.png",
+        "seosPealinnPilt": "Malaisia - Kuala Lumpur.png",
+        "lipp": "malaisia.png",
+        "seosLipp": "USA ja Libeeria lippudele <b>sarnane ülesehitus</b>. Kollane on riigis kuninglik värv ning poolkuu ja täht somboliseerivad islamit. Riigist on pärit 2023. aasta Oscari jagamistel ajalugu teinud Michelle Yeoh.",
+        "seosLippPilt": "Malaisia.png"
+    },
+    {
+        "nimi": "Maldiivid",
+        "pealinn": "Malé",
+        "seosPealinn": "Maailma lamedaim ja madalaim riik, mille saarte asetus ja tunnushotellid on <b>malelaua mustriga</b>.",
+        "pealinnAsukoht": "maldiivid.png",
+        "seosPealinnPilt": "Maldiivid - Male.png",
+        "lipp": "maldiivid.png",
+        "seosLipp": "Kui Maldiividel puhates <b>taevas puna-roheliseks</b> läheb, on vist maailmalõpp käes.",
+        "seosLippPilt": "Maldiivid.png"
+    },
+    {
+        "nimi": "Mongoolia",
+        "pealinn": "Ulaanbaatar",
+        "seosPealinn": "Riik, mille asutajaisaks peetakse tuurt Tšingis-khaani ja mille nomaadid on üks viimaseid rändrahvaid maailmas. Riigi naaberriigid on Venemaa ja Hiina, kes on oma poliitika poolest tihti nagu <b>ulakad pahatarid</b>.",
+        "pealinnAsukoht": "mongoolia.png",
+        "seosPealinnPilt": "Mongoolia - Ulaanbataar.png",
+        "lipp": "mongoolia.png",
+        "seosLipp": "Mongoolia (kui sinine) asub <b>kahe \"punase\" riigi vahel</b>: Hiina ja Venemaa (endine NSVLi juhtmaa).",
+        "seosLippPilt": "Mongoolia.png"
+    },
+    {
+        "nimi": "Myanmar (Birma)",
+        "pealinn": "Naypyidaw",
+        "seosPealinn": "Kahe nimega riik (aastani 1989 Birma sõjaväehunt muudatusele eelnevalt), kus toimus 2021. aastal sõjaväeline riigipööre ja kus kiusatakse süsteemselt taga rohingjasid. Myanmar on rohingja mehi ja <b>naisi</b> mitteinimesteks <b>pidav</b> riik.",
+        "pealinnAsukoht": "myanmar.png",
+        "seosPealinnPilt": "Myanmar (Birma) - Naypyidaw.png",
+        "lipp": "myanmar.png",
+        "seosLipp": "Myanmari lippu eristab <b>Leedu lipust</b> vaid valge täht. Riigis võttis riigipöörde käigus võimu üle sõjaväe hunta. Täht on elanike jaoks kui püsiv lootus paremast tulevikust.",
+        "seosLippPilt": "Myanmar.png"
+    },
+    {
+        "nimi": "Nepal",
+        "pealinn": "Katmandu",
+        "seosPealinn": "Hiina ja India vahel asuv Buddha sünnimaa, kus asuvad 8/10st maailma kõrgeimast mäest (sh Mount Everest) ning kust on pärit kuulus legend Jeti kohta. Kas mõni <b>mees</b> on mäkke ka <b>kassi</b> kaasa võtnud?",
+        "pealinnAsukoht": "nepal.png",
+        "seosPealinnPilt": "Nepal - Katmandu.png",
+        "lipp": "nepal.png",
+        "seosLipp": "Ainuke riigilipp maailmas, mis <b>ei ole nelinurk</b>. Kolmnurgad sümboliseerivad mäestikke, kuna Nepal paikneb mägises piirkonnas. ",
+        "seosLippPilt": "Nepali.png"
+    },
+    {
+        "nimi": "Omaan",
+        "pealinn": "Masqaţ",
+        "seosPealinn": "Sultani juhitud naftariik, kus suri kuulus rootsi DJ Avicii, kelle surmast sai riigi jaoks justkui \"<b>maskott</b>\", sest paljud polnud varem sellest riigist kuulnudki. Riigis on sündis ka näiteks tuntud näitleja Isla Fisher. ",
+        "pealinnAsukoht": "omaan.png",
+        "seosPealinnPilt": "Omaan - Masqat.png",
+        "lipp": "omaan.png",
+        "seosLipp": "Näed seda lippu ja siis oled nagu \"<b>Oh, man!</b>\"",
+        "seosLippPilt": "Omaan.png"
+    },
+    {
+        "nimi": "Pakistan",
+        "pealinn": "Islamabad",
+        "seosPealinn": "Maailma noorima Nobeli rahupreemia võitja Malala Yousafzai kodumaa, kus asub suuruselt teine moslemite kogukond maailmas. Islam leiab, et naiste peakatteta olek on <b>bad</b>, seega nad <b>takistavad</b> vastupidist käitumist. Pakistanis on suureks probleemiks noorte naiste aumõrvad.",
+        "pealinnAsukoht": "pakistan.png",
+        "seosPealinnPilt": "Pakistan - Islamabad.png",
+        "lipp": "pakistan.png",
+        "seosLipp": "\"Pettunud kriketi fänni\" meem sai alguse Austraalia vs Pakistani vahelise kriketi maailmakarika etapilt, kus pakistanlasest kriketi fänn Muhammad Sarim Akhtar, oli mängus pettunud, sest Austraalia mängija \"<b>takistas</b>\" Pakistani head söötu.",
+        "seosLippPilt": "Pakistan.png"
+    },
+    {
+        "nimi": "Põhja-Korea",
+        "pealinn": "Pyongyang",
+        "seosPealinn": "2018. aasta taliolümpiamängud toimusid Lõuna-Koreas, <b>PyeongChangis</b>. Väike viga trükkimisel ja oleksid omadega suusatanud Põhja-Koreas, Pyongyangis.",
+        "pealinnAsukoht": "põhja korea.png",
+        "seosPealinnPilt": "Pohja-Korea - Pyongyang.png",
+        "lipp": "põhja-korea.png",
+        "seosLipp": "Põhja-Koreas on diktatuur ja <b>kommunism</b>, millele viitab punane. Värvide poolest sarnane Costa Rica lipule. Lõuna-Korea lipuga peitub sarnasus vaid ümmarguses elemendis. ",
+        "seosLippPilt": "PõhjaKorea.png"
+    },
+    {
+        "nimi": "Saudi Araabia",
+        "pealinn": "Ar-Riyāḑ",
+        "seosPealinn": "Maailma kõige kõrgemat hoonet ehitav riik, mille jalgpalli klubis mängib hetkel Ronaldo ning mida peetakse islami sünnikohaks. Saudi kultuuris on kaamlitel väga oluline koht, alustades transpordist, lõpetades toiduks olemisega. Kas sa ikka <b>harjad</b> oma kaamlit?",
+        "pealinnAsukoht": "saudi araabia.png",
+        "seosPealinnPilt": "Saudi Araabia - Riyadh.png",
+        "lipp": "saudi_araabia.png",
+        "seosLipp": "Rohelise lipu keskmes asub islami <b>usutunnistus</b> šahada: \"Pole teist jumalat kui Allah ja Muhammad on Allahi saadik\". Saudi Araabia on tuntud oma brutaalsete ja avalike karistuste eest, näiteks raiutakse seal <b>mõõgaga</b> päid maha.",
+        "seosLippPilt": "SaudiAraabia.png"
+    },
+    {
+        "nimi": "Singapur",
+        "pealinn": "Singapur",
+        "seosPealinn": "<b>Üks kolmest linnriigist</b> (lisaks Monaco ja Vatikan), kus elab ligi 6 miljonit inimest. Linna peetakse üheks maailma kõige kallimaks, aga ka kõige jätkusuutlikumaks ja roheliseks linnaks Aasias. Singapur tähendab \"lõvilinna\".",
+        "pealinnAsukoht": "singapur.png",
+        "seosPealinnPilt": "Singapur - Singapur.png",
+        "lipp": "singapur.png",
+        "seosLipp": "Singapuri lipu disain on võtnud elemente üle <b>naaberriikidelt</b> Malaisialt, Indoneesialt ja ka Hiinalt.",
+        "seosLippPilt": "Singapur.png"
+    },
+    {
+        "nimi": "Sri Lanka",
+        "pealinn": "Sri Jayewardenepura Kotte, Colombo",
+        "seosPealinn": "India pisaraks kutsutav 22 miljoni elanikuga riik, mis on üks maailma suurimaid tee eksportijaid. Oled lennujaamas, et lennata Sri Lankale, aga märkad kahte kuulsust möödumas ja käratad oma giidile, et ta ootaks: \"<b>Sir, Jay ja E(d)ward enne puure-kotte!</b>\" #estonglish",
+        "pealinnAsukoht": "sri lanka.png",
+        "seosPealinnPilt": "Sri Lanka - Sri Jayewardenepura Kotte.png",
+        "lipp": "sri_lanka.png",
+        "seosLipp": "Väga unikaalne lipp. Sri Lankat kutsutakse ka \"<b>India pisaraks</b>\". Lõvilipp on ka üks vanimaid lippe maailmas. Lõvi, kelle <b>lakka</b> tahaks paitada. Riigis on toimiv <b>RO</b>ngisüsteem (roheline, oranž).",
+        "seosLippPilt": "SriLanka.png"
+    },
+    {
+        "nimi": "Süüria",
+        "pealinn": "Damaskus",
+        "seosPealinn": "Süüria sepad on <b>Damaskuse terase</b> spetsialistid.",
+        "pealinnAsukoht": "süüria.png",
+        "seosPealinnPilt": "Süüria - Damaskus.png",
+        "lipp": "süüria.png",
+        "seosLipp": "1/5 puna-valge-mustast lipust. Tähed sümboliseerivad sÜÜria <b>ü-täppe</b>.",
+        "seosLippPilt": "Süüria.png"
+    },
+    {
+        "nimi": "Tadžikistan",
+        "pealinn": "Dušanbe",
+        "seosPealinn": "Ütle \"<b>Taa-džihh-kistan</b>\" ja sult jäätist lipsida soovinud mesilane on nüüd <b>tusane bee</b>.",
+        "pealinnAsukoht": "tajikistan.png",
+        "seosPealinnPilt": "Tadzikistan - Dusanbe.png",
+        "lipp": "tadžikistan.png",
+        "seosLipp": "Lipul olev kroon sümboliseerib tadžiki rahvast ('tadzhvar' tähendab 'kroon'). Lisaks on see <b>t-tähe</b> kujuline.",
+        "seosLippPilt": "Tadzikistan.png"
+    },
+    {
+        "nimi": "Tai",
+        "pealinn": "Bangkok",
+        "seosPealinn": "<b>Tailihast</b> tehtud <b>pannkook</b>. Njämm.",
+        "pealinnAsukoht": "tai.png",
+        "seosPealinnPilt": "Tai - Bangkok.png",
+        "lipp": "tai.png",
+        "seosLipp": "Tai <b>lipu kaksik</b> on Costa Rica lipp. Kuna Norra on Islandist idapool ja Tai asub Aasias, on Tai lipp puna-sini-puna.",
+        "seosLippPilt": "Tai.png"
+    },
+    {
+        "nimi": "Türgi",
+        "pealinn": "Ankara",
+        "seosPealinn": "Türgi suurim linn on Istanbul. Aastal 1923 viidi pealinn Istanbulist sisemaale Ankarasse, et kaitsta seda vallutajate eest, olles riigi <b>ankruks</b> ('ancyra' on kreeka keeles 'ankur').",
+        "pealinnAsukoht": "türgi.png",
+        "seosPealinnPilt": "Türgi - Ankara.png",
+        "lipp": "türgi.png",
+        "seosLipp": "Türgi on kui <b>pac-man</b>, kes üritab end <b>Euroopa Liidu</b> liikmeks sisse süüa. Senini pole õnnestunud.",
+        "seosLippPilt": "Türgi.png"
+    },
+    {
+        "nimi": "Türkmenistan",
+        "pealinn": "Aşgabat",
+        "seosPealinn": "Riigi presidendist diktaator väärib kohta <b>Azkabani</b> vanglas.",
+        "pealinnAsukoht": "türkmenistan.png",
+        "seosPealinnPilt": "Türkmenistan - Asgabat.png",
+        "lipp": "türkmenistan.png",
+        "seosLipp": "Türkmenistan on tuntud oma <b>türkmeeni vaipade</b> poolest, mida on ka lipul kujutatud.",
+        "seosLippPilt": "Türkmenistan.png"
+    },
+    {
+        "nimi": "Usbekistan",
+        "pealinn": "Taškent",
+        "seosPealinn": "Kui Superman tahab end <b>uuena</b> tunda, on ta <b>taas Kent</b> (filmis kandis tavainimesena Clarke Kenti nime).",
+        "pealinnAsukoht": "uspekistan.png",
+        "seosPealinnPilt": "Taškent.jpg",
+        "lipp": "usbekistan.png",
+        "seosLipp": "Oli <b>taevas</b> ja <b>maa</b>. Sinna vahele rajati <b>verd</b> valades <b>uus</b> linn.",
+        "seosLippPilt": "Usbekistan.png"
+    },
+    {
+        "nimi": "Venemaa",
+        "pealinn": "Moskva",
+        "seosPealinn": "Pika ajalooga pindalalt maailma suurim riik, mida tuntakse praegusel ajal enim kui agressorriiki. Kuulsamad venelased on Juri Gagarin, Stalin, Putin, Maria Šarapova, Tšaikovski. Ansambel Meie Mees laulis kord: \"<b>Moskva, Moskva</b>, Kremli müürid punased..\".",
+        "pealinnAsukoht": "venemaa.png",
+        "seosPealinnPilt": "Venemaa - Moskva.png",
+        "lipp": "venemaa.png",
+        "seosLipp": "Teise maailmasõja ajal tungisid Stalini NSVL ja Hitleri Natsi-Saksamaa <b>Poolasse</b>, mille tulemusel <b>riik poolitati</b> vastavalt MRP-le.",
+        "seosLippPilt": "Venemaa.png"
+    },
+    {
+        "nimi": "Vietnam",
+        "pealinn": "Hanoi",
+        "seosPealinn": "Hiina keeles on tere '<b>ni hao</b>', Vietnamis räägitakse aga vietnami keelt ehk tähti tuleb pisut ümber tõsta.",
+        "pealinnAsukoht": "vietnam.png",
+        "seosPealinnPilt": "Vietnam - Hanoi.png",
+        "lipp": "vietnam.png",
+        "seosLipp": "Vietnam on Hiina naaberriik, kuid hiinast 29x väiksem. Vietnami lipp on <b>fragment Hiina lipust</b>.",
+        "seosLippPilt": "Vietnam.png"
     }
 ]

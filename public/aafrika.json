@@ -8,5 +8,545 @@
         "lipp": "alžeeria.png",
         "seosLipp": "Tähe ja kuu kombinatsioon, mis leitab ka <b>Türgi ja Tuneesia</b> lipult. Riigi territooriumist moodustab üle <b>80% Sahara kõrb</b> ehk rohelist vähem.",
         "seosLippPilt": "Alžeeria.png"
+    },
+    {
+        "nimi": "Angola",
+        "pealinn": "Luanda",
+        "seosPealinn": "Angolas mängitakse saalihokit luuaga, sest vaid siis saab <b>anGOALa</b>.",
+        "pealinnAsukoht": "angola.png",
+        "seosPealinnPilt": "ANGOLA - Luanda.png",
+        "lipp": "angola.png",
+        "seosLipp": "Angolat räsis aastatel 1975-2002 <b>kodusõda</b>. Sõda algas peale iseseisvumist Portugalist, kui kaks varasemat iseseisvusliikumist hakkasid maid jagama. Ka teised riigid sekkusid sõtta, et aidata oma ideoloogiatel võita. Vasakpoolne MPLA, keda toetas <b>Nõukogude Liit</b> (punane), võitis. ",
+        "seosLippPilt": "Angola.png"
+    },
+    {
+        "nimi": "Benin",
+        "pealinn": "Porto-Novo",
+        "seosPealinn": "Beninis avati <b>uus sadam</b> ('porto novo' portugali keeles), mille töölisteks on <b>penid</b>. ",
+        "pealinnAsukoht": "benin.png",
+        "seosPealinnPilt": "Benin - Porto-Novo.png",
+        "lipp": "benin.png",
+        "seosLipp": "Lipul on sarnane ülesehitus Guinea-Bissau lipuga (pissiv merisiga), kuid puudu on must täht ja värvid on vahetuses. Lipp oleks kujundatud nagu <b>abstraktse B-na</b>, mida täidavad erinevad <b>penid</b>.",
+        "seosLippPilt": "Benin.png"
+    }, 
+    {
+        "nimi": "Botswana",
+        "pealinn": "Gaborone",
+        "seosPealinn": "Botswanas on ruutkilomeetri kohta kõige rohkem elevante Aafrikas. Ehk sel juhul pakutakse seal ka <b>potis elevandi karbonaadi</b>?",
+        "pealinnAsukoht": "botswana.png",
+        "seosPealinnPilt": "Botswana - Gaborone.png",
+        "lipp": "botswana.png",
+        "seosLipp": "Ainuke riik maailmas peale Eesti, mille <b>lipuvärvideks</b> on samuti sinine, must ja valge.",
+        "seosLippPilt": "Botswana.png"
+    }, 
+    {
+        "nimi": "Burkina Faso",
+        "pealinn": "Ouagadougou",
+        "seosPealinn": "Üks maailma kõige kuumemaid riike (aasta keskmine temperatuur 28.25 kraadi). Laps on nagu: \"Kas ma võin ujuma minna?\"  ja siis ema on nagu: <b>\"Ou, aga dou gou!\"</b>",
+        "pealinnAsukoht": "burkina faso.png",
+        "seosPealinnPilt": "Burkina Faso - Ouagadougou.png",
+        "lipp": "burkina_faso.png",
+        "seosLipp": "Burkina Faso, mis tähendab tõlkes \"äraostmatute inimeste maad\", on üsna kaugel demokraatiast. Kui riik 1960. aastal Prantsuse koloniaalvõimu alt pääses, võeti nimeks Volta jõe järgi Upper Volta. 1983. aastal toimunud edukas riigipöördekatses muudeti riigi nime ja lippu, kuhu põimiti <b>revolutsiooni elemente</b> (punane ja täht). Irooniliselt, toimus 4 aasta pärast uus riigipöördekatse ning eelmised valitsejad kukutati, aga lipp jäi samaks.",
+        "seosLippPilt": "BurkinaFaso.png"
+    },
+    {
+        "nimi": "Burundi",
+        "pealinn": "Gitega",
+        "seosPealinn": "Burundis hoiab inimesi hirmuvalitsuse all 6-meetrine tapjakrokodill Gustave, kes on väidetavalt tapnud pea 300 inimest. Kuidas ta oma ohvreid meelitab? Pruntis huultega ja sellise \"isu\" tõttu on ta suur, nagu oleks <b>titega</b> (rase).",
+        "pealinnAsukoht": "burundi.png",
+        "seosPealinnPilt": "Burundi - Gitega.png",
+        "lipp": "burundi.png",
+        "seosLipp": "Gustavet tunneb ära <b>kolme kuulihaava</b> järgi, mis on ka riigi lipul. ",
+        "seosLippPilt": "Burundi.png"
+    }, 
+    {
+        "nimi": "Cabo Verde (Roheneemesaared)",
+        "pealinn": "Praia",
+        "seosPealinn": "Üks Aafrika riikide kõige stabiilsem demokraatia (93/100) ja kõrgem elatustase. Riiki külastab Grete <b>Paia</b>, kelle <b>kaabu on verine</b> piraajade rünnaku tagajärjel.",
+        "pealinnAsukoht": "cabo verde.png",
+        "seosPealinnPilt": "Cabo Verde - Praia.png",
+        "lipp": "cabo_verde.png",
+        "seosLipp": "1991. aasta vabadel valimistel võitis <b>demokraatia</b> ning et varasemat sotsialistlikku poliitikat katkestada, kehtestati uus lipp, millel on sarnaseid elemente <b>Euroopa Liidu lipule</b>. 10 kollast tähte sümboliseerivad 10 Atlandi ookeanis asuvat Cabo Verde peamist saart.",
+        "seosLippPilt": "CaboVerde.png"
+    }, 
+    {
+        "nimi": "Côte d'Ivoire",
+        "pealinn": "Yamoussoukro",
+        "seosPealinn": "Intensiivse <b>elevandiluukaubanduse</b> järgi nime saanud riik on maailma suurim kakaoubade tootja. Sellistest ubadest saab näiteks <b>šokolaadi-mousseed</b>.",
+        "pealinnAsukoht": "cote divoire.png",
+        "seosPealinnPilt": "Elevandiluurannik.png" ,
+        "lipp": "elevandiluurannik.png",
+        "seosLipp": "Lipp, millel on Iiri lipuga samad värvid, aga vastupidides järjestuses. Kui Iiriimaaga seostatakse rohelisi härjapõlvlasi, siis Elevandiluurannikuga <b>oranžikad kakaooad</b>, sest riik on maailma suurim kakaoubade tootja.",
+        "seosLippPilt": "CoteDivoire.png"
+    }, 
+    {
+        "nimi": "Djibouti",
+        "pealinn": "Djibouti",
+        "seosPealinn": "Väiksuselt kolmas Aafrika riik (eSwatini ja Gambia järel), mille pealinnas Djiboutis elab 76% riigi rahvastikust. Inimene vananeb, aga <b>booty</b> jääb ikka booty'ks.",
+        "pealinnAsukoht": "djibouti.png",
+        "seosPealinnPilt": "Djibouti - Djibouti.png",
+        "lipp": "djibouti.png",
+        "seosLipp": "Dji<b>booty</b> teemalised (alus)püksid",
+        "seosLippPilt": "Djibouti.png"
+    },
+    {
+        "nimi": "Egiptus",
+        "pealinn": "Kairo",
+        "seosPealinn": "Rikkaliku ajalooga riik, mille pealinn Kairo on Aafrika <b>üks suurima rahvaarvuga linnu</b> (Nigeeria Lagose ja Kongo Kinshasa järel).",
+        "pealinnAsukoht": "egiptus.png",
+        "seosPealinnPilt": "Egiptus - Kairo.png",
+        "lipp": "egiptus.png",
+        "seosLipp": "Üks paljudest selle kandi puna-valge-musta lippudest. Lipu keskel asuv kotkas on riigi <b>rahvuslind</b>. Alates 1952. aasta Egiptuse riigipöördest on kotkas olnud Egiptuse ja araabia natsionalismi sümbol, eriti araabia riikides, kus toimusid alates 1950. aastatest imperialistlikud poliitilised muutused.",
+        "seosLippPilt": "Egiptus.png"
+    }, 
+    {
+        "nimi": "Ekvatoriaal-Guinea",
+        "pealinn": "Malabo",
+        "seosPealinn": "Riigis elab vaid 1,2 miljonit inimest, Aafrika üks suuremaid naftatootjaid, kuid ka üks korrumpeerunumaid (4/100 TFH). Riigi juht on nagu \"<b>Ma lambo</b> masti mees.\"",
+        "pealinnAsukoht": "ekvatoriaal guinea.png",
+        "seosPealinnPilt": "Ekvatoriaal-Guinea - Malambo.png",
+        "lipp": "ekvatoriaal-guinea.png",
+        "seosLipp": "Küljepealt <b>sissetulev ookean</b> (sinine kolmnurk). Riigijuht on sama pillav kui Itaalia toidukultuur (Itaalia lipuvärvid).",
+        "seosLippPilt": "EkvatoriaalGuinea.png"
+    },
+    {
+        "nimi": "Eritrea",
+        "pealinn": "Asmara",
+        "seosPealinn": "Eritrea kui Aafrika Põhja-Korea, kus valitseb diktatuur ja tsensuur (\"sim-sala-bomm-<b>asmara</b>\" ja info on kadunud), seega riigi rahvas <b>eriti ei tea</b> midagi.",
+        "pealinnAsukoht": "eritrea.png",
+        "seosPealinnPilt": "Eritrea - Asmara.png",
+        "lipp": "eritrea.png",
+        "seosLipp": "Punane osa lipust on riigi <b>territooriumi kujuga</b>. See sümboliseerib ka iseseisvussõda, mis kestis 20 aastat (<b>20 kollast lehte</b>). Riik asub punase <b>mere ääres</b> (sinine).",
+        "seosLippPilt": "Eritrea.png"
+    }, 
+    {
+        "nimi": "eSwatini",
+        "pealinn": "Mbabane",
+        "seosPealinn": "Väiksuselt teine mandri-Aafrika riik ja Aafrika viimane absoluutne monarhia, kusjuures troonipärijaks on kuninga noorim poeg (eelmisel oli neid 67). Praegusel kuningal on 15 naist. Pole imestada, et riigis on HIV/AIDSi levimus maailma kõrgeim. Koolis jäi õppetund <b>banaaniga</b> ilmselt olemata.",
+        "pealinnAsukoht": "eSwatiini.png",
+        "seosPealinnPilt": "eSwatini - Mbabane.png",
+        "lipp": "eswatini.png",
+        "seosLipp": "Üks väga omapärane riik (Aafrika viimane absoluutne monarhia), millel on ka üks <b>unikaalsemaid</b> riigilippe maailmas. Pidustustel juuakse seal kindasti <b>martiinit</b>.",
+        "seosLippPilt": "eSwatini.png"
+    },
+    {
+        "nimi": "Etioopia",
+        "pealinn": "Addis Abeba",
+        "seosPealinn": "Aafrika vanim riik, mida pole kunagi koloniseeritud. Riigis elavad alahuules jantava suure ketta järgi tuntud Omo oru hõimud (<b>a tiss, a beebi?</b>). Etiooplane <b>Abebe</b> Bikila oli esimene aafriklane, kes võitis olümpial kulla...ja veel paljajalu.",
+        "pealinnAsukoht": "etioopia.png",
+        "seosPealinnPilt": "Etioopia - Addis Abeba.png",
+        "lipp": "etioopia.png",
+        "seosLipp": "Pan-Aafrika värvides lipp, mille kesksel kohal asub kuldne pentagramm sinisel kettal. Ketas võib viidata riigi tuntud Omo oru hõimudele, kes kannavad oma <b>huultes ketast</b>.",
+        "seosLippPilt": "Etioopia.png"
+    }, 
+    {
+        "nimi": "Gabon",
+        "pealinn": "Libreville",
+        "seosPealinn": "Gaboni pealinn Libreville tähendab prantsuse keeles \"vaba linna\", mille asutasid esimesena 1849. aastal vabastatud orjad: \"<b>C'mon, marss vabaduse villa.</b>\" Sarnane oli lugu Sierra Leone ja Freetowniga.",
+        "pealinnAsukoht": "gabon.png",
+        "seosPealinnPilt": "Gabon - Libreville.png",
+        "lipp": "gabon.png",
+        "seosLipp": "Gabon on üks 13st riigist, mida läbib <b>ekvaator</b>. Seda tähistab lipul kollane värv. Ülesehituselt on see sarnane Sierra Leone lipuga. Lipuvärvides kummitus teeb sulle \"<b>gaBOO!</b>\"",
+        "seosLippPilt": "Gabon.png"
+    }, 
+    {
+        "nimi": "Gambia",
+        "pealinn": "Banjul",
+        "seosPealinn": "Mandri-Aafrika väikseim riik, mis sai nime Gambia jõe järgi. Gambia <b>palub</b> Senegali, et ta saaks uusi tutvusi. Senegal: \"Ei!\"",
+        "pealinnAsukoht": "gambija.png",
+        "seosPealinnPilt": "Gambia - Banjul.png",
+        "lipp": "gambia.png",
+        "seosLipp": "Gambia on väike soolika kujuline riik aafrikas, mida kujutab lipul sinine värv, mis on eraldatud teistest värvidest. Läbi riigi voolab Gambja jõgi.",
+        "seosLippPilt": "Gambia.png"
+    }, 
+    {
+        "nimi": "Ghana",
+        "pealinn": "Accra",
+        "seosPealinn": "Üks väheseid stabiilseid demokraatiaid Aafrikas, kus on mitmeparteiline poliitiline süsteem ja rahumeelne võimu üleminek. Lisaks sibavad riigis ringi <b>aknega kanad</b>.",
+        "pealinnAsukoht": "ghana.png",
+        "seosPealinnPilt": "Ghana - Accra.png",
+        "lipp": "ghana.png",
+        "seosLipp": "Valgusfoori lipp, milles annavad valgust <b>kanad</b> isiklikult. Ghana lipu värvid on täpselt vastupidi Etioopia omale.",
+        "seosLippPilt": "Ghana.png"
+    }, 
+    {
+        "nimi": "Guinea",
+        "pealinn": "Conakry",
+        "seosPealinn": "<b>Guinea pig</b> (merisiga) on nii nunnu, et <i>I'm <b>gonna cry</b></i>.",
+        "pealinnAsukoht": "guinea.png",
+        "seosPealinnPilt": "Guinea - Conakry.png",
+        "lipp": "guinea.png",
+        "seosLipp": "Guinea lipu värvid on vastupidises järjekorras Mali lipule, kusjuures viimane on Guinea naaberriik. Vasakult tulles on see nagu horisontaalne <b>valgusfoor</b> (asub Malist vasakul pool), milles valgustiteks on merisead.",
+        "seosLippPilt": "Guinea.png"
+    },
+    {
+        "nimi": "Guinea-Bissau",
+        "pealinn": "Bissau",
+        "seosPealinn": "Üks neljast Guinea'd sisaldavast riigist. Endise Portugali asumaana kutsuti seda Portugali Guineaks. Kui iseseisvuti, võeti <b>pealinna järgi</b> nimeks Guinea-Bissau, et vältida vaidlusi naaberriigi Guineaga.",
+        "pealinnAsukoht": "guinea bissau.png",
+        "seosPealinnPilt": "Guinea-Bissau - Bissau.png",
+        "lipp": "guinea-bissau.png",
+        "seosLipp": "Kuna Guinea on suurem, pidi Guinea-Bissau enda eristamiseks lisama oma nimele riigi pealinna Bissau. Meriseal (<b>guinea pig</b>) on häbi ja ta peidab ennast nurga taha, sest ta tegi <b>pissiloigu</b>.",
+        "seosLippPilt": "GuineaBissau.png"
+    },
+    {
+        "nimi": "Ida-Timor (Timor-Leste)",
+        "pealinn": "Dili ",
+        "seosPealinn": "Kõige esimene 21. sajandil iseseisvunud riik, mis oli eelnevalt Portugali koloonia. \"Timor\" tähendab ida ehk riigi nimi on sisuliselt Ida-Ida. Teeme <b>diili</b>, et me seda varianti riigi nimena ei kasuta.",
+        "pealinnAsukoht": "ida timor.png",
+        "seosPealinnPilt": "Ida-Timor - Dili.png",
+        "lipp": "ida-timor.png",
+        "seosLipp": "Esimene 21. sajandil iseseisvunud riik, mis on ka üks kõige demokraatlikemaid riike Aasias. Üks kõige idapoolsemaid Aasia riike, millele viitab itta näitav \"<b>kompassinäidik</b>\".",
+        "seosLippPilt": "IdaTimor.png"
+    },
+    {
+        "nimi": "Kamerun",
+        "pealinn": "Yaoundé",
+        "seosPealinn": "Riiki hüütakse ka \"Miniatuurseks Aafrikaks\", kuid lõpliku nime sai krevettide järgi. Filmirežissöör James <b>Cameron</b> (\"Titanic\", \"Avatar\") oli esimene inimene, kes jõudis allveelaevaga soolo kõige alla (<b>under</b>) - Mariaani süviku põhja.",
+        "pealinnAsukoht": "kamerun.png",
+        "seosPealinnPilt": "Kamerun - Yaounde.png",
+        "lipp": "kamerun.png",
+        "seosLipp": "Kameruni lipp on äravahetamiseni sarnane Senegali lipuga (\"Seene Gal'i seente esikolmik\"). Kameruni lipul keskel on <b>punane</b> (red), sest <b>kameRun</b>.",
+        "seosLippPilt": "Kamerun.png"
+    },
+    {
+        "nimi": "Keenia",
+        "pealinn": "Nairobi",
+        "seosPealinn": "Keenia on koduks paljudele maailma parimatele pikamaajooksjatele (neil on <b>jooksugeen</b>) nagu Kipchoge, Obiri ja Kipyegon. <b>No ei nabi</b> neid liiga kergesti kinni.",
+        "pealinnAsukoht": "keenia.png",
+        "seosPealinnPilt": "Keenia - Nairobi.png",
+        "lipp": "keenia.png",
+        "seosLipp": "Keenias elavad <b>masai</b> hõimud, kelle tunnuseks on kilp ja odad. Lipu värvid on samad Lõuna-Sudaaniga ning lisaks on see nagu tagurpidi Afganisthani lipp.",
+        "seosLippPilt": "Keenia.png"
+    }, 
+    {
+        "nimi": "Kesk-Aafrika Vabariik",
+        "pealinn": "Bangui",
+        "seosPealinn": "Mittedemokraatlik riik Aafrika keskel, mida kontrollivad relvarühmitused. Riigi lipu kujundust valimas: \"<b>Pangu</b> see triip ikka keskele!\"",
+        "pealinnAsukoht": "kesk aafrika vabariik.png",
+        "seosPealinnPilt": "Kesk-Aafrika Vabariik - Bangui.png",
+        "lipp": "kesk_aafrika_vabariik.png",
+        "seosLipp": "Kesk-Aafrika Vabariik asub Aafrika mandri keskel ja <b>lipu keskel</b> asub punane vertikaalne triip.",
+        "seosLippPilt": "KeskAafrikaVabariik.png"
+    },
+    {
+        "nimi": "Komoorid",
+        "pealinn": "Moroni",
+        "seosPealinn": "Aafrika väiksuselt kolmas riik, mis on 40 aasta jooksul olnud tunnistajaks üle 20 riigipöörde katsele. Riigi pealinn on tuletatav riigi nimest: ko<b>MORONI</b>d",
+        "pealinnAsukoht": "komoorid.png",
+        "seosPealinnPilt": "Komoorid - Moroni.png",
+        "lipp": "komoorid.png",
+        "seosLipp": "Värvilised triibud sümboliseerivad riigi põhisaari, millest üks kuulub hoopis Prantsusmaale. Sarnane värviline ülesehitus on ka Mauritiuse ja Seišellide lippudel. Roheline kolmnurk viitab sellele, et asub nendest riikidest <b>mandrile kõige lähemal</b>.",
+        "seosLippPilt": "Komoorid.png"
+    },
+    {
+        "nimi": "Kongo DV",
+        "pealinn": "Kinshasa",
+        "seosPealinn": "Suuruselt teine Aafrika riik (Alžeeria järel), rahvaarvu poolest neljas (102 mlj) ja üks maavaraderikkamaid riike maailmas. Riik on kurikuulus oma lapssõdurite poolest, kellest võib lihtsalt saada <b>kints aasal</b>.",
+        "pealinnAsukoht": "kongo demokraatlik vabariik.png",
+        "seosPealinnPilt": "Kongo DV - Kinshasa.png",
+        "lipp": "kongo_demokraatlik_vabariik.png",
+        "seosLipp": "<b>Sinisel</b> (võiks viidata demokraatiale) \"<b>konna</b>\" lipul sümboliseerib täht kui mingit auhinda.",
+        "seosLippPilt": "KongoDV.png"
+    },
+    {
+        "nimi": "Kongo Vabariik",
+        "pealinn": "Brazzaville",
+        "seosPealinn": "Kaks Kongot ei ole kunagi olnud üks riik: KV oli <b>prantsuse</b> ja KDV Belgia koloonia. Mõlemad said nime Kongo jõe järgi, mis on maailma kõige sügavam jõgi (220m). Kongode pealinnad on maailma kõige lähestikku asuvad pealinnad maailmas (1,6km). Pealinn sai nime Prantuse avastaja <b>Brazza</b> või hoopis <b>Bratzi</b> nukkude järgi?",
+        "pealinnAsukoht": "kongo vabariik.png",
+        "seosPealinnPilt": "Kongo Vabariik - Brazzaville.png",
+        "lipp": "kongo_vabariik.png",
+        "seosLipp": "Riigilipp kasutab tavapäraseid Pan-Aafrika värve: roheline, kollane ja punane. Lisaks on see nagu lihtsustatud versioon Saint Kitts ja Nevise lipust. <b>Rohelistest, kollastest ja punastest konnadest</b> tehtud lipp.",
+        "seosLippPilt": "KongoVabariik.png"
+    },
+    {
+        "nimi": "Lesotho",
+        "pealinn": "Maseru",
+        "seosPealinn": "Üks kolmest maailma enklaavriikidest, mida tuntakse ka kui \"taeva kuningriiki\", sest selle madalaim punkt on maailma kõige kõrgem madalam punkt. Riigis on maailma kõige kõrgem suitsiidimäär per capita. Inimestel on <b>masendus</b> ja Lesothos puuduvad ressursid probleemiga tegelemiseks.",
+        "pealinnAsukoht": "lesotho.png",
+        "seosPealinnPilt": "Lesotho - Maseru.png",
+        "lipp": "lesotho.png",
+        "seosLipp": "Lipul on kujutatud traditsioonilist <b>mokorotlo kübarat</b>, mis on Lesotho kultuurile omane. Kujuta ette, et selle mütsiga kaunistatakse <b>risotot</b>.",
+        "seosLippPilt": "Lesotho.png"
+    }, 
+    {
+        "nimi": "Libeeria",
+        "pealinn": "Monrovia",
+        "seosPealinn": "Ameerika kontrolli all olnud \"koloniaalmaa\" (sarnased lipud). Tegu on Aafrika vanima vabariigiga (1847). Ameeriklanna Marilyn <b>Monroe</b> kleit oli <b>vabas</b> hõljumises (\"liber\" kui vaba lad k).",
+        "pealinnAsukoht": "libeeria.png",
+        "seosPealinnPilt": "Libeeria - Monrovia.png",
+        "lipp": "libeeria.png",
+        "seosLipp": "Lipp on inspireeritud <b>vabaturumajandusega</b> USA lipust. Libeeria oli Ameerika kontrolli all olnud \"koloniaalmaa\" tänu millele on riik ka Aafrika vanim vabariik.",
+        "seosLippPilt": "Libeeria.png"
+    },
+    {
+        "nimi": "Liibüa",
+        "pealinn": "Tripoli",
+        "seosPealinn": "Riigis asuvad Aafrika suurimad naftareservid, millest saadavaid tulusid kasutas ametnike lojaalsuse võitmiseks ära kurikuulus diktaator Gaddafi (oli võimul üle 40 aasta). Kolm <b>täpitähte</b>: i-i-ü ehk <b>tri</b>poli.",
+        "pealinnAsukoht": "liibüa.png",
+        "seosPealinnPilt": "Liibüa - Tripoli.png",
+        "lipp": "liibüa.png",
+        "seosLipp": "Enne selle lipu kasutusele võttu oli Gaddaffi valitsusajal lipp <b>ühevärviliselt roheline</b>. Sümboliseerigu lipu must osa <b>Gaddaffi</b> ränka valitsusperioodi.",
+        "seosLippPilt": "Liibüa.png"
+    },
+    {
+        "nimi": "Lõuna-Aafrika Vabariik",
+        "pealinn": "Pretoria, Bloemfontein, Kaplinn",
+        "seosPealinn": "Ainus maailma riik, millel on kolm pealinna. Tuntuimateks lõuna-aafriklasteks on Elon Musk, Nelson Mandela, Desmond Tutu  ja Charlize Theron. <b>Kapp</b>, mis viib sind <b>lilledega</b> (\"Blumen\" saksa k) ümbritsetud <b>purskkaevu</b> (\"fontain\" ingl k) ja <b>kiskjateni</b> (\"predator\" ingl k).",
+        "pealinnAsukoht": "lõuna aafrika vabariik.png",
+        "seosPealinnPilt": "Lõuna-Aafrika Vabariik - Pretoria, Kaplinn, Bloemfontein.png",
+        "lipp": "lõuna_aafrika_vabariik.png",
+        "seosLipp": "Lipu vastuvõtmise ajal oli Lõuna-Aafrika lipp ainus riigilipp maailmas, mille <b>põhikujunduses kasutati kuute põhivärvi</b>. V-kuju sümboliseerib ühiskonna erinevate elementide ühinemist ja ühtsuses liikumist (keerukas ajalugu: <b>1948–1994 kehtis riigis apartheid</b>).",
+        "seosLippPilt": "LõunaAafrikaVabariik.png"
+    },
+    {
+        "nimi": "Lõuna-Sudaan",
+        "pealinn": "Juba",
+        "seosPealinn": "Maailma noorim riik, mis iseseisvus 2011. aastal. Sellest on möödas <b>juba</b> 13 aastat ja kuigi Sudaanist lahku löömine oli rahumeelne, on riik <b>juba</b> jälle võimuvõitslusest alguse saanud konfliktis.",
+        "pealinnAsukoht": "lõuna sudaan.png",
+        "seosPealinnPilt": "Lõuna-Sudaan - Juba.png",
+        "lipp": "lõuna-sudaan.png",
+        "seosLipp": "Lõuna-Sudaan asub <b>Keeniast läänepool</b> ning nende lippude värvide järjestus on sarnane. Sudaani lipuga on sarnasuseks vaid vasakul olev kolmnurk.",
+        "seosLippPilt": "LõunaSudaan.png"
+    },
+    {
+        "nimi": "Madagaskar",
+        "pealinn": "Antananarivo",
+        "seosPealinn": "Suuruselt maailma neljas saar, kus elab üle 70 leemurlase liigi ja mis on tuntud oma vanilje poolest. \"Madagaskari\" multika semudele <b>antagu narivoodi</b>.",
+        "pealinnAsukoht": "madagaskar.png",
+        "seosPealinnPilt": "Madagaskar - Antananarivo.png",
+        "lipp": "madagaskar.png",
+        "seosLipp": "Saarel elavate paljude loomaliikide pärast on ka loomadele endale vaja <b>valgusfoore</b>.",
+        "seosLippPilt": "Madagaskar.png"
+    },
+    {
+        "nimi": "Malawi",
+        "pealinn": "Lilongwe",
+        "seosPealinn": "Malawi kogupindalast moodustab samanimeline järv enam kui viiendiku ja riigi nimi tähendab \"leegitsevat vett\", mis viitab Malawi järve kohal loojuvale päikesele. Popstaar Madonna adopteeris riigist neli last, kes <b>laavivad Lilot</b> (\"Lilo ja Stitchist\"). ",
+        "pealinnAsukoht": "malawi.png",
+        "seosPealinnPilt": "Malawi - Lilongwe.png",
+        "lipp": "malawi.png",
+        "seosLipp": "\"Malawi\" tähendab 'tule leeke', võttes oma nime <b>tõusva päikese peegelduse järgi Malawi</b> järvel. Lipuvärvide järjestus on identne Keenia lipu omaga.",
+        "seosLippPilt": "Malawi.png"
+    },
+    {
+        "nimi": "Mali",
+        "pealinn": "Bamako ",
+        "seosPealinn": "Malis elas 13. sajandil kõigi aegade rikkaim inimene, Timbuktu kuningas Mansa Musa, kelle varandus oli tänapäeva vääringus umbes 400 miljardit dollarit. Rikkus tuli riigi soola- ja kullavarudest. Barack <b>Obama</b> tütre nimi on <b>Malia</b>. ",
+        "pealinnAsukoht": "mali.png",
+        "seosPealinnPilt": "Mali pealinn - Bamako.png",
+        "lipp": "mali.png",
+        "seosLipp": "Mali lipp on peaaegu identne naaberriigi <b>Senegali lipuga</b>. Mali lipuvärvide järjestus on sarnane ka Tšaadi lipule, kuid <b>sinise asemel on roheline</b>.",
+        "seosLippPilt": "Mali.png"
+    },
+    {
+        "nimi": "Maroko",
+        "pealinn": "Rabat",
+        "seosPealinn": "Põhja-Aafrika ainus kuningriik, mille populaarseim spordiala on jalgpall: 2022. aasta MMil tehti ajalugu, kui saavutati 4. koht. Tegu on esimese Araabia ja Aafrika riigiga, kel õnnestus saada jalgpalli MMil poolfinaali. Riigis läks lahti korralik <b>sabat</b>.",
+        "pealinnAsukoht": "marokko.png",
+        "seosPealinnPilt": "Maroko - Rabat.png",
+        "lipp": "maroko.png",
+        "seosLipp": "Roheline täht tähistab <b>islami viit sammast</b> (usutunnistus, palvus, annetamine, palverännak ja paast) ja punane jalgpallimeeskonna pingutust ajaloolisel 2022. aasta MMil.",
+        "seosLippPilt": "Maroko.png"
+    },
+    {
+        "nimi": "Mauritaania",
+        "pealinn": "Nouakchott",
+        "seosPealinn": "Viimane riik maailmas, mis kaotas orjuse, kuid väidetavalt elab sadu tuhandeid inimesi endiselt orjana. Valitsus väidab, et orjus on kaotatud ja seega <b>no action</b> nende poolt. ",
+        "pealinnAsukoht": "mauritaania.png",
+        "seosPealinnPilt": "Mauritaania - Nouakchott.png",
+        "lipp": "mauritaania.png",
+        "seosLipp": "Roheline sümboliseeriks kui vabadust, kuid tegelikult elab palju inimesi endiselt <b>orjana</b>.",
+        "seosLippPilt": "Mauritaania.png"
+    },
+    {
+        "nimi": "Mauritius",
+        "pealinn": "Port Louis",
+        "seosPealinn": "Saarema suurune riik, mille sümboliks on väljasurnud dodo ja mille kohta ütles Mark Twain: \"Kõigepealt tehti Mauritius ja seejärel taevas ning taevas kopeeriti Mauritiuse järgi.\" Mõtle, kui mõnus oleks sealses <b>sadamas</b>, taustaks <b>Louis</b> Armstrongi trompetimuusika.",
+        "pealinnAsukoht": "mauritius.png",
+        "seosPealinnPilt": "Mauritius - Port Louis.png",
+        "lipp": "mauritius.png",
+        "seosLipp": "Paradiis on Mauritius ja paradiisis paistab <b>vikerkaar</b>? Sealne vikerkaar on samas ebatraditsiooniliste värvidega.",
+        "seosLippPilt": "Mauritius.png"
+    },
+    {
+        "nimi": "Mosambiik",
+        "pealinn": "Maputo",
+        "seosPealinn": "Ainus ühesõnaline riik maailmas, milles on kõik vokaalid (ingliskeelne versioon: Mosambique). Mosambiigi poliitik Graca Machel on modernse ajaloo ainus naine, kes on olnud kahe riigi esileedi (lisaks ka Lõuna-Aafrika Vabariik). Kääbusplaneet <b>Pluuto</b>, mis on tehtud <b>mosaiigist</b>.",
+        "pealinnAsukoht": "mosambiik.png",
+        "seosPealinnPilt": "Mosambiik - Pluuto.png",
+        "lipp": "mosambiik.png",
+        "seosLipp": "<b>Mosaiikselt</b> kujundatud Mosambiigi lipp",
+        "seosLippPilt": "Mosambiik.png"
+    },
+    {
+        "nimi": "Namiibia",
+        "pealinn": "Windhoek",
+        "seosPealinn": "Namiibias asub maailma vanim kõrb, Namibi kõrb, ja maailma kõrgeim liivadüün. Selle juures seistes tunned <b>tuult</b> (<i>wind</i> ingl k) ja ütled \"What the <b>hoek</b>?\" Namiibia on kõige hõredamalt asustatud riikide seas teine (Mongoolia järel), kuna riigis elab vaid alla 3 miljoni inimese.",
+        "pealinnAsukoht": "namiibia.png",
+        "seosPealinnPilt": "Namiibia pealinn - Windhoek.png",
+        "lipp": "namiibia.png",
+        "seosLipp": "Sarnane diagonaalne ülesehitus Kongo lipule. Nagu päiksega <b>taevas</b>, punane <b>kõrb</b> ja roheline <b>maa</b>.",
+        "seosLippPilt": "Namiibia.png"
+    },
+    {
+        "nimi": "Nigeeria",
+        "pealinn": "Abuja",
+        "seosPealinn": "Suurima rahvaarvuga Aafrika riik (201 mlj inimest), kus asub ka <b>Aafrika suurima rahvaarvuga linn</b> Lagos. See kaotas oma pealinna tiitli Abujale 1991. aastal, sest oli ülerahvastatud, saastunud, ei võimaldanud laienemist ja ei esindanud rahvuslikku mitmekesisust. Asi oli <b>hapu</b>.",
+        "pealinnAsukoht": "nigeeria.png",
+        "seosPealinnPilt": "Nigeeria - Abuja.png",
+        "lipp": "nigeeria.png",
+        "seosLipp": "Nigeeria lipp kui <b>N</b>",
+        "seosLippPilt": "Nigeeria.png"
+    },
+    {
+        "nimi": "Niger",
+        "pealinn": "Niamey",
+        "seosPealinn": "<b>No way</b>, et riigi nimi on...Niger. Riiki elanikkond on maailma noorim (mediaanvanus 15 aastat) ning naise kohta sünnib keskmiselt 6,9 last. Niger on ka üks maailma kuumimaid riike, sest 4/5 riigist on kõrb.",
+        "pealinnAsukoht": "niger.png",
+        "seosPealinnPilt": "Niger - Niamey.png",
+        "lipp": "niger.png",
+        "seosLipp": "India lipu \"<b>nigel</b>am\" versioon.",
+        "seosLippPilt": "Nigeri.png"
+    },
+    {
+        "nimi": "Rwanda",
+        "pealinn": "Kigali",
+        "seosPealinn": "<b>Verandal</b> kiigel pikali.",
+        "pealinnAsukoht": "rwanda.png",
+        "seosPealinnPilt": "Rwanda - Kigali.png",
+        "lipp": "rwanda.png",
+        "seosLipp": "<b>Mägigorillade</b> kodumaa, kus toimus 1994. aastal ajaloo brutaalseim genotsiid - 100 päeva jooksul tapsid hutud ligi üks miljon tutsi. Riigilipult leiab <b>Ukraina ja Kasasthani lipu</b> elemente.",
+        "seosLippPilt": "Rwanda.png"
+    },
+    {
+        "nimi": "Sambia",
+        "pealinn": "Lusaka",
+        "seosPealinn": "1964. aastal iseseisvunud ja Zambezi jõe järgi nime saanud riik, mis on Aafrikas üks poliitilisemalt stabiilsemaid. Sambia etnilistele rühmadele on omased omapärased tantsud: \"Tegu on <b>lustaka</b> tantsuga. <b>Samm ja</b> hopp.\"",
+        "pealinnAsukoht": "sambia.png",
+        "seosPealinnPilt": "Sambia - Lusaka.png",
+        "lipp": "sambia.png",
+        "seosLipp": "Lipul on nagu <b>sambad</b>. Roheline viitab lopsakale taimestikule.",
+        "seosLippPilt": "Sambia.png"
+    },
+    {
+        "nimi": "Sao Tome ja Principe",
+        "pealinn": "São Tomé",
+        "seosPealinn": "Väiksuselt teine riik Aafrikas, mis asub São Tome ja Principe saartel. \"São Tome\" tähendab portugali keeles \"<b>Pühak Toomast</b>\". Portugallased avastasid 15. sajandil selle saare just selle pühaku päeval.",
+        "pealinnAsukoht": "sao tome ja principe.png",
+        "seosPealinnPilt": "Sao Tome ja Principe - Sao Tome.png",
+        "lipp": "sao_tome_ja_principe.png",
+        "seosLipp": "Riik asub kahel suuremal saarel, mis on tähistatud <b>kahe musta tähega</b>. Endeemiliste liikide rohkuse pärast kutsutakse riiki ka <b>Aafrika Galapagoseks</b>.",
+        "seosLippPilt": "SaoTomeJaPrincipe.png"
+    },
+    {
+        "nimi": "Seišellid",
+        "pealinn": "Victoria",
+        "seosPealinn": "Aafrika väiksem riik, mis sai nime kunagise prantsuse rahandusministri järgi. Siis algas brittide võim ja pealinn nimetati <b>kuninganna Victoria</b> järgi. Ainsaid riike, kus on <b>martiarhaalne ühiskond</b> ehk pealinnaks naise nimi.",
+        "pealinnAsukoht": "seishellid.png",
+        "seosPealinnPilt": "Seisellid - Victoria.png",
+        "lipp": "seišellid.png",
+        "seosLipp": "Riigis <b>pole põlisrahvaid</b>. Saared olid asustamata aastani 1770, kui saabusid prantslased Aafrika orjadega. Tänapäeva seišellane on kultuuride \"sulatusaju\" tulem ehk erinevad värvid lipul koos.",
+        "seosLippPilt": "Seisellid.png"
+    },
+    {
+        "nimi": "Senegal",
+        "pealinn": "Dakar",
+        "seosPealinn": "Kõige jälgitum tiktokker, Khaby Lame, on Senegalist pärit. Dakaris toimub maailmakuulus <b>Dakari ralli</b>. Miks mitte panna tema ühe auto rooli?",
+        "pealinnAsukoht": "senegal.png",
+        "seosPealinnPilt": "Senegal - Dakar.png",
+        "lipp": "senegal.png",
+        "seosLipp": "<b>Seene Gal</b> reastas oma lemmikseened poodiumile:",
+        "seosLippPilt": "Senegal.png"
+    },
+    {
+        "nimi": "Sierra Leone",
+        "pealinn": "Freetown",
+        "seosPealinn": "Legend räägib, et portugali maadeavastaja koges seal viibides suurt tormi, mis tekitasid tunde nagu <b>mäed mõirgaksid</b>. Sealt ka Sierra Leone ehk tõlkes \"Lõvimäed\". Freetown asutati pakkumaks uut asundust vabastatud Aafrika orjadele. Vabaks saanud orjad, kes möirgavad rõõmust.",
+        "pealinnAsukoht": "sirra leone.png",
+        "seosPealinnPilt": "Sierra Leone - Freetown.png",
+        "lipp": "sierra_leone.png",
+        "seosLipp": "Sierra Leone kui <b>Sinine Roheline</b>. Riigi lipp on nagu minimalistlik ja ümberpööratud Usbekistani lipp.",
+        "seosLippPilt": "SierraLeone.png"
+    },
+    {
+        "nimi": "Somaalia",
+        "pealinn": "Muqdisho",
+        "seosPealinn": "Somaaliast on pärit UK kergejõustiklane, olümpiavõitjast jooksumees Mo Farah ning kurikuulsad Somaalia piraadid (tüütud nagu <b>moskiitod</b>).",
+        "pealinnAsukoht": "somaalia.png",
+        "seosPealinnPilt": "Somaalia - Muqdisho.png",
+        "lipp": "somaalia.png",
+        "seosLipp": "Lipu sinine värv võeti <b>ÜRO lipult</b>, sest ÜRO aitas Somaalial iseseisvust saavutada.",
+        "seosLippPilt": "Somaalia.png"
+    },
+    {
+        "nimi": "Sudaan",
+        "pealinn": "Hartum",
+        "seosPealinn": "Sudaanis toimuva peale ei ole <b>hard tumm</b>aks jääda. <b>Suudad sa</b> seda kõike uskuda?",
+        "pealinnAsukoht": "sudaan.png",
+        "seosPealinnPilt": "Sudaan - Hartum.png",
+        "lipp": "sudaan.png",
+        "seosLipp": "Kuigi enamik arvab, et Egiptus on püramiidide maa, siis asub <b>kõige rohkem püramiide hoopis Sudaanis</b> (220 vs 138). Sümboliseerigu see roheline kolmnurk just seda fakti.",
+        "seosLippPilt": "Sudaan.png"
+    },
+    {
+        "nimi": "Zimbabwe",
+        "pealinn": "Harare",
+        "seosPealinn": "<b>Simba</b> isa Mustafa <b>haare</b> lõdvenes (\"Lõvikuningas\") ja ta kukkus surma.",
+        "pealinnAsukoht": "zimbabe.png",
+        "seosPealinnPilt": "Zimbabwe - Harare.png",
+        "lipp": "zimbabwe.png",
+        "seosLipp": "Maailma kõide kuulsamad <b>hüperinflatsiooni</b> juhtumid pärinevad Zimbabwest ja Weimari vabariigist (Saksamaa eelkäija, lipul Saksa lipu värvid).",
+        "seosLippPilt": "Zimbabwe.png"
+    },
+    {
+        "nimi": "Tansaania",
+        "pealinn": "Dodoma",
+        "seosPealinn": "Tansaanias on <b>albinismi määr</b> maailma üks kõrgemaid. Albinismi põdevad inimesed langevad kohutavate rünnakute ohvriks. Nad peaksid rahus <b>tuduma</b>, aga ei saa.",
+        "pealinnAsukoht": "tansaania.png",
+        "seosPealinnPilt": "Tansaania - Todoma.png",
+        "lipp": "tansaania.png",
+        "seosLipp": "Jõuluvana (tan)<b>saaniga</b> mäest alla sõitmas.",
+        "seosLippPilt": "Tansaania.png"
+    },
+    {
+        "nimi": "Togo",
+        "pealinn": "Lomé",
+        "seosPealinn": "Härra Togo president, millega <b>tegeleme</b>?",
+        "pealinnAsukoht": "togo.png",
+        "seosPealinnPilt": "Togo - Lome.png",
+        "lipp": "togo.png",
+        "seosLipp": "Kääbikute <b>aiamaastik</b> ja kääbik <b>Frodo (nagu Togo)</b> eellane teekonnal Sauroni silma juurde.",
+        "seosLippPilt": "Togo.png"
+    },
+    {
+        "nimi": "Tšaad",
+        "pealinn": "N'Djamena",
+        "seosPealinn": "<b>Chad, man</b>, (kuulus meem Chad, mis viitab populaarsele, enesekindlale ja valgele isasele) on selle riigi kujuga.",
+        "pealinnAsukoht": "tsaad.png",
+        "seosPealinnPilt": "Tsaad - Ndjamena.png",
+        "lipp": "tšaad.png",
+        "seosLipp": "Tšaadi ja Rumeenia lipud on ainsad maailmalipud, mis on omavahel <b>sisuliselt identsed</b>. Riikide meeldejätmiseks kujuta ette, kuidas keegi<b>(t)saeb saega rummipudelit</b>. ",
+        "seosLippPilt": "Tšaad.png"
+    },
+    {
+        "nimi": "Tuneesia",
+        "pealinn": "Tunis",
+        "seosPealinn": "<b>Tuneesiale</b> pandi nimi Tunise järgi. Tuneeslannast tennisist <b>Ons Jabeur</b> on Anett Kontaveidi hea sõber.",
+        "pealinnAsukoht": "tuneesia.png",
+        "seosPealinnPilt": "Tuneesia - Tunis.png",
+        "lipp": "tuneesia.png",
+        "seosLipp": "Tuneesia on Aafrika põhjapoolseim riik, mida lahutab Türgist (<b>lipusemu</b>) vaid Vahemeri. <b>Kaksikutest T-d</b>.",
+        "seosLippPilt": "Tuneesia.png"
+    },
+    {
+        "nimi": "Uganda",
+        "pealinn": "Kampala",
+        "seosPealinn": "Ugandalasest näitleja Daniel Kaluuyaga <b>camp</b>imis<b>ala</b>l telkimas.",
+        "pealinnAsukoht": "uganda.png",
+        "seosPealinnPilt": "Uganda - Kampala.png",
+        "lipp": "uganda.png",
+        "seosLipp": "u<b>KAN</b>d<b>A</b>",
+        "seosLippPilt": "Uganda.png"
     }
 ]

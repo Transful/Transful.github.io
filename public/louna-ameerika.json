@@ -8,5 +8,115 @@
         "lipp": "argentiina.png",
         "seosLipp": "Kui Argentiinat tabas koroonaepideemia, sai riigist Karantiina ehk <b>päiksest sai pisik</b>.",
         "seosLippPilt": "Argentiina.png"
+    },
+    {
+        "nimi": "Boliivia",
+        "pealinn": "La Paz, Sucre",
+        "seosPealinn": "Merepiirita kahe pealinnaga Lõuna-Ameerika riik. La Paz'i teatakse ka kui linna, mis magab (<b>\"La Paus\"</b>). Kui und ei tule, siis süüakse hoopis <b>oliive</b> ja <b>suhkrut</b>.",
+        "pealinnAsukoht": "boliivia.png",
+        "seosPealinnPilt": "Boliivia - La Paz, Sucre.png",
+        "lipp": "boliivia.png",
+        "seosLipp": "Kuigi lipul kasutatakse Pan-Aafrika värve (nagu Ghana lipp), asub Boliivia hoopiski Lõuna-Ameerikas. Neid valgusfoori lippe ongi hea meelde jätta paarisrakendina: <b>oliive sööv kana</b>.",
+        "seosLippPilt": "Boliivia.png"
+    },
+    {
+        "nimi": "Brasiilia",
+        "pealinn": "Brasilia",
+        "seosPealinn": "Arvatakse, et pealinn on <b>Rio de Janeiro</b>, kuid tegelikult on pealinnaks <b>Brasilia</b>. ",
+        "pealinnAsukoht": "brasiilia.png",
+        "seosPealinnPilt": "Brasiilia - Brasilia.png",
+        "lipp": "brasiilia.png",
+        "seosLipp": "Roheline kui <b>Amazonase vihmamets</b>, kollane kui rand, mis viitab <b>merepiirile</b> ja sinine kui maakera ehk <b>pindala järgi maailma viies riik</b>.",
+        "seosLippPilt": "Brasiilia.png"
+    },
+    {
+        "nimi": "Colombia",
+        "pealinn": "Bogotá",
+        "seosPealinn": "Riigist on pärit Shakira, kes tantsib iga ilmaga <b>(погода)</b>.",
+        "pealinnAsukoht": "kolumbia.png",
+        "seosPealinnPilt": "Colombia - Bogota.png",
+        "lipp": "colombia.png",
+        "seosLipp": "1/3st horisontaalsest kolla-sini-punasest lipust, aga ilma <b>lisadeta</b>. Kollane sümboliseerib loojuvat päikest, sinine merd ja punane randa.",
+        "seosLippPilt": "Colombia.png"
+    },
+    {
+        "nimi": "Ecuador",
+        "pealinn": "Quito",
+        "seosPealinn": "Esimene riik, mis tunnistas ametlikult <b>looduse õigusi</b>, seega rahvas otsustas <b>quit'ida</b> reostamise.",
+        "pealinnAsukoht": "equador.png",
+        "seosPealinnPilt": "Ecuador - Quito.png",
+        "lipp": "ecuador.png",
+        "seosLipp": "1/3 <b>kolla-sini-punastest</b>. Vapil on kujutatud <b>loodust</b>, sest loodus on riigile oluline (õigused).",
+        "seosLippPilt": "Ecuador.png"
+    },
+    {
+        "nimi": "Guyana",
+        "pealinn": "Georgetown",
+        "seosPealinn": "Lõuna-Ameerika ainus ingliskeelne riik, mis on ka Letitia Wrighti (sai tuntuks filmiga \"Must Panter\") kodumaa.1978. aastal sooritas 918 inimest kultusjuhi eeskujul riigis massilise enesetapu. Üks <b><i>guy</i> George'sid täis linnas</b>.",
+        "pealinnAsukoht": "guynea.png",
+        "seosPealinnPilt": "Guyana - Georgetown.png",
+        "lipp": "guyana.png",
+        "seosLipp": "Lipp, mis koosneb <b>guy'dest</b> (kuttidest)",
+        "seosLippPilt": "Guyana.png"
+    },
+    {
+        "nimi": "Paraguay",
+        "pealinn": "Asunción",
+        "seosPealinn": "Riigis on lubatud püstoliduellid, kui mõlemad osalised on registreeritud veredoonoritena. Kui asuksid Eesti südames, asuksid Paides. Kui asuksid Lõuna-Ameerika südames, <b>asuksid siin</b> - Paraguays.",
+        "pealinnAsukoht": "paraguay.png",
+        "seosPealinnPilt": "Paraguay - Asuncion.png",
+        "lipp": "paraguay.png",
+        "seosLipp": "Prantsuse lipust insipireeritud lipp on unikaalne, sest ühel pool on vapp ja teisel pool on näha riigikassa pitsatit (kollane lõvi). Lipuvärvid on samad, mis Hollandil, aga Paraguay on <b>parem guy</b>.",
+        "seosLippPilt": "Paraguay.png"
+    },
+    {
+        "nimi": "Peruu",
+        "pealinn": "Lima",
+        "seosPealinn": "Macchu Picchu (inkad), laamade ja alpakde poolest tuntud riik. Neil loomadel on kombeks aga sülitada ja seega <b>lima</b> eritada.",
+        "pealinnAsukoht": "peruu.png",
+        "seosPealinnPilt": "Peruu - Lima.png",
+        "lipp": "peruu.png",
+        "seosLipp": "<b>Selfie</b> Peruu moodi",
+        "seosLippPilt": "Peruu.png"
+    },
+    {
+        "nimi": "Suriname",
+        "pealinn": "Paramaribo",
+        "seosPealinn": "Kui suitsetad <b>Marlborot</b>, käivad kehast läbi <b>surinad</b>.",
+        "pealinnAsukoht": "suriname.png",
+        "seosPealinnPilt": "Suriname - Paramaribo.png",
+        "lipp": "suriname.png",
+        "seosLipp": "Suri<b>NAM</b>e lipul on Viet<b>NAM</b>i lipu fragment.",
+        "seosLippPilt": "Suriname.png"
+    },
+    {
+        "nimi": "Tšiili",
+        "pealinn": "Santiago",
+        "seosPealinn": "Nagu Lõuna-Ameerika <b>Chicago</b>. Et Tšiili ühest otsast teise jõuda, <b>anti hagu</b> autole (roolis kuulsaim santiagolane, näitleja Pedro Pascal).",
+        "pealinnAsukoht": "tsiili.png",
+        "seosPealinnPilt": "Tsiili - Santiago.png",
+        "lipp": "tšiili.png",
+        "seosLipp": "Elasid kord kaksikud <b>Tš</b>iili ja <b>Tš</b>ehhi. Nende sarnasus oli kaugele näha.",
+        "seosLippPilt": "Tsiili.png"
+    },
+    {
+        "nimi": "Uruguay",
+        "pealinn": "Montevideo",
+        "seosPealinn": "<b>Monte</b>erin <b>videosid</b> tavaliselt oma <b>urus</b>.",
+        "pealinnAsukoht": "uruguay.png",
+        "seosPealinnPilt": "Uruguay - Montevideo.png",
+        "lipp": "uruguay.png",
+        "seosLipp": "Ka <b>uru</b>(guay's) võib <b>paista päike</b>. Lipp sarnaneb Kreeka lipule ja Kreeka on teadupärast väga päikseline.",
+        "seosLippPilt": "Uruguay.png"
+    },
+    {
+        "nimi": "Venezuela",
+        "pealinn": "Caracas",
+        "seosPealinn": "Venezuelas lokkab korruptsioon ja varastavad riigijuhid käivad ringi nagu <b>harakad</b>.",
+        "pealinnAsukoht": "venezuela.png",
+        "seosPealinnPilt": "Venezuela - Caracas.png",
+        "lipp": "venezuela.png",
+        "seosLipp": "Üks kolmest kolla-sinipunasest Lõuna-Ameerika lipust. Lipul asuv <b>tähtedest U</b> viitab Venez<b>U</b>elale.",
+        "seosLippPilt": "Venezuela.png"
     }
 ]
