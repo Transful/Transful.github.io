@@ -1,0 +1,82 @@
+[
+    {
+        "nimi": "Belize",
+        "pealinn": "Belmopan",
+        "seosPealinn": "Kui kuninganna <b>(b)Eliza</b>beth külastas Mehhikko külje all asuvat Belize'i, serveeriti talle riigi püha hõrgutist - kuningliku roti, gibnuti, liha, mida serveeriti <b>pelmeenipannil</b>.",
+        "pealinnAsukoht": "belize.png",
+        "seosPealinnPilt": "Belize_i - Belmopan.png",
+        "lipp": "belize.png",
+        "seosLipp": "See lipp hoiab ühte rekordit: kõige rohkem erinevaid värve (12!) kõikide maailma lippude arvestuses. Lisaks on see ainus, mille keskseks elemendiks on inimene. Laulja Cheri kõige kuulsamaks lauluks on \"<b>Believe</b>\". Olgu tema need kaks meest seal lipul.",
+        "seosLippPilt": "Belize.png"
+    },
+    {
+        "nimi": "Costa Rica",
+        "pealinn": "San José",
+        "seosPealinn": "Costa Rica pealinn sai nime <b>Jeesuse legaalse isa, Joosepi</b> järgi. Tema kõrvus <b>kostab ikka</b> beebikisa.",
+        "pealinnAsukoht": "costa rica.png",
+        "seosPealinnPilt": "Costa Rica - San Jose.png",
+        "lipp": "costa_rica.png",
+        "seosLipp": "Costa Rica <b>lipu kaksik</b> on Tai lipp. Kuna Island asub Norrast läänepool ja Costa Rica asub Kesk-Ameerikas, on Costa Rica lipp sini-puna-sinine.",
+        "seosLippPilt": "CostaRica.png"
+    }, 
+    {
+        "nimi": "El Salvador",
+        "pealinn": "San Salvador",
+        "seosPealinn": "Riik, mille elanikkonnast 1% istub vanglas ja kus ametliku valuutana hakati lubama ka bitcoini. <b>San kui son</b> ehk pealinn, mis on riigist (isa) väiksem üksus.",
+        "pealinnAsukoht": "el-salvador.png",
+        "seosPealinnPilt": "El Salvador - San Salvador.png",
+        "lipp": "el_salvador.png",
+        "seosLipp": "<b>Kesk-Ameerikas</b> on mitmeid sarnastes toonides lippe (helesnine-valge-helesinine). See lipp on peaaegu identne Nicaragua omaga. Mõlemas riigis asuvad vulkaanid. Kuna El Salvador on <b>kahesõnaline riik</b> (võrreldes ühesõnalise Nicaraguaga), siis on selle lipu keskne vapp \"<b>segasem</b>\" ehk kaheosaline ehk lisaks kolmnurgale veel \"kaunistusi\".",
+        "seosLippPilt": "ElSalvador.png"
+    },
+    {
+        "nimi": "Guatemala",
+        "pealinn": "Guatemala",
+        "seosPealinn": "Guatemalast on pärit Duolingo asutaja Luis von Ahn ning pool riigi elanikkonnast on majade tsivilisatsiooni põliselanikud (\"Maailm lõppeb 2012. aastal!\"). Pealinn Guatemala City on <b>Kesk-Ameerika suurim linn</b>.",
+        "pealinnAsukoht": "guatemaala.png",
+        "seosPealinnPilt": "Guatemala - Guatemala City.png",
+        "lipp": "guatemala.png",
+        "seosLipp": "Ainus sini-valge-sini lipp Kesk-Ameerikas, mille lipuvärvid on vertikaalselt. Guatemala ise on kõige <b>vertikaalsema kujuga</b> Kesk-Ameerika riikide hulgas.",
+        "seosLippPilt": "Guatemala.png"
+    },
+    {
+        "nimi": "Honduras",
+        "pealinn": "Tegucigalpa",
+        "seosPealinn": "Gängiboss sõidab <b>Hondaga</b> juurde, laseb prillid alla ja ütleb: \"<b>Tee tegusid</b> ja saad <b>palka</b>.\"",
+        "pealinnAsukoht": "honduras.png",
+        "seosPealinnPilt": "Honduras - Tegucigalpa.png",
+        "lipp": "honduras.png",
+        "seosLipp": "Kesk-Ameerika riikidele kohaselt sini-valge-sini, aga Hondurase lippu eristab <b>H-täht lipul</b>.",
+        "seosLippPilt": "Honduras.png"
+    },
+    {
+        "nimi": "Mehhiko",
+        "pealinn": "México",
+        "seosPealinn": "Kunstnik Frida Kahlo ja näitleja Salma Hayeki kodumaa, mis tutvustas maailmale šokolaadi, chillit, maisi, Corona õlu, tekiilat ja värvilist televisiooni. <b>Pealinn Mexico City</b> ehitati keset järve asuvale saarele, mis-tõttu linn vajub, tekitades sellega mitmeid probleeme. ",
+        "pealinnAsukoht": "mehiko.png",
+        "seosPealinnPilt": "Mehhiko - Mexico City.png",
+        "lipp": "mehhiko.png",
+        "seosLipp": "Mehhiko lipu keskel on <b>kotkas, madu suus, kes istub viigikaktuse oksal</b>. Legendi järgi käskis päikesejumal rajada asteekidel linn sinna, kus nad näevadki just seda lipul kujutatavat stseeni. Asteegid nägid sellist pilti järve keskel ja sinna rajatigi Mexico City. ",
+        "seosLippPilt": "Mehhiko.png"
+    },
+    {
+        "nimi": "Nicaragua",
+        "pealinn": "Managua",
+        "seosPealinn": "Nicaraguas, mille nimi saadi, kui põlisrahvad \"Nicarao\" ühendati sõnaga vesi (aqua), asub maailma üks aktiivsemaid vulkaane. Vulkaan on nagu nõia pott, kus nõid, <b>nina raagus</b>, võlujooki keedab ja needusi <b>manab</b>.",
+        "pealinnAsukoht": "nikaragua.png",
+        "seosPealinnPilt": "Nicaragua - Managua.png",
+        "lipp": "nicaragua.png",
+        "seosLipp": "Kesk-Ameerikas on mitmeid sarnastes toonides lippe (helesnine-valge-helesinine). See lipp on peaaegu identne El Salvadori omaga. Mõlemas riigis asuvad vulkaanid. Kuna Nicaragua on <b>ühesõnaline riik</b> (võrreldes kahesõnalise El Salvadoriga), siis on selle lipu <b>keskne vapp \"puhtam\" ehk üheosaline</b>.",
+        "seosLippPilt": "Nicaragua.png"
+    },
+    {
+        "nimi": "Panama",
+        "pealinn": "Panamá",
+        "seosPealinn": "<b>Panama kanal</b> (valmis 1914. aastal) genereerib riigi 1/3st riigi majanduse kogu sissetulekust. Panama on <b>kui vanama</b>, kellel on ilmselt ka nimi, aga keda kõik kutsuvad ikka vanamaks.",
+        "pealinnAsukoht": "panama.png",
+        "seosPealinnPilt": "Panama - Panama.png",
+        "lipp": "panama.png",
+        "seosLipp": "Riiki läbib maailma laevaliiklusele oluline <b>Panama kanal</b>, mis ühendab Kariibi merd (punane) ja Vaikset ookeani.",
+        "seosLippPilt": "Panama.png"
+    }
+]

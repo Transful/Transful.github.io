@@ -1,0 +1,452 @@
+[
+    {
+        "nimi": "Albaania",
+        "pealinn": "Tirana",
+        "seosPealinn": "Lipul olev vapp meenutab nagu mõnd luksuslikku <b>tiaarat</b>.",
+        "pealinnAsukoht": "albaania.png",
+        "seosPealinnPilt": "Albaania - Tirana.png",
+        "lipp": "albaania.png",
+        "seosLipp": "Maailma kõige kuulsam albaanlane on hetkeseisuga poplaulja <b>Dua Lipa</b>, kes on <b>brünett</b> nagu lipul olev lind.",
+        "seosLippPilt": "Albaania.png"
+    },
+    {
+        "nimi": "Andorra",
+        "pealinn": "Andorra la Vella",
+        "seosPealinn": "Andorra la Vella tähendab \"<b>Andorra the town</b>\", mis eristab pealinna riigist.",
+        "pealinnAsukoht": "andorra.png",
+        "seosPealinnPilt": "Andorra - Andorra la Vella.png",
+        "lipp": "andorra.png",
+        "seosLipp": "Andorra asub <b>Hispaania ja Prantsusmaa vahel</b> ning riigi lipp on segu mõlemast. Riiki valitseb kaks printsi (piiskop ja Prantsusmaa president).",
+        "seosLippPilt": "Andorra.png"   
+    },
+    {
+        "nimi": "Austria",
+        "pealinn": "Viin",
+        "seosPealinn": "Austriast pärit märulistaar Arnold Schwarzenegger mägede vahel poseerimas, <b>viin</b> musklil.",
+        "pealinnAsukoht": "austria.png",
+        "seosPealinnPilt": "Austria - Viin.png",
+        "lipp": "austria.png",
+        "seosLipp": "Kui Austria hertsog Leopold V lahingust saabus, oli ta rüü verest läbi imbunud. Kui ta aga <b>rüü ära võttis</b>, oli riie selle alt <b>valge</b>.",
+        "seosLippPilt": "Austria.png"
+    },
+    {
+        "nimi": "Belgia",
+        "pealinn": "Brüssel",
+        "seosPealinn": "Belgias söövad tähtsad poliitikud tihti <b>Brüsseli kapsast</b>.",
+        "pealinnAsukoht": "belgia.png",
+        "seosPealinnPilt": "Belgia - Brüssel.png",
+        "lipp": "belgia.png",
+        "seosLipp": "Belgia vahvli tegemisel on kolm etappi: esimese <b>kõrvetad</b> ära, teine tuleb <b>perfektselt kuldne</b> ja kolmandale lisad ka <b>moosi</b>.",
+        "seosLippPilt": "Belgia.png"
+    }, 
+    {
+        "nimi": "Bosnia ja Hertsegoviina",
+        "pealinn": "Sarajevo",
+        "seosPealinn": "28. juunil 1914. aastal lasti Sarajevos maha Austria-Ungari troonipärija <b>Franz Ferdinand</b>, mis oli otseselt ajend I maailmasõja puhkemiseks.",
+        "pealinnAsukoht": "bosnia ja hertsegoviina.png",
+        "seosPealinnPilt": "Bosnia ja Hertsegoviina - Sarajevo.png",
+        "lipp": "bosnia_ja_hertsegoviina.png",
+        "seosLipp": "Lipu sinine ja tähed tähistavad <b>Euroopat</b> ning kolmnurk <b>kolme etnilist gruppi</b>: horvaate, moslemeid ja serblasi. Riik ei ole veel osa Euroopa Liidust.",
+        "seosLippPilt": "BosniaJaHertsegoviina.png"
+    },
+    {
+        "nimi": "Bulgaaria",
+        "pealinn": "Sofia",
+        "seosPealinn": "Kujuta ette Bulgaaria rahvusriietes <b>Sofiat</b>, näiteks \"Moodsast perekonnast\" tuntud Sofia Vergarat.",
+        "pealinnAsukoht": "bulgaaria.png",
+        "seosPealinnPilt": "Bulgaaria - Sofia.png",
+        "lipp": "bulgaaria.png",
+        "seosLipp": "Bulgaaria lipp on nagu <b>pleekunud</b> Venemaa lipp, mille sinisest on saanud roheline.",
+        "seosLippPilt": "Bulgaaria.png"
+    },
+    {
+        "nimi": "Eesti",
+        "pealinn": "Tallinn",
+        "seosPealinn": "Digiriik ja startuppide maa, mis on ühtlasi ka üks kõige vähem usklikke riike maailmas. Tallinna vanalinn on kõige paremini säilinud <b>keskaegne linn</b> Põhja-Euroopas. Tallinn kui <b>talvlinn</b>, sest seal on alati nii külm.",
+        "pealinnAsukoht": "eesti.png",
+        "seosPealinnPilt": "Eesti - Tallinn.png",
+        "lipp": "eesti.png",
+        "seosLipp": "Pilt talvisest Eestist: sinine <b>taevas</b>, must <b>mets</b> ja lumine <b>maa</b>.",
+        "seosLippPilt": "Eesti.png"
+    },
+    {
+        "nimi": "Hispaania",
+        "pealinn": "Madrid",
+        "seosPealinn": "Siesta, fiesta ja jalgpallimaa. Pealinnas tegutseb tuntud jalgpalliklubi <b>Real Madrid</b>, kellel on mänguplatsil alati <b><i>mad</i> riid</b> FC Barcelonaga.",
+        "pealinnAsukoht": "hispania.png",
+        "seosPealinnPilt": "Hispaania - Madrid.png",
+        "lipp": "hispaania.png",
+        "seosLipp": "Härjavõitluses, mis on populaarne vaatemäng Hispaanias, kasutab matadoor <b>punast rätikut</b>. Vapi erinevad elemendid tähistavad Hispaania eri osade (nt Granada, Navarra) sulandumist üheks riigiks.",
+        "seosLippPilt": "Hispaania.png"
+    }, 
+    {
+        "nimi": "Holland",
+        "pealinn": "Amsterdam",
+        "seosPealinn": "Van Gogh' kodumaa, mille pealinnas Amsterdamis varjas end Saksa okupatsiooni ajal ka päevikut pidanud Anne Frank. Lisaks on Amsterdam tuntu ka oma kanalite ja <b>tammidel</b> peesitavate <b>hamstrite</b> poolest.",
+        "pealinnAsukoht": "holland.png",
+        "seosPealinnPilt": "Holland - Amsterdam.png",
+        "lipp": "holland.png",
+        "seosLipp": "Kuigi kodumaa eest väljas olevaid hollandi jalgpallureid ja kergejõustiklasi näeb võistlusareenil hoopis <b>oranžides värvides</b>, siis lipul seda värvi ei ole. Lipu värvide ülesehituses ei ole midagi unikaalset, sest sarnane puna-valge-sinine lipp on veel ka Paraguayl ja peaaegu-naaberriigil Luxembourgil.",
+        "seosLippPilt": "Holland.png"
+    }, 
+    {
+        "nimi": "Horvaatia",
+        "pealinn": "Zagreb",
+        "seosPealinn": "Riigist on pärit <b>dalmaatsia koerad</b>, kes omakeskis sagivad ja rebivad nagu koerad ikka.",
+        "pealinnAsukoht": "horvaatia.png",
+        "seosPealinnPilt": "Horvaatia - Zagreb.png",
+        "lipp": "horvaatia.png",
+        "seosLipp": "Balkani piirkonna traditsioonilised pan-slaavi värvid, mida iseloomustab ruuduline vapp, mis võib viidata näiteks <b>jalgpallile</b>, mis on riigis au sees.",
+        "seosLippPilt": "Horvaatia.png"
+    }, 
+    {
+        "nimi": "Iirimaa",
+        "pealinn": "Dublin",
+        "seosPealinn": "Riik, kust sai alguse Halloween ja kust on pärit UFC-võitleja Conor McGregor. Samuti on riik <b>tubli</b> Eurovisioonil osaleja. Võite on rekordiliselt seitse, kusjuures Johnny Logan võitis võistluse kolmel korral (viimasel korral laulu autorina).",
+        "pealinnAsukoht": "iirimaa.png",
+        "seosPealinnPilt": "Iirimaa - Dublin.png",
+        "lipp": "iirimaa.png",
+        "seosLipp": "Roheline kui <b>ristikhein ja härjapõlvlased</b> ning oranž kui riigist alguse saanud Halloweeni traditsioon. Iirimaa lippu eristab Elevandiluuranniku omast vaid rohelise ja oranži vahetuses asukoht.",
+        "seosLippPilt": "Iirimaa.png"
+    },
+    {
+        "nimi": "Island",
+        "pealinn": "Reykjavik",
+        "seosPealinn": "Selleks, et näha ära kõik looduskaunid kohad (Sinine Laguun, vulkaanid) on vaja olla <b>reip ja virk</b>. ",
+        "pealinnAsukoht": "island.png",
+        "seosPealinnPilt": "Island - Reykjavik.png",
+        "lipp": "island.png",
+        "seosLipp": "Norra lipp, aga värvid on vahetuses.",
+        "seosLippPilt": "Island.png"
+    },
+    {
+        "nimi": "Itaalia",
+        "pealinn": "Rooma",
+        "seosPealinn": "Itaalias saab nii palju pitsat ja pastat süüa, et pärast peab koju <b>roomama</b>.",
+        "pealinnAsukoht": "itaalia.png",
+        "seosPealinnPilt": "Itaalia - Rooma.png",
+        "lipp": "itaalia.png",
+        "seosLipp": "Itaalia toidukultuurid: <b>spinat</b> (enamasti puistad peale), <b>mozzarella</b> ja <b>tomatid</b> (enamik toitude põhikomponent).",
+        "seosLippPilt": "Itaalia.png"
+    },
+    {
+        "nimi": "Kosovo",
+        "pealinn": "Priština",
+        "seosPealinn": "Euroopa noorim riik, mille ametlikeks keelteks on albaania ja serbia keel ning vaatamata sellele, et ei olda veel osa EL-ist, on käibel euro. Riigi kuulsaim inimene on poplaulja Rita Ora, kes on võitnud <b>prestiižseid</b> auhindu.",
+        "pealinnAsukoht": "kosovo.png",
+        "seosPealinnPilt": "Kosovo pealinn - Priština.png",
+        "lipp": "kosovo.png",
+        "seosLipp": "Lipul on kujutatud Kosovo <b>riiki</b> (nagu Küproselgi) ja valged tähed sümboliseerivad Kosovo <b>kuut etnilist rühma</b>. 1 kahest sellisest riigist.",
+        "seosLippPilt": "Kosovo.png"
+    },
+    {
+        "nimi": "Kreeka",
+        "pealinn": "Ateena",
+        "seosPealinn": "Rikka ajaloo ja kultuuri (ja valitsuse võlakriisi) poolest tuntud riik, mille pealinn sai nime <b>tarkuse ja sõjajumalanna Ateena</b> järgi. Väidetavalt võitles linnale nime andmise õiguse eest ka Poseidon, aga tema kinkis rahvale vee, samas kui Ateena kinkis oliivipuu, mis andis nii õli, toitu kui ka puitu ning tundus rahvale seega väärtuslikum.",
+        "pealinnAsukoht": "kreeka.png",
+        "seosPealinnPilt": "Kreeka - Ateena.png",
+        "lipp": "kreeka.png",
+        "seosLipp": "Kreeka sportlased on olümpiamängudel sportlaste paraadi esimene riik, sest Kreeka on paik, kust antiik- ja nüüdisaja <b>olümpiamängud</b> sündisid. Riigi rahvusvärvid on sinine ja valge.",
+        "seosLippPilt": "Kreeka.png"
+    },
+    {
+        "nimi": "Küpros",
+        "pealinn": "Nikosia",
+        "seosPealinn": "Riik, mille rannal sündis merevahust Aphrodite, kus on rohkem kasse kui inimesi ning mille territooriumi kuju on sigaripiibu kujuga. Riigis suitsetatakse palju ja tarbitakse seega palju <b>nikotiini</b>.",
+        "pealinnAsukoht": "küpros.png",
+        "seosPealinnPilt": "Küpros - Nikosia.png",
+        "lipp": "küpros.png",
+        "seosLipp": "Lipul on <b>saare kuju</b> (oranž kui vask, mida on saarel palju) ja kaks <b>oliivioksa</b>, mis sümboliseerivad rahu Kreeka ja Türgi küproslaste vahel. Väidetavalt ärkas just Küprose rannal ellu Aphrodite.",
+        "seosLippPilt": "Küpros.png"
+    },
+    {
+        "nimi": "Leedu",
+        "pealinn": "Vilnius",
+        "seosPealinn": "Merevaigujuveelide ja kettaheitesangarite poolest tuntud Leedu, mille rahvusport on korvpall. Mängijate jalad on suurest mängimisest tihti <b>villis</b>. Leedu keel on üks maailma vanimaid säilinud keeli maailmas.",
+        "pealinnAsukoht": "leedu.png",
+        "seosPealinnPilt": "Leedu - Vilnius.png",
+        "lipp": "leedu.png",
+        "seosLipp": "Taevas särav <b>päike</b>, roheline <b>muru</b> ja maasse peidetud Leedu eest valatud <b>veri</b>.",
+        "seosLippPilt": "Leedu.png"
+    }, 
+    {
+        "nimi": "Liechtenstein",
+        "pealinn": "Vaduz",
+        "seosPealinn": "40 000 elaniku ja ühe miljardäriga riik, mis oli viimane Euroopa riik, mis andis naistele valimisõiguse (1984). 2001. aastal ähvardas riigi prints riigi Bill Gates'ile maha müüa, kui avalikkus ei toetanud tema põhiseaduslikke reforme tema volituste suurendamiseks: \"Te <b>vanad ussid!</b>\"",
+        "pealinnAsukoht": "litsenstein.png",
+        "seosPealinnPilt": "Liechtenstein - Vaduz.png",
+        "lipp": "liechtenstein.png",
+        "seosLipp": "1936. aasta suveolümpial leiti, et Haiti lipp oli Liechtensteiniga sarnase disainiga. Et vältida segadust tulevikus, lisati Liechtensteini lipule järgmisel aastal <b>kuldne kroon</b>.",
+        "seosLippPilt": "Liechtenstein.png"
+    }, 
+    {
+        "nimi": "Luksemburg",
+        "pealinn": "Luxembourg",
+        "seosPealinn": "5x Eurovisiooni võitnud riigi motoks on \"<b>Tahame jääda selleks, kes oleme</b>\". Riigi tollasest peaministrist Xavier Bettelist sai esimene EL-i liider, kes astus samasoolisse abiellu. Tegu on ühe maailma rikkaima riigiga, mille miinimumpalk on 2571€ kuus (2023) ja mille pool tööjõust on piiriülesed \"pendelrändurid\".",
+        "pealinnAsukoht": "luxembourg.png",
+        "seosPealinnPilt": "Luxembourg - Luxembourg.png",
+        "lipp": "luksemburg.png",
+        "seosLipp": "Lipul on sarnane ülesehitus Hollandi ja Paraguay lippudele, aga siiski...<b>Luxembourger</b>.",
+        "seosLippPilt": "Luksemburg.png"
+    }, 
+    {
+        "nimi": "Läti",
+        "pealinn": "Riia",
+        "seosPealinn": "Lido (restoranikett), Jelena Ostapenko (tennisist) ja Mark Rothko (kunstnik, kelle kallim maal müüdi 186 miljoni dollari eest) sünnimaa. Riigis sündis ka teksapükste leiutaja Jacob William Davis. Kui Lätit külastada, tuleb ka <b>Riia palsamit</b> proovida.",
+        "pealinnAsukoht": "läti.png",
+        "seosPealinnPilt": "Läti - Riia.png",
+        "lipp": "läti.png",
+        "seosLipp": "Üks <b>maailma vanimaid lippe</b> (kasutuses aastast 1279) Taani järel. Lipu ülesehitus on sarnane Austria omale.",
+        "seosLippPilt": "Läti.png"
+    },
+    {
+        "nimi": "Malta",
+        "pealinn": "Valletta",
+        "seosPealinn": "150 aastat brittide võimu all olnud riik, mille mõjud on näha ka tänapäeval: inglise keel, vasakpoolne liiklus ja punased telfonikastid. Malta oli 2. maailmasõja pommitatuim riik ning Eurovisioon on nende jaoks sisuliselt riigipüha. Nad oleksid valmis ostma korraldamisõigusi, sest neil on paks <b>wallet</b>.",
+        "pealinnAsukoht": "malta.png",
+        "seosPealinnPilt": "Malta - Valletta.png",
+        "lipp": "malta.png",
+        "seosLipp": "Malta mitteametlikku valge-punast lippu täiendati 28. detsembril 1943 <b>George'i risti kujutisega</b>. Nimelt andis kuningas George VI Malta rahvale üle sõjalise teenetemärgi Malta kangelasliku kaitsmise eest teise maailmasõja ajal. ",
+        "seosLippPilt": "Malta.png"
+    },
+    {
+        "nimi": "Moldova",
+        "pealinn": "Chișinău",
+        "seosPealinn": "Üks Euroopa vähim külastatud riike, mis on tuntud oma veinide poolest. Riigis on esinenud ka maavärinaid. <b>Hallitusega</b> toas (<i>mold</i> ingl k) on <b>juustune</b> (<i>cheesy</i>) <b>njäu</b> (<i>cat</i>).",
+        "pealinnAsukoht": "moldova.png",
+        "seosPealinnPilt": "Moldova - Chisinau.png",
+        "lipp": "moldova.png",
+        "seosLipp": "Moldova <b>lipu värvide järjestus</b> on identne Andorra ja Rumeenia omaga. Kuna Rumeenia on Moldovast suurem on suuremal justkui \"õigus\" kasutada vaid põhivärve. Andorra lipu jaotatud ruutude vapp viitab riiki valitsevalt kahele printsile.",
+        "seosLippPilt": "Moldova.png"
+    },
+    {
+        "nimi": "Monaco",
+        "pealinn": "Monaco",
+        "seosPealinn": "Vatikani järel <b>väiksuselt teine riik maailmas</b>, mis on tuntud oma kuulsa Monte Carlo kasiino ja Vormel-1 etapi poolest. Iga kolmas Monaco elanik on miljonär ja enamik neist on välismaal sündinud. Riigi prints abieluus 1956. aastal Hollywoodi staar Grace Kelly'ga.",
+        "pealinnAsukoht": "monaco.png",
+        "seosPealinnPilt": "Monaco - Monaco.png",
+        "lipp": "monaco.png",
+        "seosLipp": "Monaco asub <b>Prantsusmaa suhtes paremal all</b> ning riigi lipp on nagu Prantsusmaa kaks paremapoolset värvi ehk punane ja valge. Sarnase ülesehitusega lipud on veel Indoneesial ja Poolal.",
+        "seosLippPilt": "Monaco.png"
+    },
+    {
+        "nimi": "Montenegro",
+        "pealinn": "Podgorica",
+        "seosPealinn": "Serbiast 2006. aastal iseseisvunud populaarne turismiriik, mis tähendab \"<b>musta mäge</b>\". Musta mäe juures asuv <b>pood</b>, kuhu <b>lähed</b> (<i>go</i> ingl k) <b>ikka</b>.",
+        "pealinnAsukoht": "montenegro.png",
+        "seosPealinnPilt": "Montenegro - Podgorica.png",
+        "lipp": "montenegro.png",
+        "seosLipp": "Montenegro tähendab \"<b>musta mäge</b>\", mille otsas kükitab Montenegro sümbol - kahepealine kotkas.",
+        "seosLippPilt": "Montenegro.png"
+    },
+    {
+        "nimi": "Norra",
+        "pealinn": "Oslo",
+        "seosPealinn": "Fjordide, suusatamise, lõhe, virmaliste ja naftast saadud rikkuse poolest tuntud riik, milles asub ka vulkaan (Jan Mayeni saarel). Kuidas end Norras <b>slow</b>'na tunda? Mine norrakatega suusatama. Maailma tuntuimad norrakad on Jo Nesbø, Erling Haaland, Edvar Grieg, Edvard Munch, Magnus Carlsen, Astrid S, Karsten Warholm.",
+        "pealinnAsukoht": "norra.png",
+        "seosPealinnPilt": "Norra - Oslo.png",
+        "lipp": "norra.png",
+        "seosLipp": "Tundub, et tegelik <b>ema</b> kõikidel lippudel ole ikka Norra lipp.",
+        "seosLippPilt": "Norra.png"
+    },
+    {
+        "nimi": "Poola",
+        "pealinn": "Varssavi",
+        "seosPealinn": "Koperniku, Chopini, Curie ja Lewandowski kodumaa, mis kadus <b>2. maailmasõja</b> ajal peaaegu kaardilt, muuhulgas tegid natside pommid maatasa Varssavi (<b>War-savi</b>).",
+        "pealinnAsukoht": "poola.png",
+        "seosPealinnPilt": "Poola - Varssavi.png",
+        "lipp": "poola.png",
+        "seosLipp": "Lipp, mida on kerge sassi ajada Indoneesia ja Monaco lippudega. Poola lipp on nagu <b>siniseta Venemaa (lipp)</b>. 2. maailmasõja ajal \"jagas\" NSVL riigi \"koostöös\" Natsi-Saksamaaga pooleks.",
+        "seosLippPilt": "Poola.png"
+    },
+    {
+        "nimi": "Portugal",
+        "pealinn": "Lissabon",
+        "seosPealinn": "Rebane (лиса) Portugali jalgpallimeeskonna võistlusvormis.",
+        "pealinnAsukoht": "portugal.png",
+        "seosPealinnPilt": "Portugal - Lissabon.png",
+        "lipp": "portugal.png",
+        "seosLipp": "<b>Ronaldo</b> Portugali võistlusdressis. Roheline enne, sest Ronaldo.",
+        "seosLippPilt": "Portugal.png"
+    },
+    {
+        "nimi": "Prantsusmaa",
+        "pealinn": "Pariis",
+        "seosPealinn": "<b>Armastuse ja valguse</b> linn Pariis, kus asub maailma suurim kunstimuuseum (Louvre) ja Notre-Dame ",
+        "pealinnAsukoht": "prantsusmaa.png",
+        "seosPealinnPilt": "Prantsusmaa - Pariis.png",
+        "lipp": "prantsusmaa.png",
+        "seosLipp": "Kolme värvi kombinatsioon sümboliseerib kuninga ja rahva vahelist liitu, olles nii ühtse Prantsusmaa sümbol, kusjuures lipp loodi Prantsuse revolutsiooni ajal 1789. aastal. Valge oli kuninga värv. Sinine ja punane olid Pariisi linna värvid.",
+        "seosLippPilt": "Prantsusmaa.png"
+    },
+    {
+        "nimi": "Põhja-Makedoonia",
+        "pealinn": "Skopje",
+        "seosPealinn": "Lipul olevad päiksekiired oleks nagu tiirlevad <b>skjopteri</b> tiivikud.",
+        "pealinnAsukoht": "põhja makedoonia.png",
+        "seosPealinnPilt": "Põhja-Makedoonia - Skopje.png",
+        "lipp": "põhja-makedoonia.png",
+        "seosLipp": "Makedoonia on <b>Kreeka iidse piirkonna</b> nimi (Alexander Suur). Kreeka kardab, et seda nime (enne, kui muudeti Põhja-Makedooniaks) kasutades seatakse väljakutse Kreeka rahvuslikule identiteedile varastatakse nende ajalugu. Lipul on vabaduse uus päike.",
+        "seosLippPilt": "PõhjaMakedoonia.png"
+    },
+    {
+        "nimi": "Rootsi",
+        "pealinn": "Stockholm",
+        "seosPealinn": "Eestis on pisut Stockholmi - <b>Stockmann</b>.",
+        "pealinnAsukoht": "rootsi.png",
+        "seosPealinnPilt": "Rootsi - Stockholm.png",
+        "lipp": "rootsi.png",
+        "seosLipp": "Väidetavalt on kujundus inspireeritud Taani lipust Dannebrogist. Pildil on Rootsi kaks tuntuiat sportlast Zlatan Ibrahimovic ja Mondo Duplantis riigi rahvusvärvides <b>võistlusvormis</b>.",
+        "seosLippPilt": "Rootsi.png"
+    },
+    {
+        "nimi": "Rumeenia",
+        "pealinn": "Bukarest",
+        "seosPealinn": "Riigis asub maailma suuruselt teine hoone (Pentagoni järel), mille lasi omal ajal ehitada kurikuulus kommunistlik diktaator Ceausescu, kes keelustas riigis muuhulgas rasestumisvastased vahendid elanikkonna kasvatamiseks. Aastaks 1989 oli lastekodudes 170 000 orvu. Transilvaanias <b>puhkab (restib)</b> väidetavalt ka krahv Dracula.",
+        "pealinnAsukoht": "rumeenia.png",
+        "seosPealinnPilt": "Rumeenia - Bukarest.png",
+        "lipp": "rumeenia.png",
+        "seosLipp": "Tšaadi ja Rumeenia lipud on ainsad maailmalipud, mis on omavahel <b>sisuliselt identsed</b>. Riikide meeldejätmiseks kujuta ette, kuidas keegi<b>(t)saeb saega rummipudelit</b>.",
+        "seosLippPilt": "Rumeenia.png"
+    },
+    {
+        "nimi": "Saksamaa",
+        "pealinn": "Berliin",
+        "seosPealinn": "Erinevatel ajalooperioodidel väga tähtsat rolli mänginud linn. Enim on näiteks tuntud <b>Berliini müür</b>, mis eraldas Berliini idaosa lääneosast 28 aastaks.",
+        "pealinnAsukoht": "saksamaa.png",
+        "seosPealinnPilt": "Saksamaa - Berliin.png",
+        "lipp": "saksamaa.png",
+        "seosLipp": "<b>Pimedusest</b> ja <b>verest</b> kuldse <b>hiilguseni</b>.",
+        "seosLippPilt": "Saksamaa.png"
+    },
+    {
+        "nimi": "San Marino",
+        "pealinn": "San Marino",
+        "seosPealinn": "Merepiirita <b>kääbusriik</b>, mille maismaapiiri kogupikkus on 37 kilomeetrit. Riik sai nime asutaja Püha Marinuse järgi.",
+        "pealinnAsukoht": "san marino.png",
+        "seosPealinnPilt": "San Marino - San Marino.png",
+        "lipp": "san_marino.png",
+        "seosLipp": "Vapil asuvad <b>kindlused</b> ja mäetipust avaneb valge-sinine vaade.",
+        "seosLippPilt": "SanMarino.png"
+    },
+    {
+        "nimi": "Serbia",
+        "pealinn": "Belgrad",
+        "seosPealinn": "Kõige kuulsam serblane number üks, Nikola Tesla, <b>pelgas</b> pisikuid ja pärle. Kõige kuulsam number kaks, Novak Djokovic, <b>pelgab</b> karjääri lõpetamist.",
+        "pealinnAsukoht": "serbia.png",
+        "seosPealinnPilt": "Serbia - Belgrad.png",
+        "lipp": "serbia.png",
+        "seosLipp": "<b>Pan-slaavi</b> traditsioonilised värvid. Tagurpidi Venemaa lipp. Eristab lipul olev vapp, mis kuulus ühele dünastiale ehk <b>sir'idele</b> (söör-bia).",
+        "seosLippPilt": "Serbia.png"
+    },
+    {
+        "nimi": "Slovakkia",
+        "pealinn": "Bratislava",
+        "seosPealinn": "Juutuuber David Dobrik on pärit Slovakkiast. Tema videod on eriilmelised. Näiteks mängib ta ühes oma vennaga (<b>brat</b> vene k) mängu \"Floor <b>is lava</b>\".",
+        "pealinnAsukoht": "slovakkia.png",
+        "seosPealinnPilt": "Slovakkia - Bratislava.png",
+        "lipp": "slovakkia.png",
+        "seosLipp": "Sloveenia ja Slovakkia lipud on sarnased. Slovakkia lipu vapp meenutab <b>automarki</b> (\"slovakKIA!\") ning vapil on viide ka mägedele.",
+        "seosLippPilt": "Slovakkia.png"
+    },
+    {
+        "nimi": "Sloveenia",
+        "pealinn": "Ljubljana",
+        "seosPealinn": "Ljubov on vene keeles armastus ehk siis s<b>LOVE</b>enia ja <b>LJUB</b>ljana.",
+        "pealinnAsukoht": "sloveenia.png",
+        "seosPealinnPilt": "Sloveenia - Ljubljana.png",
+        "lipp": "sloveenia.png",
+        "seosLipp": "Pan-slaavi traditsioonilised värvid (kõige sarnasemad Slovakkia ja Venemaa). Vapil on näha slo<b>VEENID</b>.",
+        "seosLippPilt": "Sloveenia.png"
+    },
+    {
+        "nimi": "Soome",
+        "pealinn": "Helsingi",
+        "seosPealinn": "Maailma kõige õnnelikumaks riigiks ja \"tuhande järve maaks\" peetav Soome on kuulus saunakultuuri, kalevipoegade, Sibeliuse, Muumide, \"Angry Birds'i\", Kimi Räikkoneni ja Käärijä (\"Cha-cha-cha\") poolest. Kui juba Soomes, siis ikka <b>heledat sinki</b>.",
+        "pealinnAsukoht": "soome.png",
+        "seosPealinnPilt": "Soome - Helsingi.png",
+        "lipp": "soome.png",
+        "seosLipp": "Sinine sümboliseerib Soome \"<b>Tuhande järve maa</b>\" staatust ja valge lund, mis katab Soomet talvel.",
+        "seosLippPilt": "Soome.png"
+    },
+    {
+        "nimi": "Suurbritannia",
+        "pealinn": "London",
+        "seosPealinn": "Kes see <b>blond on</b>? Boris Johnson, UK endine peaminister.",
+        "pealinnAsukoht": "suurbritania.png",
+        "seosPealinnPilt": "Suurbritannia - London.png",
+        "lipp": "suurbritannia.png",
+        "seosLipp": "\"Union Jack\" on saadud Inglismaa, Šotimaa ja Iirimaa Püha Patricku lipu <b>kombineerimisel</b>. Ühendriigi koosseisu kuulub veel ka Wales.",
+        "seosLippPilt": "Suurbritannia.png"
+    },
+    {
+        "nimi": "Šveits",
+        "pealinn": "Bern",
+        "seosPealinn": "Multika \"Kuidas taltsutada lohet\" tegevuspaik on <b>Berkis</b>. Linn sarnaneb ülesehituselt Bernile.",
+        "pealinnAsukoht": "sveits.png",
+        "seosPealinnPilt": "Sveits - Bern.png",
+        "lipp": "šveits.png",
+        "seosLipp": "Šveitsi on neutraalne, nagu ka lahinguväljale appi tormavad <b>meedikud</b>.",
+        "seosLippPilt": "Sveits.png"
+    },
+    {
+        "nimi": "Taani",
+        "pealinn": "Kopenhaagen",
+        "seosPealinn": "<b>Open hagen</b> ('aed' norra keeles) ehk mittemägine avatud aiake, mida iseloomustavad näiteks hygge, jalgratturid, tudengid ja värvikad majad.",
+        "pealinnAsukoht": "taani.png",
+        "seosPealinnPilt": "Taani - Kopenhaagen.png",
+        "lipp": "taani.png",
+        "seosLipp": "<b>Vanim</b> pidevalt kasutuses olnud riigilipp. Legendi järgi nähti <b>lippu taevas</b> keset taanlaste ja eestlaste vahelist lahingut. Ilmutus andis taanlastele jõudu võiduni võidelda.",
+        "seosLippPilt": "Taani.png"
+    },
+    {
+        "nimi": "Tšehhi",
+        "pealinn": "Praha",
+        "seosPealinn": "\"Et Tšehhi siis odav riik?\" \"P-<b>raha</b>-hahahah-ahaha.\"",
+        "pealinnAsukoht": "tsehhi.png",
+        "seosPealinnPilt": "Tsehhi - Praha.png",
+        "lipp": "tšehhi.png",
+        "seosLipp": "<b>Poola</b> (valge-punane) on Tšehhi (sinine) <b>naaberriik</b>.",
+        "seosLippPilt": "Tšehhi.png"
+    },
+    {
+        "nimi": "Ukraina",
+        "pealinn": "Kiiev",
+        "seosPealinn": "Ukraina president <b>Zelenskõi Kiievi kotletti</b> söömas.",
+        "pealinnAsukoht": "ukraina.png",
+        "seosPealinnPilt": "Ukraina - Kiiev.png",
+        "lipp": "ukraina.png",
+        "seosLipp": "Sinine <b>taevas</b> kuldse <b>viljapõllu</b> kohal (Ukraina on üks maailma suurimaid põllumajandustootjaid- ja eksportijaid).",
+        "seosLippPilt": "Ukraina.png"
+    },
+    {
+        "nimi": "Ungari",
+        "pealinn": "Budapest",
+        "seosPealinn": "Laulja George Ezra laulmas Budapestis oma hittlaulu \"<b>Budapest</b>\".",
+        "pealinnAsukoht": "ungari.png",
+        "seosPealinnPilt": "Ungari - Budapest.png",
+        "lipp": "ungari.png",
+        "seosLipp": "\"<b>Italy</b>, you are not you when you are <b>Hung(a)ry</b>.\"",
+        "seosLippPilt": "Ungari.png"
+    },
+    {
+        "nimi": "Valgevene",
+        "pealinn": "Minsk",
+        "seosPealinn": "Lukašenka on kui <b>mink</b>, kes on oma tegevusega välja söönud euroopa naaritsa.",
+        "pealinnAsukoht": "valgevene.png",
+        "seosPealinnPilt": "Valgevene - Minsk.png",
+        "lipp": "valgevene.png",
+        "seosLipp": "Riiki valitseb diktaator Lukašenka, kelle põhimõtted sobituvad endiselt kommunismi raamidesse. Lipuna on kasutusel <b>NSVL-aegse</b> lipu kohandatud versioon.",
+        "seosLippPilt": "Valgevene.png"
+    },
+    {
+        "nimi": "Vatikan",
+        "pealinn": "Vatikan",
+        "seosPealinn": "Tegu on väga väikese riigiga (<b>Euroopa väikseim</b>). Eraldi pealinnale poleks lihtsalt ruumi.",
+        "pealinnAsukoht": "vatikan.png",
+        "seosPealinnPilt": "Vatikan - Vatikan.png",
+        "lipp": "vatikan.png",
+        "seosLipp": "Lipul on <b>paavstile viitav peaehe</b>.",
+        "seosLippPilt": "Vatikan.png"
+    }
+  ]

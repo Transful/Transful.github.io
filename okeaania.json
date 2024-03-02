@@ -1,0 +1,142 @@
+[
+    {
+        "nimi": "Austraalia",
+        "pealinn": "Canberra",
+        "seosPealinn": "<b>Kängurumaast</b> Austraalia on ainus riik, mis on ka manner. Pealinnaks pakutakse tihti ka Sydney't ja Melbourne'i, aga kompromissiks valiti Canberra juba aastal 1908. ",
+        "pealinnAsukoht": "austraalia.png",
+        "seosPealinnPilt": "Austraalia - Canberra.png",
+        "lipp": "austraalia.png",
+        "seosLipp": "Austraalia ja Uus-Meremaa lipud on päris sarnased. Sümboliseerigu Austraalia lipul asuv suurem valge täht AUSile kuuluvat <b>Tasmaania saart</b>.",
+        "seosLippPilt": "Austraalia.png"
+    },
+    {
+        "nimi": "Belau",
+        "pealinn": "Ngerulmud",
+        "seosPealinn": "Kuna lipu seos on \"Teletupsudest\", võiks ette kujutada <b>nigelate kulmudega</b> teletupsusid.",
+        "pealinnAsukoht": "belau.png",
+        "seosPealinnPilt": "Belau - Ngerulmud.png",
+        "lipp": "belau.png",
+        "seosLipp": "Lipp meenutab armsat <b>beebipäikest</b> \"Teletupsudest\". Beebidele tehakse tuti-pluti-belau-blau. Belau nagu <b>blue</b> ehk sinine.",
+        "seosLippPilt": "Belau.png"
+    }, 
+    {
+        "nimi": "Fidži",
+        "pealinn": "Suva",
+        "seosPealinn": "<b>Sokifirma Suva</b> ei <b>viitsi</b> Fidžile laieneda, kuna seal lihtsalt ei kanta sokke.",
+        "pealinnAsukoht": "fiji.png",
+        "seosPealinnPilt": "Fidži - Suva.png",
+        "lipp": "fidži.png",
+        "seosLipp": "Kuigi riik iseseisvus 1970. aastal, oli Fidži <b>Briti koloonia. Helesinine taust</b> viitab sellele, et asub Okeaanias ja et tegu on eraldatud saareriigiga. Lõvi riigi vapil on nagu \"Ma ei <b>fiji</b> enam!\"",
+        "seosLippPilt": "Fidži.png"
+    }, 
+    {
+        "nimi": "Kiribati",
+        "pealinn": "Tarawa",
+        "seosPealinn": "Ainus maailma riik, mis asub kõigis neljas hemisfääris ja riik, mis tähistab kõige esimesena uut aastat. Kui lähed paadiga sõitma, on sul sinna vaja <b>tagavara</b>.",
+        "pealinnAsukoht": "kiribati.png",
+        "seosPealinnPilt": "Kiribati - Tarawa.png",
+        "lipp": "kiribati.png",
+        "seosLipp": "Esimene riik, kuhu saabub uusaasta ehk lipul on <b>tõusev päike</b>, mis seda sümboliseerib.",
+        "seosLippPilt": "Kiribati.png"
+    },
+    {
+        "nimi": "Marshalli saared",
+        "pealinn": "Majuro ",
+        "seosPealinn": "Veetaseme tõusu pärast ohus olev saareriik, mille julgeolekut ja kaitset kontrollib endiselt USA, kes kasutas aastaid Marshalli saari tuumakatsetusteks (kokku lõhati 67 aatomipommi, muuhulgas esimene vesinikupomm, mis oli 1000x võimsam kui Hiroshima \"Little Boy\"). <b>Maailmas</b> toimuv <b>jura</b> on põhjus, miks seda riiki peagi ei eksisteeri.",
+        "pealinnAsukoht": "marshalli saared.png",
+        "seosPealinnPilt": "Marshalli Saared - Majuro.png",
+        "lipp": "marshalli_saared.png",
+        "seosLipp": "Riigis lõhati maailma esimene vesinikupomm (1000x võimsam kui Hiroshimale visatud), mille <b>plahvatust</b> võiks sümboliseerida valge mitmeharuline täht. Asukohale <b>Vaikses ookeanis</b> viitab tumesinine taust.",
+        "seosLippPilt": "MarshalliSaared.png"
+    },
+    {
+        "nimi": "Mikroneesia",
+        "pealinn": "Palikir",
+        "seosPealinn": "Neljast suuremast saarest koosnev riik, mis on sukeldujate paradiis. Mikroneesia on nii pisike, et kaardilt selle \"<b>pealkirja</b>\" leidmine võib peavalu valmistada.",
+        "pealinnAsukoht": "mikroneesia.png",
+        "seosPealinnPilt": "Mikroneesia - Palikir.png",
+        "lipp": "mikroneesia.png",
+        "seosLipp": "Riik koosneb <b>neljast \"suuremast\" saarest</b>, mida on tähekestena ka lipul kujutatud. ",
+        "seosLippPilt": "Mikroneesia.png"
+    },
+    {
+        "nimi": "Nauru",
+        "pealinn": "Yaren",
+        "seosPealinn": "Maailma kõige vähem külastatud riik, mis on suurem vaid Vatikanist ja Monacost ning mille ülemäärane fosfaadi kaevandamine viis riigi sisuliselt pankrotti. Riigi elanikest on üle 60% ülekaalulised (nad <b>järavad</b> süüa), mis teeb neist paksimate inimestega rahva.",
+        "pealinnAsukoht": "nauru.png",
+        "seosPealinnPilt": "Nauru - Yaren.png",
+        "lipp": "nauru.png",
+        "seosLipp": "Lipp sümboliseerib riigi <b>asukohta</b> ookeanis ja selle väiksust.",
+        "seosLippPilt": "Nauru.png"
+    },
+    {
+        "nimi": "Paapua Uus-Guinea",
+        "pealinn": "Port Moresby",
+        "seosPealinn": "Paapua Uus-<b>Linguea</b> - linguistiliselt kõige mitmekesisem riik maailmas. Koduks vähemalt 840 eluskeelele: Tok Pisin, Hiri Motu, Underdeutsch, aga <b>more to be</b>. Lisaks elab riigis üks maailma vähestest mürgistest lindudest. ",
+        "pealinnAsukoht": "paapua uus quiana.png",
+        "seosPealinnPilt": "Paapua Uus-Guinea - Port Moresby.png",
+        "lipp": "paapua_uus-guinea.png",
+        "seosLipp": "Lõuna Rist näitab, et riik asub lõunapoolkeral. Kui su vana merisiga läheb taevasse ingliks, kingib <b>papa sulle uue guinea pig'i</b> (merisea).",
+        "seosLippPilt": "PaapuaUusGuinea.png"
+    },
+    {
+        "nimi": "Saalomoni saared",
+        "pealinn": "Honiara",
+        "seosPealinn": "Umbes 1000 saarest koosnev riik, millele pani nime Hispaania meresõitja Alvaro de Mendana, kes arvas, et tegu oli piirkonnaga, kust kuningas Saalomon sai kulla, mida kasutas oma Jeruusalemma templi ehitamiseks. Iga mõistlik naine oma mehele, kes läheb kulda otsima: \"<b>Honey, ära</b> mine!\"",
+        "pealinnAsukoht": "saalomoni saared.png",
+        "seosPealinnPilt": "Saalomoni Saared - Honiara.png",
+        "lipp": "saalomon_saared.png",
+        "seosLipp": "Kujuta ette suusatajat, kes sõidab tähtede vahel <b>slaalomit</b>. Viis valget tähte tähistavad viit provintsi, mis algselt riigi moodustasid.",
+        "seosLippPilt": "SaalomoniSaared.png"
+    },
+    {
+        "nimi": "Samoa",
+        "pealinn": "Apia",
+        "seosPealinn": "Samoa on tuntud oma tätoveeringute poolest, kusjuures sõna \"tattoo\" tulebki samoa sõnast \"tatau\". Kuna neid tätoveeringuid ei tehta tavapärase püstoliga, vaid toksides, võid tätoveeringut saades karjuda: \"<b>Appi, ai!</b>\".",
+        "pealinnAsukoht": "samoa.png",
+        "seosPealinnPilt": "Samoa - Apia.png",
+        "lipp": "samoa.png",
+        "seosLipp": "Kuigi Samoa asub Tongast umbes 800km kaugusel, on tegu \"naabersaartega\". Sarnane lipu <b>ülesehitus</b>. Samoa kasutab lipul <b>sama</b> Lõunaristi, mis AUSi lipp.",
+        "seosLippPilt": "Samoa.png"
+    },
+    {
+        "nimi": "Tonga",
+        "pealinn": "Nuku'alofa",
+        "seosPealinn": "Legendaarne Tonga suusataja nägi olümpia avatseremoonial välja nagu <b>nukk, aloha</b> (vihje: Tongal on keskmine temperatuur 26 kraadi).",
+        "pealinnAsukoht": "175.png",
+        "seosPealinnPilt": "Tonga - Nukualofa.png",
+        "lipp": "tonga.png",
+        "seosLipp": "Siis, kui teed sõbrale <b>tünga</b>:",
+        "seosLippPilt": "Tonga.png"
+    },
+    {
+        "nimi": "Tuvalu",
+        "pealinn": "Funafuti",
+        "seosPealinn": "Maailma väikseim riik, millel on pealinn. Nii riigi nimes kui ka pealinnas on kaks <b>u-d. Vutimuna</b> on väikseim muna, mida Eestis sööme.",
+        "pealinnAsukoht": "tuvalu.png",
+        "seosPealinnPilt": "Tuvalu - Funafuti.png",
+        "lipp": "tuvalu.png",
+        "seosLipp": "Tuvalu koosneb <b>üheksast saarest</b>, millel on oht jääda kliimamuutuste tõttu täielikult vee alla (täielik <b>valu</b>!). Riigi minister pidas selleteemalise kõne põlvedeni vees.",
+        "seosLippPilt": "Tuvalu.png"
+    },
+    {
+        "nimi": "Uus-Meremaa",
+        "pealinn": "Wellington",
+        "seosPealinn": "Et reisida Uus-Meremaale, peas sul olema <b>well income</b>, sest riik asub nii kaugel Eestist.",
+        "pealinnAsukoht": "uus meremaa.png",
+        "seosPealinnPilt": "Uus-Merema - Wellington.png",
+        "lipp": "uus-meremaa.png",
+        "seosLipp": "Lipp on sarnane Austraalia omaga, aga Uus-Meremaal <b>pole Tasmaaniat</b> (suurt valget tähte).",
+        "seosLippPilt": "UusMeremaa.png"
+    },
+    {
+        "nimi": "Vanuatu",
+        "pealinn": "Port Vila",
+        "seosPealinn": "<b>Vannu, et</b> järgmine \"Villa\" hooaeg toimuks sadamas (<b>port</b> ingl k).",
+        "pealinnAsukoht": "vanuatu.png",
+        "seosPealinnPilt": "Vanuatu - Port Vila.png",
+        "lipp": "vanuatu.png",
+        "seosLipp": "Y-i kuju tähistab <b>Vanuatu saari</b> ning kolmnurgas asuv V viitab <b>V</b>anuatule.",
+        "seosLippPilt": "Vanuatu.png"
+    }
+]
