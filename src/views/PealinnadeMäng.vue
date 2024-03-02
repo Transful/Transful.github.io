@@ -21,10 +21,9 @@
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
                             <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
-                              <button class="radio-button"
-                              @click="valitudVastus = choice"
+                              <button class="radio-button" @click="valitudVastus = choice"
                               :class="{'green': kontrollitud && choice === this.currentQuestion.correctAnswer,
-                                             'red': kontrollitud && choice !== this.currentQuestion.correctAnswer }"
+                                       'red': kontrollitud && choice !== this.currentQuestion.correctAnswer && valitudVastus === choice}" 
                                     :disabled="kontrollitud">{{ choice }}</button>
                             </li>
                         </ul>
@@ -179,14 +178,21 @@ export default {
         /* Kui vajutatakse "Vihje" nuppu */
         näitaVihjet() {
             console.log('Vihje nuppu vajutati');
-            console.log(this.currentQuestion.pealinnAsukoht)
-            if (this.isLoading) return;
-            this.vihje = true;
+            if(this.vihje){
+                this.vihje = false;
+            }else{
+              if (this.isLoading) return;
+              this.vihje = true;
+            }
         },
         /* Kui vajutatakse "Kontrolli" nuppu */
        kontrolliVastust() {
             if (this.isLoading) return;
-            
+            // Kontrollin, kas kasutaja on vastuse valinud
+            if (this.valitudVastus === "") {
+                alert("Palun vali vastus!");
+                return;
+            }
             //alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
             
             this.kontrollitud = true;

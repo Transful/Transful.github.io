@@ -36,18 +36,8 @@ export default {
             this.selectedGame = this.$store.state.selectedGame;
             this.questionCount = this.$store.state.questionCount;
             this.selectedContinents = this.$store.state.selectedContinents;
-            
-            //TODO võtta õiged andmed
-           /* if(this.selectedContinents.includes('Euroopa')){
-                console.log('Valitud: Euroopa');
-                let ajutisedAndmed = this.$store.getters.getEuroopaAndmed;
-            }else{
-                console.log('Valitud: Kõik riigid');
-                let ajutisedAndmed = this.$store.getters.getAndmed;
-            }
-            */
 
-            let ajutisedAndmed = this.$store.getters.getAndmed;
+            //let ajutisedAndmed = this.$store.getters.getAndmed;
 
             // Mängu valimine
             if(this.selectedGame === 'pealinnadeMäng') {
@@ -56,6 +46,45 @@ export default {
                 this.gameStartedLippudeMäng = true;
             }else{
                 console.log('Mängu valimine ebaõnnestus');
+            }
+
+            //Valin andmed vastavalt valitud kontinentidele
+
+            let ajutisedAndmed = [];
+
+            if (this.selectedContinents.includes('Euroopa')) {
+            console.log('Valitud: Euroopa');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getEuroopaAndmed);
+            }
+            if (this.selectedContinents.includes('Põhja-Ameerika')) {
+            console.log('Valitud: Põhja-Ameerika');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getPõhjaAmeerikaAndmed);
+            }
+            if (this.selectedContinents.includes('Kesk-Ameerika')) {
+            console.log('Valitud: Kesk-Ameerika');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getKeskAmeerikaAndmed);
+            }
+            if (this.selectedContinents.includes('Lõuna-Ameerika')) {
+            console.log('Valitud: Lõuna-Ameerika');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getLõunaAmeerikaAndmed);
+            }
+            if (this.selectedContinents.includes('Aafrika')) {
+            console.log('Valitud: Aafrika');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getAafrikaAndmed);
+            }
+            if (this.selectedContinents.includes('Aasia')) {
+            console.log('Valitud: Aasia');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getAasiaAndmed);
+            }
+            if (this.selectedContinents.includes('Okeaania')) {
+            console.log('Valitud: Okeaania');
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getOkeaaniaAndmed);
+            }
+            // Kui pole valitud ühtegi kontinenti või on valitud 'Kõik riigid'
+            if (ajutisedAndmed.length === 0 || this.selectedContinents.includes('Kõik riigid')) {
+            console.log('Valitud: Default Kõik riigid');
+            ajutisedAndmed = [];
+            ajutisedAndmed = ajutisedAndmed.concat(this.$store.getters.getAndmed);
             }
 
             //Segan andmed

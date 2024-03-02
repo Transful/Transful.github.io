@@ -56,7 +56,7 @@
         data() {
             return {
                 questionCount: 10,
-                continents: ['Põhja-Ameerika', 'Lõuna-Ameerika', 'Euroopa','Aafrika', 'Aasia', 'Kõik riigid'],
+                continents: ['Põhja-Ameerika', 'Kesk-Ameerika', 'Lõuna-Ameerika', 'Euroopa', 'Aafrika', 'Aasia', 'Okeaania', 'Kõik riigid'],
                 selectedContinents: [],
                 selectedGame: null,
                 mängValitud: false
@@ -64,6 +64,7 @@
         },
         methods: {
             startGame() {
+                if(!this.validateSelection()) return;
                 console.log(`\Alustan ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
                 this.$store.commit('startGame', {
                     selectedGame: this.selectedGame,
@@ -72,6 +73,19 @@
                     mängValitud: this.mängValitud
             });
             this.$emit('start-game');
+            },
+            // Kontrollib, kas mängu tüüp on valitud
+            validateSelection() {
+                if (!this.selectedGame) {
+                console.error('A game type must be chosen!');
+                alert('Vali vähemalt üks mängu tüüp!')
+                return false;
+                }
+                if (this.selectedGame !== 'pealinnadeMäng' && this.selectedGame !== 'lippudeMäng') {
+                console.error('Invalid game type!');
+                return false;
+                }
+                return true;
             }
         },
     }

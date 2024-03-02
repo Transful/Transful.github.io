@@ -1,11 +1,25 @@
 import kõikRiigid from '/public/riigid.json';
 import euroopaRiigid from '/public/euroopa.json';
+import põhjaAmeerikaRiigid from '/public/pohja-ameerika.json';
+import keskAmeerikaRiigid from '/public/kesk-ameerika.json';
+import lõunaAmeerikaRiigid from '/public/louna-ameerika.json';
+//import ameerikaRiigid from '/public/ameerika.json';
+import aafrikaRiigid from '/public/aafrika.json';
+import aasiaRiigid from '/public/aasia.json';
+import okeaaniaRiigid from '/public/okeaania.json';
 import { createStore } from 'vuex';
 
 const store = createStore({
   state: {
     kõikRiigid: kõikRiigid,
     euroopaRiigid: euroopaRiigid,
+    põhjaAmeerikaRiigid: põhjaAmeerikaRiigid,
+    keskAmeerikaRiigid: keskAmeerikaRiigid,
+    lõunaAmeerikaRiigid: lõunaAmeerikaRiigid,
+    //ameerikaRiigid: ameerikaRiigid,
+    aafrikaRiigid: aafrikaRiigid,
+    aasiaRiigid: aasiaRiigid,
+    okeaaniaRiigid: okeaaniaRiigid,
     selectedGame: null,
     questionCount: 0,
     selectedContinents: [],
@@ -32,9 +46,14 @@ const store = createStore({
     getAndmed: state =>{
       return state.kõikRiigid;
     },
-    getEuroopaAndmed: state =>{
-      return state.euroopaRiigid;
-    },
+    getEuroopaAndmed: state => state.euroopaRiigid,
+    getPõhjaAmeerikaAndmed: state => state.põhjaAmeerikaRiigid,
+    getKeskAmeerikaAndmed: state => state.keskAmeerikaRiigid,
+    getLõunaAmeerikaAndmed: state => state.lõunaAmeerikaRiigid,
+    //getAmeerikaAndmed: state => state.ameerikaRiigid,
+    getAafrikaAndmed: state => state.aafrikaRiigid,
+    getAasiaAndmed: state => state.aasiaRiigid,
+    getOkeaaniaAndmed: state => state.okeaaniaRiigid
   }
 });
 
