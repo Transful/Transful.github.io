@@ -5,27 +5,27 @@
                 <h1 class="pealkiri" id="meeskondH1">MEESKOND</h1>
                 <div class="veergudeLayout">
                     <div class="meeskonnaLiige">
-                        <img src="@/assets/kai.png" alt="Kai" width="200" height="200">
+                        <img src="@/assets/kai.jpg" alt="Kai" width="200" height="200">
                         <h2>Kai-Melli Kapten</h2>
                         <p>Turundus- ja koolitusjuht</p>
                     </div>
                     <div class="meeskonnaLiige">
-                        <img src="@/assets/liisa.png" alt="Liisa" width="200" height="200">
+                        <img src="@/assets/liisa.jpg" alt="Liisa" width="200" height="200">
                         <h2>Liisa Peterson</h2>
                         <p>Andmebaasi projektijuht</p>
                     </div>
                     <div class="meeskonnaLiige">
-                        <img src="@/assets/lija.png" alt="Lija" width="200" height="200">
+                        <img src="@/assets/lija.jpg" alt="Lija" width="200" height="200">
                         <h2>Lija Jegisman</h2>
                         <p>Operatiivjuht</p>
                     </div>
                     <div class="meeskonnaLiige">
-                        <img src="@/assets/sander.png" alt="Sander" width="200" height="200">
+                        <img src="@/assets/sander.jpg" alt="Sander" width="200" height="200">
                         <h2>Sander Truu</h2>
                         <p>Arendaja</p>
                     </div>
                     <div class="meeskonnaLiige">
-                        <img src="@/assets/jaanis.png" alt="Jaanis" width="200" height="200">
+                        <img src="@/assets/jaanis.jpg" alt="Jaanis" width="200" height="200">
                         <h2>Jaanis Soosaar</h2>
                         <p>Arendaja</p>
                     </div>

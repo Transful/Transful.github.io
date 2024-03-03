@@ -1,10 +1,9 @@
 <template>
-<header class="header">
-    <div class="TransfulJaLogo">
+<header>
+    <div class="transfulLogoJaNimi">
       <img @click="pealehele()" :src="require('@/assets/logo-transful.png')" alt="Transful logo">
       <h1 @click="pealehele()">TRANSFUL</h1>
     </div>  
-    <div>
       <ul class="nav">
           <!--
             <li class="dropdown">
@@ -29,7 +28,6 @@
             </div>
           </li>
       </ul>
-    </div>
 </header>
 </template>
 
@@ -87,17 +85,17 @@
 }
 
 /*****************************/
-.header{
+header{
     top: 0;
     position: static;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-family: Raleway-Bold, sans-serif;
 
-    
 }
-.TransfulJaLogo{
+.transfulLogoJaNimi{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -105,27 +103,24 @@
   padding-left: 15ch;
   padding-top: 2ch;
 }
-.TransfulJaLogo>img:hover{
-  cursor: pointer;
-}
-.TransfulJaLogo>h1:hover{
+.transfulLogoJaNimi>img:hover, .transfulLogoJaNimi>h1:hover{
   cursor: pointer;
 }
 
-.TransfulJaLogo>img{
+.transfulLogoJaNimi>img{
   width: 100px;
   height: auto;
   padding-right: 2ch;
 }
 
-.TransfulJaLogo>h1{
+.transfulLogoJaNimi>h1{
   color: #55E0E5;
   text-decoration: none;
   user-select: none;
 
 }
 .nav{
-padding-top: 2ch;
+    padding-top: 2ch;
     justify-content: center;
     display: flex;
     list-style-type: none;
@@ -152,9 +147,18 @@ ul.nav-list {
   margin: 0;
   display: flex;
 }
-@media(min-width: 250px){
 
+/*
+max-width: 600px - töötab medial mis on 600px või väiksem
+min-width: 600px - töötab medial mis on 600px või suurem
+
+*/
+@media(max-width: 250px){
+  .logoButton{
+    display: none;
+  }
 }
+/*
 
 @media(min-width: 921px){
   .header, .nav{
@@ -181,5 +185,29 @@ ul.nav-list {
   .header{
     display: block;
   }
+}
+*/
+@media(max-width: 1120px){ /* 1120 ja väiksem*/
+  .transfulLogoJaNimi{
+    padding-left: 5ch;
+  }
+}
+
+@media(max-width: 1021px){ /* 1021 ja väiksem*/
+  .transfulLogoJaNimi{
+    padding-left: 1ch;
+  }
+  .nav{
+    padding-right: 10px;
+  }
+  
+}
+@media(max-width:845){ /* 845 ja väiksem*/
+
+  /*
+  Siit maalt hakkab ka taustapilt liikuma??
+  ja läheb katki?
+  ja siit peaks ka headeri ja nav-i kujundust muutma?
+  */
 }
 </style>

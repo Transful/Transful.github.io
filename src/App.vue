@@ -37,8 +37,10 @@ export default {
 .background{
   background-image: url("@/assets/Veebilehe-taust.png");
   background-repeat: repeat-y;
-  background-size: 100% auto;
-  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: auto;
 }
 #app {
   text-align: center;
@@ -63,5 +65,18 @@ html, body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 250px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .background{
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
 }
 </style>
