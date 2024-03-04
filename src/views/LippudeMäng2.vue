@@ -176,7 +176,7 @@ export default {
             this.kontrollitud = true;
 
             /* Kui on õige vastus ja ei ole veel selle küsimuse eest punkti saanud, siis suurendame skoori */
-            if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].lipp && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
+            if (this.valitudVastus === this.andmed[this.praeguseKüsimuseIndeks].question && !this.õigestiVastatud[this.praeguseKüsimuseIndeks]) {
                 this.skoor++;
                 this.õigestiVastatud[this.praeguseKüsimuseIndeks] = true;
             }
