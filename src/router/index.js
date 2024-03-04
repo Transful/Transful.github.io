@@ -5,7 +5,7 @@ import Lipud from "../views/Lipud.vue";
 import Tehnikad from "../views/Tehnikad.vue";
 import Meie from "../views/Meie.vue";
 import LippudeMäng from "../views/LippudeMäng.vue";
-import testmäng from "../views/testmäng.vue";
+import mänguMenüü from "../views/testmäng.vue";
 import PealinnadeMäng from "../views/PealinnadeMäng.vue";
 
 
@@ -41,9 +41,9 @@ const routes = [{
         component: LippudeMäng,
     },
     {
-        path: "/testmäng",
-        name: "testmäng",
-        component: testmäng,
+        path: "/mänguMenüü",
+        name: "mänguMenüü",
+        component: mänguMenüü,
     },
     {
         path: "/pealinnade-mäng",

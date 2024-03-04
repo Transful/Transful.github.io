@@ -38,7 +38,7 @@
                 </div>
             </div>  <!-- QuestionContainer -->
             <div class="kontrolliJajärgmineNupud">
-                <button class="kontrolliNupp" v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
+                <button v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
                 <button v-if="kontrollitud && kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
                 <button v-if="kontrollitud && !kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
             </div>
@@ -134,7 +134,7 @@ export default {
         let ajutineData = imporditudAndmed.muudetudAndmed;
 
         this.andmed = ajutineData.map(item => {  
-          if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp) {
+          if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.seosPealinnPilt || !item.pealinnAsukoht) {
             console.log('Andmed on puudulikud');
           }
           return{
@@ -143,14 +143,12 @@ export default {
           seosJutt: item.seosPealinn,
           seosPilt: item.seosPealinnPilt,
           pealinnAsukoht: item.pealinnAsukoht,
-          lipp: item.lipp,
-          seosLipp: item.seosLipp
           }
         });
 
         console.log('Andmed:', this.andmed);
 
-        // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
+        // Vastusevariantideks on kõikide teiste riikide pealinnad.
 
         for (let i = this.andmed.length - 1; i > 0; i--) {
             kõikAndmed.forEach(item => {

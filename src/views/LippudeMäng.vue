@@ -1,6 +1,6 @@
 <template>
     <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Lipud">
-        <div v-if="lõpetatud == true">
+        <div v-if="kasTestOnLõpetatud == true">
             <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
@@ -20,7 +20,7 @@
                             <li v-for="(lipp, index) in currentQuestion.choices" :key="index" class="answer-option">
                                 <button class="radio-button" @click="valitudVastus = lipp"
                                     :class="{'green': kontrollitud && lipp === this.currentQuestion.lipp,
-                                             'red': kontrollitud && lipp !== this.currentQuestion.lipp }"
+                                             'red': kontrollitud && lipp !== this.currentQuestion.lipp && lipp === valitudVastus}"
                                     :disabled="kontrollitud">
                                     <img :src="require(`@/assets/lipud/${lipp}`)" :alt="lipp">
                                   </button>
@@ -39,7 +39,7 @@
             <div class="kontrolliJajärgmineNupud">
                 <button v-if="!kontrollitud" @click="kontrolliVastust">Kontrolli</button>
                 <button v-if="kontrollitud && kasOnOlemasJärgmineKüsimus" @click="järgmineKüsimus">Järgmine küsimus</button>
-                <button v-if="!kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
+                <button v-if="kontrollitud && !kasOnOlemasJärgmineKüsimus" @click="lõpetaTest">Lõpeta test</button>
             </div>
         </div>
     </div>
@@ -49,9 +49,9 @@
 export default {
     data() {
        return {
-         andmed: null,
+         andmed: [],
          kasAndmedOnLaetud: false,
-         lõpetatud: false,
+         kasTestOnLõpetatud: false,
          vihje: false,
          kontrollitud: false,
          praeguseKüsimuseIndeks: 0,
@@ -60,31 +60,25 @@ export default {
          õigestiVastatud: [],
          allChoices: [],
          seosLipp: 'ei ole seost',
-         seosPilt: '',
          seosLippPilt: '',
        };
     },
     computed: {
         currentQuestion() {
             if (this.andmed != null && this.andmed.length > 0) {
-                return this.andmed[this.praeguseKüsimuseIndeks];
+                return this.andmed[this.praeguseKüsimuseIndeks] || null;
             }
-            return null;
         },
         kasOnOlemasJärgmineKüsimus() {
             if (this.andmed != null)
                 return this.praeguseKüsimuseIndeks < this.andmed.length - 1;
         },
         kasOnÕigeVastus(){
-            if(this.valitudVastus === this.currentQuestion.correctAnswer){
-                return true;
-            }else{
-                return false;
-            }
+            return this.valitudVastus === this.currentQuestion.lipp;
         }
     },
     async created() {
-        console.log('Created lifecycle hook called - Võtan andmed');
+        console.log('Created, Jõudsin lippudeMängu');
     
     try {
        
@@ -130,23 +124,23 @@ export default {
 
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
-        let ajutineData = this.$store.getters.getAndmed;
-        //console.log('Fetching data... Data:', this.ajutineData);
-
-
-        // Peaks võibolla kontrollima, kas andmed on kohale jõudnud?!!
-        // Aga mitte json korral, sest see on kohe olemas.
+        let kõikAndmed = require('/public/riigid.json');
         
+        let imporditudAndmed = this.$store.getters.getMuudetudAndmed;
+        console.log('Imporditud andmed:', imporditudAndmed);
+
+        //Unwrappin proxy objecti, et pääseda ligi arrayle
+        imporditudAndmed = JSON.parse(JSON.stringify(imporditudAndmed));
+        
+        let ajutineData = imporditudAndmed.muudetudAndmed;
+
         this.andmed = ajutineData.map(item => {
-            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.pealinnAsukoht || !item.lipp || !item.seosLipp || !item.seosLippPilt) {
+            if(!item.nimi || !item.pealinn || !item.lipp || !item.seosLipp || !item.seosLippPilt) {
                 console.log('Andmed on puudulikud');
             }
             return{
                 question: item.nimi,
-                correctAnswer: item.pealinn,
-                seosJutt: item.seosPealinn,
-                seosPilt: item.seosPealinnPilt,
-                pealinnAsukoht: item.pealinnAsukoht,
+                pealinn: item.pealinn,
                 lipp: item.lipp,
                 seosLipp: item.seosLipp,
                 seosLippPilt: item.seosLippPilt,
@@ -156,17 +150,24 @@ export default {
         console.log('Andmed:', this.andmed);
 
 
-        // Vastusevariantideks on kõikide teiste sisestatud riikide pealinnad.
-        this.allChoices = this.andmed.map(question => question.lipp);
-        console.log('All choices:', this.allChoices);
+        // Vastusevariantideks on kõikide teiste riikide lipud.
 
-        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
+        for (let i = this.andmed.length - 1; i > 0; i--) {
+            kõikAndmed.forEach(question => {
+                this.allChoices.push(question.lipp);
+            });
+        }
 
+        // Märgin ära iga "küsimuse" õige vastuse
+        this.andmed.map(question => question.lipp);
+
+        // Panen paika iga küsimuse vastusevariandid (mis sisaldab õiget vastust ja kolme suvalist vale vastust)
         this.andmed.forEach(question => {
             question.choices = this.võtaSuvalisedVastused(question.lipp);
         });
 
     } catch (error) {
+        console.log("Tekkis error")
         console.error(error);
     } finally {
         this.kasAndmedOnLaetud = true;
@@ -177,14 +178,22 @@ export default {
         /* Kui vajutatakse "Vihje" nuppu */
         näitaVihjet() {
             console.log('Vihje nuppu vajutati');
-            console.log(this.currentQuestion.pealinnAsukoht)
-            if (this.isLoading) return;
-            this.vihje = true;
+            if(this.vihje){
+                this.vihje = false;
+            }else{
+              if (this.isLoading) return;
+              this.vihje = true;
+            }
         },
         /* Kui vajutatakse "Kontrolli" nuppu */
        kontrolliVastust() {
             if (this.isLoading) return;
-            
+
+             // Kontrollin, kas kasutaja on vastuse valinud
+             if (this.valitudVastus === "") {
+                alert("Palun vali vastus!");
+                return;
+            }
             //alert(this.valitudVastus === this.currentQuestion.correctAnswer ? "Õige vastus!" : "Vale vastus!");
             
             this.kontrollitud = true;
@@ -207,7 +216,7 @@ export default {
 
        /* Kui vajutatakse "Lõpeta test" nuppu */
        lõpetaTest() {
-         this.lõpetatud = true;
+         this.kasTestOnLõpetatud = true;
          console.log("Test on lõpetatud, skoor on: " + this.skoor);
        },
 
@@ -220,7 +229,7 @@ export default {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
             }
-            choices = choices.slice(0, 3).concat(lipp);
+            choices = choices.slice(0, 5).concat(lipp);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
@@ -250,8 +259,6 @@ export default {
     border-radius: 36px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
     padding-left: 10ch;
   }
   .keskmineContainer {
@@ -290,6 +297,7 @@ export default {
     background-color: black;
     border: 2px solid #55E0E5;
     padding: 20px;
+    max-width: 300px;
 }
   .vihjePilt{
     width: 200px;

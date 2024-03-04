@@ -21,10 +21,14 @@
           <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
             <div class="dropdown-menu">
+              <!--
               <router-link to="/pealinnade-mäng">Mäng 1</router-link>
               <router-link to="/lippude-mäng">Mäng 2</router-link>
               <router-link to="/">Mäng 3</router-link>
-              <router-link to="/testmäng">TestMäng</router-link>
+              -->
+              <router-link to="/mänguMenüü">Mängu menüü</router-link>
+              <router-link to="/">Mäng 2</router-link>
+              <router-link to="/">Mäng 3</router-link>
             </div>
           </li>
       </ul>
