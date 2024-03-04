@@ -1117,7 +1117,7 @@
         "seosPealinnPilt": "Marshalli Saared - Majuro.png",
         "lipp": "marshalli_saared.png",
         "seosLipp": "Riigis lõhati maailma esimene vesinikupomm (1000x võimsam kui Hiroshimale visatud), mille <b>plahvatust</b> võiks sümboliseerida valge mitmeharuline täht. Asukohale <b>Vaikses ookeanis</b> viitab tumesinine taust.",
-        "seosLippPilt": "MarshalliSaared.png"
+        "seosLippPilt": "Marshalli_saared.png"
     },
     {
         "nimi": "Mauritaania",
@@ -1435,9 +1435,9 @@
         "seosPealinn": "Umbes 1000 saarest koosnev riik, millele pani nime Hispaania meresõitja Alvaro de Mendana, kes arvas, et tegu oli piirkonnaga, kust kuningas Saalomon sai kulla, mida kasutas oma Jeruusalemma templi ehitamiseks. Iga mõistlik naine oma mehele, kes läheb kulda otsima: \"<b>Honey, ära</b> mine!\"",
         "pealinnAsukoht": "saalomoni saared.png",
         "seosPealinnPilt": "Saalomoni Saared - Honiara.png",
-        "lipp": "saalomon_saared.png",
+        "lipp": "saalomoni_saared.png",
         "seosLipp": "Kujuta ette suusatajat, kes sõidab tähtede vahel <b>slaalomit</b>. Viis valget tähte tähistavad viit provintsi, mis algselt riigi moodustasid.",
-        "seosLippPilt": "SaalomoniSaared.png"
+        "seosLippPilt": "Saalomoni_saared.png"
     },
     {
         "nimi": "Saint Kitts ja Nevis",
