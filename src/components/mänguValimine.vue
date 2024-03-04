@@ -21,6 +21,15 @@
                     </label>
                 </div>
             </div>
+            <div class="radio-container">
+                <div>
+                    <input type="radio" id="lippudeMäng2" value="lippudeMäng2" v-model="selectedGame" class="hidden-radio">
+                    <label for="lippudeMäng2" class="radio-label">
+                        <span class="custom-radio"></span>
+                        Lippude mäng 2
+                    </label>
+                </div>
+            </div>
             <!-- Question Count Selector -->
             <div>
                 <label id="labeliteTekst" for="questionCount">Küsimuste arv:</label>
@@ -77,13 +86,13 @@
             // Kontrollib, kas mängu tüüp on valitud
             validateSelection() {
                 if (!this.selectedGame) {
-                console.error('A game type must be chosen!');
-                alert('Vali vähemalt üks mängu tüüp!')
-                return false;
+                    console.error('A game type must be chosen!');
+                    alert('Vali vähemalt üks mängu tüüp!')
+                    return false;
                 }
-                if (this.selectedGame !== 'pealinnadeMäng' && this.selectedGame !== 'lippudeMäng') {
-                console.error('Invalid game type!');
-                return false;
+                if (this.selectedGame !== 'pealinnadeMäng' && this.selectedGame !== 'lippudeMäng' && this.selectedGame !== 'lippudeMäng2') {
+                    console.error('Invalid game type!');
+                    return false;
                 }
                 return true;
             }

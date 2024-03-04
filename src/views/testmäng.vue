@@ -1,8 +1,9 @@
 <template>
     <div class="mänguMenüüContainer">
-        <mänguValimine v-if="!gameStartedPealinnad && !gameStartedLippudeMäng" @start-game="startGame"></mänguValimine>
+        <mänguValimine v-if="!gameStartedPealinnad && !gameStartedLippudeMäng && !gameStartedLippudeMäng2" @start-game="startGame"></mänguValimine>
         <pealinnadeMäng v-if="gameStartedPealinnad" :imporditudAndmed="imporditudAndmed"></pealinnadeMäng>
         <lippudeMäng v-if="gameStartedLippudeMäng" :imporditudAndmed="imporditudAndmed"></lippudeMäng>
+        <lippudeMäng2 v-if="gameStartedLippudeMäng2" :imporditudAndmed="imporditudAndmed"></lippudeMäng2>
     </div>  
 </template>
 
@@ -10,6 +11,7 @@
 import mänguValimine from '../components/mänguValimine.vue';
 import pealinnadeMäng from './PealinnadeMäng.vue';
 import LippudeMäng from './LippudeMäng.vue';
+import LippudeMäng2 from './LippudeMäng2.vue';
 // VEEL POLE VALMIS, HETKEL KATKI VEEL :)
 
 export default {
@@ -17,12 +19,14 @@ export default {
     components: {
         mänguValimine,
         'pealinnadeMäng': pealinnadeMäng,
-        'lippudeMäng': LippudeMäng
+        'lippudeMäng': LippudeMäng,
+        'lippudeMäng2': LippudeMäng2
     },
     data() {
         return {
             gameStartedPealinnad: false,
             gameStartedLippudeMäng: false,
+            gameStartedLippudeMäng2: false,
             imporditudAndmed: [],
             questionCount: 0,
             selectedContinents: [],
@@ -44,6 +48,8 @@ export default {
                 this.gameStartedPealinnad = true;
             }else if(this.selectedGame === 'lippudeMäng') {
                 this.gameStartedLippudeMäng = true;
+            }else if(this.selectedGame === 'lippudeMäng2') {
+                this.gameStartedLippudeMäng2 = true;
             }else{
                 console.log('Mängu valimine ebaõnnestus');
             }

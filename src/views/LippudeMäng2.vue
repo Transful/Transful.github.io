@@ -4,7 +4,7 @@
             <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
         </div>
         <div class="questionBoxiPeal">
-            <h2>TEST: LIPUD</h2>
+            <h2>TEST: LIPUD 2</h2>
             <div class="question-counter">
                 {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
@@ -13,17 +13,26 @@
             <div class="QuestionContainer">
                 <div>
                     <div class="küsimusJaVastusevariandid">
-                            <h2 class="küsimus" v-if="currentQuestion">{{currentQuestion.question }}</h2>
+                            <!--
+                              <h2 class="küsimus" v-if="currentQuestion">{{currentQuestion.question }}</h2>
+                            -->
+                            <img class="lipupilt" :src="require(`@/assets/lipud/${currentQuestion.lipp}`)" :alt="currentQuestion.lipp">
                     </div>
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
-                            <li v-for="(lipp, index) in currentQuestion.choices" :key="index" class="answer-option">
+                            <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
+                              <!--
                                 <button class="radio-button" @click="valitudVastus = lipp"
                                     :class="{'green': kontrollitud && lipp === this.currentQuestion.lipp,
                                              'red': kontrollitud && lipp !== this.currentQuestion.lipp && lipp === valitudVastus}"
                                     :disabled="kontrollitud">
                                     <img :src="require(`@/assets/lipud/${lipp}`)" :alt="lipp">
                                   </button>
+                              -->
+                              <button class="radio-button" @click="valitudVastus = choice"
+                              :class="{'green': kontrollitud && choice === this.currentQuestion.question,
+                                       'red': kontrollitud && choice !== this.currentQuestion.question && valitudVastus === choice}" 
+                                    :disabled="kontrollitud">{{ choice }}</button>
                             </li>
                         </ul>
                     </div>
@@ -83,47 +92,6 @@ export default {
         console.log('Created, Jõudsin lippudeMängu');
     
     try {
-       
-        //ANDMEBAASIGA ANDMETE VÕTMINE
-        
-        /*
-        const responseKatse = await fetch('/');
-        console.log('ResponseKatse:', responseKatse); 
-
-        console.log('Fetching data...'); // Add this line
-        const response = await fetch('http://localhost:3000/api/riigid'); // Replace with your actual API endpoint
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        console.log('Response:', response); // Add this line
-
-        const data = await response.json();
-        console.log('Data:', data); // Add this line
-
-        this.andmed = data.map(item => ({
-            question: item.nimi,
-            correctAnswer: item.pealinn,
-        }));
-        this.allChoices = this.andmed.map(question => question.correctAnswer);
-
-        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
-
-        this.andmed.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
-        });
-        console.log('Transformed data:', this.andmed); // Add this line
-        } catch (error) {
-            console.error('Error fetching data:', error); // Modify this line
-        } finally {
-            this.kasAndmedOnLaetud = true;
-        }
-        
-        */
-
-        //const data = require('/public/riigid.json');
-
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
         let kõikAndmed = require('/public/riigid.json');
@@ -153,19 +121,19 @@ export default {
 
 
         // Vastusevariantideks on kõikide teiste riikide lipud.
-
+        // Nimed pead võtma otse json failist, mitte ülalpool mapitud andmetest
         for (let i = this.andmed.length - 1; i > 0; i--) {
-            kõikAndmed.forEach(question => {
-                this.allChoices.push(question.lipp);
+            kõikAndmed.forEach(item => {
+                this.allChoices.push(item.nimi);
             });
         }
 
         // Märgin ära iga "küsimuse" õige vastuse
-        this.andmed.map(question => question.lipp);
+        this.andmed.map(question => question.question);
 
         // Panen paika iga küsimuse vastusevariandid (mis sisaldab õiget vastust ja kolme suvalist vale vastust)
         this.andmed.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.lipp);
+            question.choices = this.võtaSuvalisedVastused(question.question);
         });
 
     } catch (error) {
@@ -177,7 +145,7 @@ export default {
 
 },
     methods: {
-      
+
         /* Kui vajutatakse vihje pilti */
         näitaVihjePilti() {
             this.kasNäitanVihjePilti = true;
@@ -239,7 +207,7 @@ export default {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
             }
-            choices = choices.slice(0, 5).concat(lipp);
+            choices = choices.slice(0, 3).concat(lipp);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
@@ -326,7 +294,11 @@ export default {
     color: #55E0E5;
     font-size: 16px;
   }
-
+  .lipupilt > img{
+    width: 150px;
+    height: 75;
+    border-radius: 25px; 
+  }
   .vihjeDiv{
     margin-left: 20px;
   }
@@ -380,10 +352,13 @@ export default {
     padding-left: 0;
   }
   
-  .answer-option{
+   .answer-option img{
     display: flex;
     align-items: center;
     text-align: center;
+    width: 300;
+    height: 150;
+    border-radius: 15px;
    }
 
 
@@ -394,7 +369,7 @@ export default {
     padding: 10px;
     border: 2px solid #55E0E5;
     border-radius: 15px;
-    background-color: black;
+    background-color: #0B1C24;
     color: #55E0E5;
     font-size: 16px;
     cursor: pointer;

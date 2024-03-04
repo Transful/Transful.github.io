@@ -33,7 +33,8 @@
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje" class="vihjeContainer">
                       <p v-html="currentQuestion.seosJutt"></p>
-                        <img class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
+                        <img v-if="!kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/avaVihje.png`)" @click="näitaVihjePilti" alt="Ava vihje pilt">
+                        <img v-if="kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/seosed/${currentQuestion.seosPilt}`)" alt="Seose pilt">
                     </div>
                 </div>
             </div>  <!-- QuestionContainer -->
@@ -62,6 +63,7 @@ export default {
          allChoices: [],
          seosJutt: 'ei ole seost',
          seosPilt: '',
+         kasNäitanVihjePilti: false,
        };
     },
     computed: {
@@ -173,6 +175,13 @@ export default {
 
 },
     methods: {
+      
+        /* Kui vajutatakse vihje pilti */
+        näitaVihjePilti() {
+            this.kasNäitanVihjePilti = true;
+            console.log('Vihje pilti vajutati')
+;        },
+
         /* Kui vajutatakse "Vihje" nuppu */
         näitaVihjet() {
             console.log('Vihje nuppu vajutati');
@@ -207,6 +216,7 @@ export default {
         if (this.isLoading) return;
          this.praeguseKüsimuseIndeks++;
          this.vihje = false;
+         this.kasNäitanVihjePilti = false;
          this.valitudVastus = "";
          this.kontrollitud = false;
        },
