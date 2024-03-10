@@ -17,12 +17,15 @@
                     </div>
                     <div class="valikuVariandid">
                         <ul class="answer-grid">
-                            <li v-for="(lipp, index) in currentQuestion.choices" :key="index" class="answer-option">
-                                <button class="radio-button" @click="valitudVastus = lipp"
-                                    :class="{'green': kontrollitud && lipp === this.currentQuestion.lipp,
-                                             'red': kontrollitud && lipp !== this.currentQuestion.lipp && lipp === valitudVastus}"
-                                    :disabled="kontrollitud">
-                                    <img :src="require(`@/assets/lipud/${lipp}`)" :alt="lipp">
+                            <li v-for="(choice, index) in currentQuestion.choices" :key="index" class="answer-option">
+                              <!-- siin nüüd choices on 2D array, mille elemendid siis 2-el arrayd riigi nime ja lipuga -->
+                              <!-- pos 0 on lipp, pos 1 on riigi nimi, saame selle anda hover effectile kaasa, et kuvada riigi nime -->
+                                <button class="radio-button" @click="valitudVastus = choice[0]"
+                                    :class="{'green': kontrollitud && choice[0] === this.currentQuestion.lipp,
+                                             'red': kontrollitud && choice[0] !== this.currentQuestion.lipp && choice[0] === valitudVastus}"
+                                    :disabled="kontrollitud"
+                                    :data-country-name="choice[1]">
+                                    <img :src="require(`@/assets/lipud/${choice[0]}`)" :alt="choice[0]">
                                   </button>
                             </li>
                         </ul>
@@ -30,7 +33,7 @@
                 </div>
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
-                    <div v-if="vihje" class="vihjeContainer">
+                    <div v-if="vihje || kasOnValeVastus" class="vihjeContainer">
                       <p v-html="currentQuestion.seosLipp"></p>
                         <img v-if="!kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/avaVihje.png`)" @click="näitaVihjePilti" alt="Ava vihje pilt">
                         <img v-if="kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/lipuseosed/${currentQuestion.seosLippPilt}`)" alt="Seose pilt">
@@ -77,6 +80,9 @@ export default {
         },
         kasOnÕigeVastus(){
             return this.valitudVastus === this.currentQuestion.lipp;
+        },
+        kasOnValeVastus(){
+          return this.valitudVastus !== null && this.valitudVastus !== this.currentQuestion.lipp && this.kontrollitud;
         }
     },
     async created() {
@@ -153,10 +159,10 @@ export default {
 
 
         // Vastusevariantideks on kõikide teiste riikide lipud.
-
+        // lisab kahe elemendilise array, kus on nii lipp, kui riigi nimi
         for (let i = this.andmed.length - 1; i > 0; i--) {
             kõikAndmed.forEach(question => {
-                this.allChoices.push(question.lipp);
+                this.allChoices.push([question.lipp, question.nimi]);
             });
         }
 
@@ -165,7 +171,7 @@ export default {
 
         // Panen paika iga küsimuse vastusevariandid (mis sisaldab õiget vastust ja kolme suvalist vale vastust)
         this.andmed.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.lipp);
+            question.choices = this.võtaSuvalisedVastused([question.lipp, question.nimi]);
         });
 
     } catch (error) {
@@ -231,15 +237,17 @@ export default {
        },
 
        /* Võtan vastusevariantideks suvalised vastused */
-       võtaSuvalisedVastused(lipp) {
+       /* Võtab kaheelemendilise array, kus on lipp ja nimi argumendina*/
+
+       võtaSuvalisedVastused(oige) {
             if (this.isLoading) return;
             let choices = [...this.allChoices];
-            choices = choices.filter(choice => choice !== lipp);
+            choices = choices.filter(choice => choice[0] !== oige[0]);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
             }
-            choices = choices.slice(0, 5).concat(lipp);
+            choices = choices.slice(0, 5).concat([oige]);
             for (let i = choices.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [choices[i], choices[j]] = [choices[j], choices[i]];
@@ -407,6 +415,14 @@ export default {
     background-color: red;
     border: 2px solid black;
   }
+
+  .red:hover::after {
+    content: attr(data-country-name); /* Hover effekti jaoks nime kuvamine*/
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
 
   .radio-button:hover {
     background-color: #55E0E5;
