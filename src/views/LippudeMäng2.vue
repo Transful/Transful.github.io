@@ -39,7 +39,7 @@
                 </div>
                 <div class="vihjeDiv">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
-                    <div v-if="vihje" class="vihjeContainer">
+                    <div v-if="vihje || kasOnValeVastus" class="vihjeContainer">
                       <p v-html="currentQuestion.seosLipp"></p>
                         <img v-if="!kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/avaVihje.png`)" @click="näitaVihjePilti" alt="Ava vihje pilt">
                         <img v-if="kasNäitanVihjePilti" class="vihjePilt" :src="require(`@/assets/lipuseosed/${currentQuestion.seosLippPilt}`)" alt="Seose pilt">
@@ -86,6 +86,9 @@ export default {
         },
         kasOnÕigeVastus(){
             return this.valitudVastus === this.currentQuestion.lipp;
+        },
+        kasOnValeVastus(){
+          return this.valitudVastus !== null && this.valitudVastus !== this.currentQuestion.question && this.kontrollitud
         }
     },
     async created() {
