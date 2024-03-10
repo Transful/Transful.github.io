@@ -8,6 +8,9 @@
             <div class="question-counter">
                 {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
+            <div>
+              <progress class="test-progress" :value="praeguseKüsimuseIndeks + 1" :max="andmed.length"></progress>
+            </div>
         </div>
         <div class="KeskmineContainer">
             <div class="QuestionContainer">
