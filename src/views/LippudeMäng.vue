@@ -8,9 +8,10 @@
             <div class="question-counter">
                 {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
-            <div>
-              <progress class="test-progress" :value="praeguseKüsimuseIndeks + 1" :max="andmed.length"></progress>
-            </div>
+            
+        </div>
+        <div class="test-progress">
+          <progress class="progress-bar" :value="praeguseKüsimuseIndeks" :max="andmed.length-1"></progress>
         </div>
         <div class="KeskmineContainer">
             <div class="QuestionContainer">
@@ -69,6 +70,7 @@ export default {
          seosLipp: 'ei ole seost',
          seosLippPilt: '',
          kasNäitanVihjePilti: false,
+         progressValue: 0,
        };
     },
     computed: {
@@ -87,6 +89,7 @@ export default {
         kasOnValeVastus(){
           return this.valitudVastus !== null && this.valitudVastus !== this.currentQuestion.lipp && this.kontrollitud;
         }
+
     },
     async created() {
         console.log('Created, Jõudsin lippudeMängu');
@@ -442,5 +445,39 @@ export default {
   li::marker{
     visibility: hidden;
     position: absolute;
+  }
+  .test-progress{
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  progress[value] {
+    --color:  /* the progress color */
+      linear-gradient(#fff8,#fff0),
+      repeating-linear-gradient(135deg,#0003 0 10px,#0000 0 20px),
+      #55E0E5; 
+    --background: lightgrey; /* the background color */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
   }
    </style>

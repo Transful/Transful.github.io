@@ -8,9 +8,9 @@
             <div class="question-counter">
                 {{ praeguseKüsimuseIndeks + 1 }} / {{ andmed.length }}
             </div>
-            <div>
-              <progress class="test-progress" :value="praeguseKüsimuseIndeks + 1" :max="andmed.length"></progress>
-            </div>
+        </div>
+        <div class="test-progress">
+             <progress class="progress-bar" :value="praeguseKüsimuseIndeks" :max="andmed.length-1"></progress>
         </div>
         <div class="KeskmineContainer">
             <div class="QuestionContainer">
@@ -404,5 +404,38 @@ export default {
   li::marker{
     visibility: hidden;
     position: absolute;
+  }
+  .test-progress{
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden; 
+  }
+  progress[value] {
+    --w: 100%; /* the width*/
+    --color:  /* the progress color */
+      linear-gradient(90deg,#2d414b,#55e0e5) 0/var(--w);
+    --background: lightgrey; /* the background color */
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: var(--w);
+    margin: 0 10px;
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
   }
    </style>
