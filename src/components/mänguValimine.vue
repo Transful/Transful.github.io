@@ -51,6 +51,25 @@
                     </label>
                 </div>
             </div>
+            <!-- Play with clues or not-->
+            <label id="labeliteTekst" for="vihjetegaVõiIlma">Mängin vihjetega:</label>
+            <br>
+            <div class="radio-containerCol">
+                <div>
+                    <input type="radio" id="vihjetegaVõiIlmaJah" value="Jah" v-model="vihjetegaMäng" class="hidden-radio">
+                    <label for="vihjetegaVõiIlmaJah" class="radio-label">
+                        <span class="custom-radio"></span>
+                        Jah
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="vihjetegaVõiIlmaEi" value="Ei" v-model="vihjetegaMäng" class="hidden-radio">
+                    <label for="vihjetegaVõiIlmaEi" class="radio-label">
+                        <span class="custom-radio"></span>
+                        Ei
+                    </label>
+                </div>
+            </div>
 
             <!-- Start Game Button -->
             <button @click="startGame">Alusta mänguga</button>
@@ -68,18 +87,26 @@
                 continents: ['Põhja-Ameerika', 'Kesk-Ameerika', 'Lõuna-Ameerika', 'Euroopa', 'Aafrika', 'Aasia', 'Okeaania', 'Kõik riigid'],
                 selectedContinents: [],
                 selectedGame: null,
-                mängValitud: false
+                mängValitud: false,
+                vihjetegaMäng: null,
             };
         },
         methods: {
             startGame() {
                 if(!this.validateSelection()) return;
-                console.log(`\Alustan ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}`);
+                if(this.vihjetegaMäng === 'Ei'){
+                    this.vihjetegaMäng = false;
+                }else{
+                    this.vihjetegaMäng = true;
+                }
+                
+                console.log(`\Alustan ${this.selectedGame} with ${this.questionCount} questions and continents: ${this.selectedContinents.join(', ')}, vihjetega: ${this.selectedVihjetega}!`);
                 this.$store.commit('startGame', {
                     selectedGame: this.selectedGame,
                     questionCount: this.questionCount,
                     selectedContinents: this.selectedContinents,
-                    mängValitud: this.mängValitud
+                    mängValitud: this.mängValitud,
+                    vihjetegaMäng: this.vihjetegaMäng
             });
             this.$emit('start-game');
             },
@@ -92,6 +119,11 @@
                 }
                 if (this.selectedGame !== 'pealinnadeMäng' && this.selectedGame !== 'lippudeMäng' && this.selectedGame !== 'lippudeMäng2') {
                     console.error('Invalid game type!');
+                    return false;
+                }
+                if(this.vihjetegaMäng === ''){
+                    console.error('Vihjetega või ilma mängimine peab olema valitud!');
+                    alert('Vali, kas soovid mängida vihjetega või ilma!')
                     return false;
                 }
                 return true;
@@ -166,6 +198,11 @@
         padding-top: 1ch;
     }
 
+    .radio-containerCol{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     
     /* Radio nupud */
     .radio-container {
