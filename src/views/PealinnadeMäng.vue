@@ -14,7 +14,7 @@
             
         </div>
         <div class="KeskmineContainer">
-            <div class="QuestionContainer">
+            <div class="QuestionContainer" :style="{ 'padding-right': vihjetegaMäng ? '20px' : '10ch' }">
                 <div>
                     <div class="küsimusJaVastusevariandid">
                             <h2 class="küsimus" v-if="currentQuestion">{{currentQuestion.question }}</h2>
@@ -33,7 +33,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="vihjeDiv">
+                <div class="vihjeDiv" v-if="vihjetegaMäng">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje || kasOnValeVastus" class="vihjeContainer">
                       <p v-html="currentQuestion.seosJutt"></p>
@@ -68,6 +68,7 @@ export default {
          seosJutt: 'ei ole seost',
          seosPilt: '',
          kasNäitanVihjePilti: false,
+         vihjetegaMäng: null,
        };
     },
     computed: {
@@ -136,6 +137,17 @@ export default {
         
         let imporditudAndmed = this.$store.getters.getMuudetudAndmed;
         console.log('Imporditud andmed:', imporditudAndmed);
+
+        // Teen selgeks, kas mäng tuleb vihjetega või ilma
+        this.vihjetegaMäng = this.$store.getters.getKasKasutanVihjeid;
+        
+        /*
+        let kasKasutanVihjeid = this.$store.getters.getKasKasutanVihjeid;
+        if(!kasKasutanVihjeid){
+          console.log('Mäng on ilma vihjeteta')
+          this.vihjetegaMäng = false;
+        }
+        */
 
         //Unwrappin proxy objecti, et pääseda ligi arrayle
         imporditudAndmed = JSON.parse(JSON.stringify(imporditudAndmed));
@@ -271,9 +283,11 @@ export default {
     background-color: #0B1C24;
     color: #55E0E5;
     border-radius: 36px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-left: 10ch;
+    padding-right: 20px;    
   }
   .keskmineContainer {
     display: inline-flex;
