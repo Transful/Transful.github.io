@@ -1,20 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import mänguMenüü from "../views/testmäng.vue";
+import mänguLõpp from "../views/mänguLõpp.vue";
 import Avaleht from "../views/Avaleht.vue";
 import Pealinnad from "../views/Pealinnad.vue";
 import Lipud from "../views/Lipud.vue";
 import Tehnikad from "../views/Tehnikad.vue";
 import Meie from "../views/Meie.vue";
 import LippudeMäng from "../views/LippudeMäng.vue";
-import mänguMenüü from "../views/testmäng.vue";
 import PealinnadeMäng from "../views/PealinnadeMäng.vue";
 import LippudeMängRiikideNimedega from "../views/LippudeMäng2.vue";
 
 
 const routes = [{
         path: '/',
-        name: 'Avaleht',
-        component: () =>
-            import ("../views/Avaleht.vue")
+        name: 'mänguMenüü',
+        component: mänguMenüü,
     },
     {
         path: "/pealinnad",
@@ -56,10 +56,15 @@ const routes = [{
         name: "LippudeMängRiikideNimedega",
         component: LippudeMängRiikideNimedega,
     },
+    {
+        path: "/mänguLõpp",
+        name: "mänguLõpp",
+        component: mänguLõpp,
+    },
     { //will route to Avaleht view if none of the previous routes apply
         path: "/:catchAll(.*)",
-        name: "Avaleht",
-        component: Avaleht,
+        name: "mänguMenüü",
+        component: mänguMenüü,
     }
 ]
 

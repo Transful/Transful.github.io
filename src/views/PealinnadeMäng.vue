@@ -1,8 +1,5 @@
 <template>
     <div v-if="currentQuestion && kasAndmedOnLaetud" class="Test-Pealinnad">
-        <div v-if="kasTestOnLõpetatud">
-            <h3>Sinu skoor on: {{ skoor }} / {{ andmed.length }}</h3>
-        </div>
         <div class="questionBoxiPeal">
             <h2>TEST: PEALINNAD</h2>
             <div class="question-counter">
@@ -193,7 +190,6 @@ export default {
 
 },
     methods: {
-      
         /* Kui vajutatakse vihje pilti */
         näitaVihjePilti() {
             this.kasNäitanVihjePilti = true;
@@ -243,6 +239,7 @@ export default {
        lõpetaTest() {
          this.kasTestOnLõpetatud = true;
          console.log("Test on lõpetatud, skoor on: " + this.skoor);
+          this.$emit('test-lõpetatud', true);
        },
 
        /* Võtan vastusevariantideks suvalised vastused */

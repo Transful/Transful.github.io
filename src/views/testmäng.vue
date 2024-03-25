@@ -1,9 +1,12 @@
 <template>
     <div class="mänguMenüüContainer">
         <mänguValimine v-if="!gameStartedPealinnad && !gameStartedLippudeMäng && !gameStartedLippudeMäng2" @start-game="startGame"></mänguValimine>
-        <pealinnadeMäng v-if="gameStartedPealinnad" :imporditudAndmed="imporditudAndmed"></pealinnadeMäng>
-        <lippudeMäng v-if="gameStartedLippudeMäng" :imporditudAndmed="imporditudAndmed"></lippudeMäng>
-        <lippudeMäng2 v-if="gameStartedLippudeMäng2" :imporditudAndmed="imporditudAndmed"></lippudeMäng2>
+        <pealinnadeMäng v-if="gameStartedPealinnad && !kasTestOnLõpetatud" :imporditudAndmed="imporditudAndmed"  @test-lõpetatud="handleTestLõpetatud"></pealinnadeMäng>
+        <lippudeMäng v-if="gameStartedLippudeMäng && !kasTestOnLõpetatud" :imporditudAndmed="imporditudAndmed"  @test-lõpetatud="handleTestLõpetatud"></lippudeMäng>
+        <lippudeMäng2 v-if="gameStartedLippudeMäng2 && !kasTestOnLõpetatud" :imporditudAndmed="imporditudAndmed"  @test-lõpetatud="handleTestLõpetatud"></lippudeMäng2>
+        <!--
+        <mänguLõpp v-if="kasTestOnLõpetatud" :imporditudAndmed="imporditudAndmed"></mänguLõpp>
+        -->
     </div>  
 </template>
 
@@ -12,7 +15,7 @@ import mänguValimine from '../components/mänguValimine.vue';
 import pealinnadeMäng from './PealinnadeMäng.vue';
 import LippudeMäng from './LippudeMäng.vue';
 import LippudeMäng2 from './LippudeMäng2.vue';
-// VEEL POLE VALMIS, HETKEL KATKI VEEL :)
+import mänguLõpp from './mänguLõpp.vue';
 
 export default {
     name: "App",
@@ -20,13 +23,15 @@ export default {
         mänguValimine,
         'pealinnadeMäng': pealinnadeMäng,
         'lippudeMäng': LippudeMäng,
-        'lippudeMäng2': LippudeMäng2
+        'lippudeMäng2': LippudeMäng2,
+        mänguLõpp
     },
     data() {
         return {
             gameStartedPealinnad: false,
             gameStartedLippudeMäng: false,
             gameStartedLippudeMäng2: false,
+            kasTestOnLõpetatud: false,
             imporditudAndmed: [],
             questionCount: 0,
             selectedContinents: [],
@@ -36,6 +41,15 @@ export default {
     },
     computed: {},
     methods: {
+        handleTestLõpetatud(newVal) {
+            this.kasTestOnLõpetatud = newVal;
+            if (this.kasTestOnLõpetatud) {
+                this.$router.push("/mänguLõpp");
+            }else{
+                console.log('ERROR: Mängu lõpetamine ebaõnnestus');
+            }
+            
+        },
         startGame() {
             this.selectedGame = this.$store.state.selectedGame;
             this.questionCount = this.$store.state.questionCount;

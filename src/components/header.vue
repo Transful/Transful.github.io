@@ -29,6 +29,7 @@
               <router-link to="/mänguMenüü">Mängu menüü</router-link>
               <router-link to="/">Mäng 2</router-link>
               <router-link to="/">Mäng 3</router-link>
+              <RouterLink to="/mänguLõpp">Testimine</RouterLink>
             </div>
           </li>
       </ul>
