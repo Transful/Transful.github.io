@@ -41,8 +41,8 @@ export default {
     },
     computed: {},
     methods: {
-        handleTestLõpetatud(newVal) {
-            this.kasTestOnLõpetatud = newVal;
+        handleTestLõpetatud(kasTestLõppes) {
+            this.kasTestOnLõpetatud = kasTestLõppes;
             if (this.kasTestOnLõpetatud) {
                 this.$router.push("/mänguLõpp");
             }else{
