@@ -20,6 +20,7 @@ const store = createStore({
     okeaaniaRiigid: okeaaniaRiigid,
     selectedGame: null,
     questionCount: 0,
+    testResults: null,
     selectedContinents: [],
     mängValitud: false,
     vihjetegaMäng: null,
@@ -35,11 +36,23 @@ const store = createStore({
   },
   impordiAndmed(state, muudetudAndmed){
       state.muudetudAndmed = muudetudAndmed;
-  }
+  },
+  saveTestResults(state, testResults) {
+    state.testResults = testResults;
+  },
   },
   actions: {},
   modules: {},
   getters: {
+    getTestInfo: state => {
+      return {
+        selectedGame: state.selectedGame,
+        questionCount: state.questionCount,
+        selectedContinents: state.selectedContinents,
+        vihjetegaMäng: state.vihjetegaMäng,
+        testResults: state.testResults
+      };
+    },
     getKasKasutanVihjeid: state => {
       return state.vihjetegaMäng;
     },

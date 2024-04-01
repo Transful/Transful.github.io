@@ -23,7 +23,37 @@
             </div>
             <div v-if="täpsemadTulemused">
                 <h1>Sinu tulemused</h1>
-
+                <div class="täpsemadTulemused">
+                    <div>
+                        <h3>Valitud mäng:</h3>
+                        <p>{{ selectedGame }}</p>
+                    </div>
+                    <div>
+                        <h3>Valitud kontinendid:</h3>
+                        <p>{{ selectedContinents.join(', ') }}</p>
+                    </div>
+                    <div>
+                        <h3>Küsimuste arv:</h3>
+                        <p>{{ questionCount }}</p>
+                    </div>
+                    <div>
+                        <h3>Skoor:</h3>
+                        <p>{{ skoor }}</p>
+                    </div>
+                    <div>
+                        <h3>Õigesti vastatud protsent:</h3>
+                        <p>{{ õigestiVastatudProtsent }}%</p>
+                    </div>
+                    <div>
+                        <h3>Kas mängisid vihjetega?</h3>
+                        <p>{{ vihjetegaMäng ? 'Jah' : 'Ei' }}</p>
+                    </div>
+                    <div>
+                        <h3>Kasutatud vihjete arv:</h3>
+                        <p>{{ kasutatudVihjeteArv }} - Hetkel veel ei tööta</p>
+                    </div>
+                    <br>
+                </div>
                 <div class="alumisedNupud">
                     <button @click="vaataTulemusi"> Tagasi</button>
                     <button @click="mineMänguMenüüsse">Mängi uuesti!</button>
@@ -34,21 +64,29 @@
 
 </template>
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: "getMänguLõpp",
         data() {
             return {
-                questionCount: 10,
-                continents: ['Põhja-Ameerika', 'Kesk-Ameerika', 'Lõuna-Ameerika', 'Euroopa', 'Aafrika', 'Aasia', 'Okeaania', 'Kõik riigid'],
-                selectedContinents: [],
-                selectedGame: null,
                 mängValitud: false,
-                vihjetegaMäng: null,
-                õigestiVastatudProtsent: 51,
-                /////////////
                 täpsemadTulemused: false,
+                /////////////
+                selectedGame: null,
+                questionCount: 0,
+                selectedContinents: [],
+                vihjetegaMäng: null,
+                skoor: 0,
+                kasutatudVihjeteArv: 0,
+                õigestiVastatudProtsent: 0,
+
+
             };
         },
+    computed: {
+        ...mapGetters(['getTestInfo']),
+    },
     methods: {
         mineMänguMenüüsse() {
             this.$router.push("/mänguMenüü");
@@ -64,33 +102,32 @@ export default {
     async created() {
         console.log('Created, jõudsin mänguLõpp.vue-sse');
     
+        
         // Võtan lõppenud mängu tulemused
+        const { selectedGame, questionCount, selectedContinents, vihjetegaMäng, testResults } = this.getTestInfo;
 
-        let kõikAndmed = require('/public/riigid.json');
-        
-        let imporditudAndmed = this.$store.getters.getMuudetudAndmed;
-        console.log('Imporditud andmed:', imporditudAndmed);
+        this.selectedGame = selectedGame;
+        if(selectedGame === 'pealinnadeMäng'){
+            this.selectedGame = 'Pealinnade mäng';
+        }else if(selectedGame === 'lippudeMäng'){
+            this.selectedGame = 'Lippude mäng';
+        }else if(selectedGame === 'lippudeMäng2'){
+            this.selectedGame = 'Lippude mäng 2';
+        }
+        this.questionCount = questionCount;
+        this.selectedContinents = selectedContinents;
+        this.vihjetegaMäng = vihjetegaMäng;
+        this.skoor = testResults.skoor;
+        this.kasutatudVihjeteArv = testResults.kasutatudVihjeteArv;
+        this.õigestiVastatudProtsent = (testResults.skoor / questionCount) * 100;
 
-        // Teen selgeks, kas mäng tuleb vihjetega või ilma
-        this.vihjetegaMäng = this.$store.getters.getKasKasutanVihjeid;
-
-        //Unwrappin proxy objecti, et pääseda ligi arrayle
-        imporditudAndmed = JSON.parse(JSON.stringify(imporditudAndmed));
-        
-        let ajutineData = imporditudAndmed.muudetudAndmed;
-
-        this.andmed = ajutineData.map(item => {  
-          if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.seosPealinnPilt || !item.pealinnAsukoht) {
-            console.log('Andmed on puudulikud');
-          }
-          return{
-          question: item.nimi,
-          correctAnswer: item.pealinn,
-          seosJutt: item.seosPealinn,
-          seosPilt: item.seosPealinnPilt,
-          pealinnAsukoht: item.pealinnAsukoht,
-          }
-        });
+        console.log('Selected game:', selectedGame);
+        console.log('Question count:', questionCount);
+        console.log('Selected continents:', selectedContinents);
+        console.log('Vihjetega mäng:', vihjetegaMäng);
+        console.log('Test results:', testResults);
+        console.log('Skoor:', testResults.skoor);
+        console.log('Kasutatud vihjete arv:', testResults.kasutatudVihjeteArv);
     
     }, // created
     
@@ -147,5 +184,14 @@ button:hover {
 .tulemusePildid{
     width: 250px;
     height: auto;
+}
+
+.täpsemadTulemused>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.täpsemadTulemused>div>h3{
+    margin-right: 10px;
 }
 </style>

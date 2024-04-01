@@ -52,19 +52,25 @@ export default {
     data() {
        return {
          andmed: [],
-         kasAndmedOnLaetud: false,
-         kasTestOnLõpetatud: false,
-         vihje: false,
-         kontrollitud: false,
-         praeguseKüsimuseIndeks: 0,
          valitudVastus: "",
-         skoor: 0,
          õigestiVastatud: [],
          allChoices: [],
+
+         kasAndmedOnLaetud: false,
+         kasTestOnLõpetatud: false,
+         kontrollitud: false,
+
          seosJutt: 'ei ole seost',
          seosPilt: '',
+
+         skoor: 0,
+         praeguseKüsimuseIndeks: 0,
+
+         ///// Vihjete kraam
+         vihje: false,
          kasNäitanVihjePilti: false,
          vihjetegaMäng: null,
+         kasutatudVihjeteArv: 0,
        };
     },
     computed: {
@@ -88,45 +94,7 @@ export default {
         console.log('Created, jõudsin pealinnadeMängu');
     
     try {
-       
-        //ANDMEBAASIGA ANDMETE VÕTMINE
-        
-        /*
-        const responseKatse = await fetch('/');
-        console.log('ResponseKatse:', responseKatse); 
 
-        console.log('Fetching data...'); // Add this line
-        const response = await fetch('http://localhost:3000/api/riigid'); // Replace with your actual API endpoint
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        console.log('Response:', response); // Add this line
-
-        const data = await response.json();
-        console.log('Data:', data); // Add this line
-
-        this.andmed = data.map(item => ({
-            question: item.nimi,
-            correctAnswer: item.pealinn,
-        }));
-        this.allChoices = this.andmed.map(question => question.correctAnswer);
-
-        console.log('Created lifecycle hook called - Võtan suvalised vastused.');
-
-        this.andmed.forEach(question => {
-            question.choices = this.võtaSuvalisedVastused(question.correctAnswer);
-        });
-        console.log('Transformed data:', this.andmed); // Add this line
-        } catch (error) {
-            console.error('Error fetching data:', error); // Modify this line
-        } finally {
-            this.kasAndmedOnLaetud = true;
-        }
-        
-        */
-  
         //IMPORDITUD ANDMETEGA MÄNGIMINE
 
         let kõikAndmed = require('/public/riigid.json');
@@ -137,13 +105,9 @@ export default {
         // Teen selgeks, kas mäng tuleb vihjetega või ilma
         this.vihjetegaMäng = this.$store.getters.getKasKasutanVihjeid;
         
-        /*
-        let kasKasutanVihjeid = this.$store.getters.getKasKasutanVihjeid;
-        if(!kasKasutanVihjeid){
-          console.log('Mäng on ilma vihjeteta')
-          this.vihjetegaMäng = false;
-        }
-        */
+
+        //Kasutatud vihjete arvu nullimine
+        this.kasutatudVihjeteArv = 0;
 
         //Unwrappin proxy objecti, et pääseda ligi arrayle
         imporditudAndmed = JSON.parse(JSON.stringify(imporditudAndmed));
@@ -237,9 +201,17 @@ export default {
 
        /* Kui vajutatakse "Lõpeta test" nuppu */
        lõpetaTest() {
-         this.kasTestOnLõpetatud = true;
-         console.log("Test on lõpetatud, skoor on: " + this.skoor);
+          this.kasTestOnLõpetatud = true;
+          console.log("Test on lõpetatud, skoor on: " + this.skoor);
+          // Lõpetan mängu
           this.$emit('test-lõpetatud', true);
+
+          //Salvestan mängu andmed, et neid näidata lõpu ekraanil
+          this.$store.commit('saveTestResults', {
+            skoor: this.skoor,
+            kasutatudVihjeteArv: this.kasutatudVihjeteArv,
+        
+          });
        },
 
        /* Võtan vastusevariantideks suvalised vastused */

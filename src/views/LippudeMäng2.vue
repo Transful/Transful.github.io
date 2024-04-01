@@ -10,7 +10,7 @@
              <progress class="progress-bar" :value="praeguseKüsimuseIndeks" :max="andmed.length-1"></progress>
         </div>
         <div class="KeskmineContainer">
-            <div class="QuestionContainer">
+          <div class="QuestionContainer" :style="{ 'padding-right': vihjetegaMäng ? '20px' : '10ch' }">
                 <div>
                     <div class="küsimusJaVastusevariandid">
                             <!--
@@ -37,7 +37,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="vihjeDiv">
+                <div class="vihjeDiv" v-if="vihjetegaMäng">
                     <button class="näitaVihjetNupp" @click="näitaVihjet">Vihje</button>
                     <div v-if="vihje || kasOnValeVastus" class="vihjeContainer">
                       <p v-html="currentQuestion.seosLipp"></p>
@@ -67,11 +67,13 @@ export default {
          praeguseKüsimuseIndeks: 0,
          valitudVastus: "",
          skoor: 0,
+         kasutatudVihjeteArv: 0,
          õigestiVastatud: [],
          allChoices: [],
          seosLipp: 'ei ole seost',
          seosLippPilt: '',
          kasNäitanVihjePilti: false,
+         vihjetegaMäng: null,
        };
     },
     computed: {
@@ -95,6 +97,12 @@ export default {
         console.log('Created, Jõudsin lippudeMängu');
     
     try {
+
+        //Kasutatud vihjete arvu nullimine
+        this.kasutatudVihjeteArv = 0;
+
+        // Teen selgeks, kas mäng tuleb vihjetega või ilma
+        this.vihjetegaMäng = this.$store.getters.getKasKasutanVihjeid;
 
         // ANDMED TULEVAD JSON FAILIST läbi store'i
         let kõikAndmed = require('/public/riigid.json');
@@ -200,6 +208,12 @@ export default {
          this.kasTestOnLõpetatud = true;
          console.log("Test on lõpetatud, skoor on: " + this.skoor);
          this.$emit('test-lõpetatud', true);
+
+         //Salvestan mängu andmed, et neid näidata lõpu ekraanil
+         this.$store.commit('saveTestResults', {
+         skoor: this.skoor,
+         kasutatudVihjeteArv: this.kasutatudVihjeteArv,
+        });
        },
 
        /* Võtan vastusevariantideks suvalised vastused */
