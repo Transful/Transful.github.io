@@ -16,6 +16,13 @@ import getFooter from '@/components/footer.vue';
 import getHeader from '@/components/header.vue';
 export default {
   name: "App",
+  metaInfo: {
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+      // Other meta tags can be added here if needed
+    ],
+  },
   components: {
    getFooter,
    getHeader
@@ -62,9 +69,24 @@ html, body {
 }
 
 .container {
+  /*
   display: inline-flex;
+  */
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .container > * {
+    width: 100%; /* Make elements take up the full width on smaller screens */
+  }
+  .background{
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
 }
 
 @media (max-width: 250px) {
