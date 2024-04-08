@@ -41,14 +41,27 @@ export default {
 }
   /* Add similar lines for other font styles if available (e.g., Bold, Italic) */
 
-.background{
-  background-image: url("@/assets/Veebilehe-taust.png");
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width: auto;
-}
+  .background {
+    position: fixed;
+    background-image: url("@/assets/Veebilehe-taust.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+  }
+
 #app {
   text-align: center;
 }
@@ -62,43 +75,6 @@ h1, h2, h3, h4, h5, h6{
   font-family: Raleway-Bold, sans-serif;
   color: #55E0E5;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-.container {
-  /*
-  display: inline-flex;
-  */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-@media (max-width: 800px) {
-  .container > * {
-    width: 100%; /* Make elements take up the full width on smaller screens */
-  }
-  .background{
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  }
-}
 
-@media (max-width: 250px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .background{
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  }
-}
 </style>

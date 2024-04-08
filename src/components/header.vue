@@ -3,8 +3,28 @@
     <div class="transfulLogoJaNimi">
       <img @click="pealehele()" :src="require('@/assets/logo-transful.png')" alt="Transful logo">
       <h1 @click="pealehele()">TRANSFUL</h1>
-    </div>  
-      <ul class="nav">
+    </div>
+    <div class="hamburger" @click="toggleNav">
+      <li><router-link to="/pealinnad">PEALINNAD</router-link></li>
+      <li><router-link to="/lipud">LIPUD</router-link></li>
+      <li><router-link to="/tehnikad">TEHNIKAD</router-link></li>
+      <li><router-link to="/meie">MEIE</router-link></li>
+      <li class="dropdown">
+        <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
+        <div class="dropdown-menu">
+          <!--
+          <router-link to="/pealinnade-mäng">Mäng 1</router-link>
+          <router-link to="/lippude-mäng">Mäng 2</router-link>
+          <router-link to="/">Mäng 3</router-link>
+          -->
+          <router-link to="/mänguMenüü">Mängu menüü</router-link>
+          <router-link to="/">Mäng 2</router-link>
+          <router-link to="/">Mäng 3</router-link>
+          <RouterLink to="/mänguLõpp">Testimine</RouterLink>
+        </div>
+      </li>
+    </div>
+      <ul class="nav" v-if="isNavVisible || screenWidth > 400">
           <!--
             <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Seosed <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
@@ -39,10 +59,22 @@
 <script>
     export default {
     name: "getHeader",
+    data() {
+      return {
+        isNavVisible: false,
+        screenWidth: 0
+      };
+    },
     methods: {
       pealehele(){
         return this.$router.push('/');
       },
+      toggleNav() {
+        this.isNavVisible = !this.isNavVisible;
+      },
+      updateWidth() {
+        this.screenWidth = window.innerWidth;
+      }
     },
     mounted() {
       // Navigatsioonist klikitud lingi taustavärv muutub mustaks / ei tea kas on vajalik? :) Sest ei tööta ka täiesti korralikult
@@ -51,15 +83,49 @@
         link.addEventListener('click', function() {
           links.forEach(lnk => lnk.style.backgroundColor = '');
           this.style.backgroundColor = 'black';
+        });
       });
-    });
+      this.updateWidth();
+      window.addEventListener('resize', this.updateWidth);
   },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.updateWidth);
+  }
 }
 
 </script>
 
 
 <style scoped>
+
+/*Hamburger menu*/
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #333;
+}
+
+@media (max-width: 400px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/*----------------------------*/
+
 
 /*Dropdown menu*/
 .dropdown {
