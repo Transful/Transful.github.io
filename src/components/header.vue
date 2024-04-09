@@ -1,30 +1,27 @@
 <template>
 <header>
-    <div class="transfulLogoJaNimi">
+    <div class="transfulLogoJaNimi" v-if="!isNavVisible">
       <img @click="pealehele()" :src="require('@/assets/logo-transful.png')" alt="Transful logo">
       <h1 @click="pealehele()">TRANSFUL</h1>
     </div>
-    <div class="hamburger" @click="toggleNav">
-      <li><router-link to="/pealinnad">PEALINNAD</router-link></li>
-      <li><router-link to="/lipud">LIPUD</router-link></li>
-      <li><router-link to="/tehnikad">TEHNIKAD</router-link></li>
-      <li><router-link to="/meie">MEIE</router-link></li>
-      <li class="dropdown">
-        <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
-        <div class="dropdown-menu">
-          <!--
-          <router-link to="/pealinnade-mäng">Mäng 1</router-link>
-          <router-link to="/lippude-mäng">Mäng 2</router-link>
-          <router-link to="/">Mäng 3</router-link>
-          -->
-          <router-link to="/mänguMenüü">Mängu menüü</router-link>
-          <router-link to="/">Mäng 2</router-link>
-          <router-link to="/">Mäng 3</router-link>
-          <RouterLink to="/mänguLõpp">Testimine</RouterLink>
-        </div>
-      </li>
+    
+    <div class="hamburger" @click="toggleNav($event)" v-if="screenWidth <= 800">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </div>
-      <ul class="nav" v-if="isNavVisible || screenWidth > 400">
+    <div v-if="isNavVisible">
+      <ul>
+        <li><router-link to="/pealinnad">PEALINNAD</router-link></li>
+        <li><router-link to="/lipud">LIPUD</router-link></li>
+        <li><router-link to="/tehnikad">TEHNIKAD</router-link></li>
+        <li><router-link to="/meie">MEIE</router-link></li>
+        <li><router-link to="/mänguMenüü">Mängu menüü</router-link></li>
+        <li><router-link to="/mänguLõpp">Testimine</router-link></li>
+      </ul>
+    </div>
+    
+      <ul class="nav" v-if="screenWidth > 800">
           <!--
             <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Seosed <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
@@ -41,11 +38,6 @@
           <li class="dropdown">
             <router-link to="/seoste-andmebaasid">Mängud <img class="dropdownpicture" :src="require('@/assets/dropdown.png')"></router-link>
             <div class="dropdown-menu">
-              <!--
-              <router-link to="/pealinnade-mäng">Mäng 1</router-link>
-              <router-link to="/lippude-mäng">Mäng 2</router-link>
-              <router-link to="/">Mäng 3</router-link>
-              -->
               <router-link to="/mänguMenüü">Mängu menüü</router-link>
               <router-link to="/">Mäng 2</router-link>
               <router-link to="/">Mäng 3</router-link>
@@ -69,8 +61,9 @@
       pealehele(){
         return this.$router.push('/');
       },
-      toggleNav() {
-        this.isNavVisible = !this.isNavVisible;
+      toggleNav(event) {
+        this.isNavVisible ? this.isNavVisible = false : this.isNavVisible = true;
+        event.target.classList.toggle("change");
       },
       updateWidth() {
         this.screenWidth = window.innerWidth;
@@ -100,27 +93,31 @@
 
 /*Hamburger menu*/
 .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  display: inline-block;
   cursor: pointer;
 }
-
-.hamburger div {
-  width: 2rem;
-  height: 0.25rem;
-  background-color: #333;
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #55E0E5;
+  margin: 6px 0;
+  transition: 0.15s;
 }
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
 
 @media (max-width: 400px) {
   .nav {
     display: none;
-  }
-
-  .hamburger {
-    display: flex;
   }
 }
 

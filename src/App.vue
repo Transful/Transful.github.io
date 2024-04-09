@@ -1,5 +1,4 @@
 <template>
-  <div class="background">
     <getHeader />
     <div class="container">
 
@@ -8,7 +7,6 @@
 
     </div>
     <getFooter />
-  </div>
 </template>
 
 <script>
@@ -40,35 +38,32 @@ export default {
   src: url('@/assets/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
 }
   /* Add similar lines for other font styles if available (e.g., Bold, Italic) */
-
-  .background {
-    position: fixed;
-    background-image: url("@/assets/Veebilehe-taust.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   
   .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
     min-height: 100vh;
     width: 100%;
+    align-content: start;
   }
 
 #app {
   text-align: center;
+  overflow: auto; /* Add this line */
+  height: 100vh; /* Add this line */
+
 }
 body{
   font-family: Raleway, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("@/assets/Veebilehe-taust.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6{

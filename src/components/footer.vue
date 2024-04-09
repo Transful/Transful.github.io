@@ -38,6 +38,29 @@
 </script>
 
 <style scoped>
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Add this line */
+  }
+  .col1, .col2 {
+    width: 100%; /* Change this line */
+    margin: 0 auto;
+    text-align: center;
+  }
+  .InstaJaMeil, .TransfulJaLogo, .Instagram, .Meil>a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links {
+    align-items: center;
+  }
+}
 .col1{
     display: flex;
     flex-direction: column;
@@ -64,10 +87,8 @@ footer{
     width: 100%;
 }
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   }
   .InstaJaMeil{
     display: flex;

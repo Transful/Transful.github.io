@@ -133,6 +133,44 @@
 </script>
 
 <style scoped>
+
+@media (max-width: 400px) {
+    .mänguMenüü {
+      padding: 0ch;
+    }
+}
+
+@media (max-width: 700px) {
+    .mänguMenüü {
+      flex-direction: column;
+      padding: 2ch;
+      align-items: flex-start; /* Add this line */
+    }
+  
+    .mänguMenüü div {
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+  
+    .mänguMenüü > button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .radio-container, .radio-containerCol {
+      flex-direction: column;
+    }
+  
+    .checkbox-container {
+      margin-bottom: 15px;
+      align-self: flex-start;
+    }
+  
+    #labeliteTekst {
+      font-size: 18px;
+    }
+  }
+
     .mänguMenüüContainer {
         display: flex;
         justify-content: center;
@@ -146,6 +184,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         background-color: #0B1C24;
         padding: 4ch;
         padding-top: 2ch;
@@ -155,13 +194,13 @@
     .mänguMenüü div {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
         margin-bottom: 10px;
     }
 
     .mänguMenüüNupud {
         flex-direction: column;
+        align-items: flex-start; /* Add this line */
         padding-top: 1ch;
     }
 
