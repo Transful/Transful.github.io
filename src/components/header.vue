@@ -1,16 +1,20 @@
 <template>
 <header>
-    <div class="transfulLogoJaNimi" v-if="!isNavVisible">
+    <div class="transfulLogoJaNimi">
       <img @click="pealehele()" :src="require('@/assets/logo-transful.png')" alt="Transful logo">
       <h1 @click="pealehele()">TRANSFUL</h1>
     </div>
     
-    <div class="hamburger" @click="toggleNav($event)" v-if="screenWidth <= 800">
+     <!-- Hamburger menu icon -->
+     <div class="hamburger" @click="toggleNav($event)" v-if="!isNavVisible">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    <div v-if="isNavVisible">
+
+    <!-- Side navigation menu -->
+    <div class="sidenav" :class="{ 'open': isNavVisible }">
+      <a href="javascript:void(0)" class="closebtn" @click="toggleNav($event)">&times;</a>
       <ul>
         <li><router-link to="/pealinnad">PEALINNAD</router-link></li>
         <li><router-link to="/lipud">LIPUD</router-link></li>
@@ -62,7 +66,7 @@
         return this.$router.push('/');
       },
       toggleNav(event) {
-        this.isNavVisible ? this.isNavVisible = false : this.isNavVisible = true;
+        this.isNavVisible = !this.isNavVisible;
         event.target.classList.toggle("change");
       },
       updateWidth() {
@@ -91,17 +95,99 @@
 
 <style scoped>
 
-/*Hamburger menu*/
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
+
+/* Style for small screens*/
+
+/* Side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; /* Change left to right */
+  background-color: rgba(85, 224, 229, 0.9); /* white background with 90% opacity */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.bar1, .bar2, .bar3 {
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #55E0E5;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Keep left for close button */
+  font-size: 36px;
+  margin-left: 50px;
+  color: #55E0E5; /* Set color to match the design */
+  text-decoration: none; /* Remove underline */
+  background-color: transparent;
+}
+/* END Side Navigation Menu*/
+
+/*Hamburger menu*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger div {
   width: 35px;
   height: 5px;
   background-color: #55E0E5;
   margin: 6px 0;
-  transition: 0.15s;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* white background with 90% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  padding: 10px 0;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #55E0E5;
+}
+
+.nav-menu ul li a:hover {
+  color: #007bff;
 }
 
 .change .bar1 {
@@ -122,6 +208,7 @@
 }
 
 /*----------------------------*/
+/*END Style for small screens* END/
 
 
 /*Dropdown menu*/
@@ -226,35 +313,7 @@ min-width: 600px - töötab medial mis on 600px või suurem
     display: none;
   }
 }
-/*
 
-@media(min-width: 921px){
-  .header, .nav{
-    display: flex;
-  }
-  .header{
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media(max-width: 920px){
-  .logoButton{
-    display: none;
-  }
-  .nav {
-    text-align: center;
-  }
-
-  .nav a {
-    padding: 10px;
-    font-size: 1em;
-  }
-  .header{
-    display: block;
-  }
-}
-*/
 @media(max-width: 1120px){ /* 1120 ja väiksem*/
   .transfulLogoJaNimi{
     padding-left: 5ch;
@@ -270,12 +329,20 @@ min-width: 600px - töötab medial mis on 600px või suurem
   }
   
 }
-@media(max-width:845){ /* 845 ja väiksem*/
+@media (max-width: 800px) {
+  /* Show hamburger menu icon for smaller screens */
+  .hamburger {
+    display: block;
+  }
 
-  /*
-  Siit maalt hakkab ka taustapilt liikuma??
-  ja läheb katki?
-  ja siit peaks ka headeri ja nav-i kujundust muutma?
-  */
+  /* Hide side navigation menu by default for smaller screens */
+  .sidenav {
+    width: 0;
+  }
+
+  /* Adjust styles when side navigation menu is open */
+  .sidenav.open {
+    width: 250px;
+  }
 }
 </style>
