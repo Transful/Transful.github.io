@@ -13,7 +13,7 @@ npm install
 Complete the information related to your database (db name, password) in the database.js file that is in the ../server directory
 ```
 
-### Run the Back-end (Pole vaja hetkel)
+### Run the Back-end (Currently not using)
 ```
 npm run server
 ```
@@ -34,4 +34,4 @@ npm run build
 npm run deploy (for Github pages)
 ```
 
-### Link for a github pages version (not always up to date): https://jaanissoosaar.github.io/
+### Link for a github pages version (not always up to date): https://transful.github.io/
