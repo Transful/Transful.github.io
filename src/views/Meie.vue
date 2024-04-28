@@ -35,7 +35,7 @@
                 <div class="jutuDiv">
                     <h1 class="pealkiri">MEIE LUGU</h1>	
                     <p align="justify">
-                        Transful sai alguse 2022. aasta sügisel Tartu Ülikooli kursuse <strong>“Ettevõtluse alused”</strong>
+                        Transful sai alguse 2022. aasta sügisel Tartu Ülikooli kursuse <strong>“Ettevõtluse alused”</strong>    
                         ja <strong>STARTERtartu</strong> raames kui kolm majandustudengit ja üks psühholoogia tudeng otsustasid,
                         et teeme ära.
                         <br>
