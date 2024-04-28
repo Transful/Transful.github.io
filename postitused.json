@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "pilt": "postitus1.png",
+        "filter": "Mälutehnikad",
+        "kuupäev": "september 9, 2023",
+        "pealkiri": "KUIDAS KEHAOSADE ABIL POENIMEKIRJA MEELDE JÄTTA?"
+    },
+    {
+        "id": 2,
+        "pilt": "postitus2.png",
+        "filter": "Mälutehnikad",
+        "kuupäev": "november 3, 2023",
+        "pealkiri": "KREEKA TÄHESTIKU MEELDE JÄTMINE KASUTADES OMAENDA KODU"
+    },
+    {
+        "id": 3,
+        "pilt": "postitus3.png",
+        "filter": "Ettevõtlus",
+        "kuupäev": "november 7, 2023",
+        "pealkiri": "RAAMATUKOGUS MÕTISKLEMISEST TÖÖTA KORRALDAMISENI"
+    },
+    {
+        "id": 4,
+        "pilt": "postitus4.png",
+        "filter": "Ettevõtlus",
+        "kuupäev": "november 24, 2023",
+        "pealkiri": "\"PROTOTÜÜBI PROOV NUMBER 123\" EHK EDTECH HACK 2023"
+    },
+    {
+        "id": 5,
+        "pilt": "postitus5.png",
+        "filter": "Mälutehnikad",
+        "kuupäev": "veebruar 9, 2024",
+        "pealkiri": "MISSION POSSIBLE: 195+ PEALINNA MEELDEJÄTMINE"
+    },
+    {
+        "id": 6,
+        "pilt": "postitus6.png",
+        "filter": "Mälutehnikad",
+        "kuupäev": "märts 16, 2023",
+        "pealkiri": "TÕSISELT? SA ÕPPISID 100 PII KOMAKOHTA PÄHE? YEAHHH."
+    }
+]
