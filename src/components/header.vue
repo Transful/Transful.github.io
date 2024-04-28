@@ -303,24 +303,14 @@ ul.nav-list {
   display: flex;
 }
 
-/*
-max-width: 600px - töötab medial mis on 600px või väiksem
-min-width: 600px - töötab medial mis on 600px või suurem
-
-*/
 @media(max-width: 250px){
   .logoButton{
     display: none;
   }
 }
 
-@media(max-width: 1120px){ /* 1120 ja väiksem*/
-  .transfulLogoJaNimi{
-    padding-left: 5ch;
-  }
-}
 
-@media(max-width: 1021px){ /* 1021 ja väiksem*/
+@media(max-width: 1248px){ /* 1248 ja väiksem*/
   .transfulLogoJaNimi{
     padding-left: 1ch;
   }

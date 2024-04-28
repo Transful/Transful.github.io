@@ -50,8 +50,7 @@ export default {
 
 #app {
   text-align: center;
-  overflow: auto; /* Add this line */
-  height: 100vh; /* Add this line */
+  overflow: auto;
 
 }
 body{

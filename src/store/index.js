@@ -6,6 +6,7 @@ import lõunaAmeerikaRiigid from '/public/louna-ameerika.json';
 import aafrikaRiigid from '/public/aafrika.json';
 import aasiaRiigid from '/public/aasia.json';
 import okeaaniaRiigid from '/public/okeaania.json';
+import postitused from '/public/postitused.json';
 import { createStore } from 'vuex';
 
 const store = createStore({
@@ -24,7 +25,9 @@ const store = createStore({
     selectedContinents: [],
     mängValitud: false,
     vihjetegaMäng: null,
-    muudetudAndmed: []
+    muudetudAndmed: [],
+    // Postitused - Tehnikad lehel:
+    postitused: postitused,
   },
   mutations: {
     startGame(state, { selectedGame, questionCount, selectedContinents, vihjetegaMäng }) {
@@ -44,6 +47,9 @@ const store = createStore({
   actions: {},
   modules: {},
   getters: {
+    getPostitused: state => {
+      return state.postitused;
+    },
     getTestInfo: state => {
       return {
         selectedGame: state.selectedGame,
