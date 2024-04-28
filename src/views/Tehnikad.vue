@@ -137,6 +137,7 @@
   }
   
   @media (max-width: 700px) {
+
     .blog-post {
       width: 100%;
     }
@@ -144,6 +145,29 @@
         padding-left: 1ch;
         padding-right: 1ch;
     }
+
+    /* KATKINE KARUSELL*/
+    /*
+    .blog-post-container {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-left: 500px;
+    }
+    .blog-post {
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        max-width: calc(100% - 20px);
+        margin: 0 10px; 
+    }
+    .blog-post:first-child {
+        padding-left: 0;
+    }
+    .blog-post:last-child {
+        margin-right: 0;
+    }
+    */
   }
 
   .filtriDisain > a{

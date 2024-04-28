@@ -53,11 +53,11 @@
     mounted() {
       this.updateWidth();
       window.addEventListener('resize', this.updateWidth);
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.updateWidth);
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.updateWidth);
+    }
   }
-}
 </script>
 
 <style scoped>
