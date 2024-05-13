@@ -9,6 +9,7 @@ import Meie from "../views/Meie.vue";
 import LippudeMäng from "../views/LippudeMäng.vue";
 import PealinnadeMäng from "../views/PealinnadeMäng.vue";
 import LippudeMängRiikideNimedega from "../views/LippudeMäng2.vue";
+import Postitus from "../views/postitus.vue";
 
 
 const routes = [{
@@ -60,6 +61,11 @@ const routes = [{
         path: "/mänguLõpp",
         name: "mänguLõpp",
         component: mänguLõpp,
+    },
+    {
+        path: "/postitus",
+        name: "Postitus",
+        component: Postitus,
     },
     { //will route to Avaleht view if none of the previous routes apply
         path: "/:catchAll(.*)",

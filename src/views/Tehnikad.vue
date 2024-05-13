@@ -4,7 +4,7 @@
       <p class="centered-text">
         Kas mäletad Harry Potteri filmist seda Tom Riddle’i päevikut, kuhu sulepeaga kirjutades ilmus sinna kohe ka vastus? Noh, see 2002. aasta versioon ChatGPT-st? Kihvt oleks sellist raamatut omada, aga isegi seal poleks vist kõiki vastuseid kirjas, seega tuleb ise eksperimenteerida. Siin saad aimu sellest, kuidas meil õnnestub meie idu ehitamine ja mälutehnikate maailma kaardistamine.       </p>
       <div class="blog-post-container">
-        <div class="blog-post" v-for="post in posts" :key="post.id">
+        <div class="blog-post" v-for="post in posts" :key="post.id" @click="valiPostitus(post.postitus)">
             <div class="postituse-pilt">
                 <img :src="require(`@/assets/blogiPildid/${post.pilt}`)" alt="Postituse pilt" width="200" height="200">
             </div>
@@ -31,6 +31,11 @@
         posts: [],
       };
     },
+    methods: {
+        valiPostitus(postitus) {
+            this.$router.push({ name: 'postitus', params: {postitus: postitus } });
+        },
+    },
     async created() {
         console.log('Created, laen postitused');
 
@@ -41,7 +46,7 @@
         //let ajutineData = imporditudAndmed.muudetudAndmed;
 
         this.posts = ajutinePosts.map(item => {
-            if(!item.id || !item.pilt || !item.filter || !item.kuupäev || !item.pealkiri) {
+            if(!item.id || !item.pilt || !item.filter || !item.kuupäev || !item.pealkiri || !item.postitus) {
                 console.log('Andmed on puudulikud');
             }
             return{
@@ -50,6 +55,7 @@
                 filter: item.filter,
                 kuupäev: item.kuupäev,
                 pealkiri: item.pealkiri,
+                postitus: item.postitus
             }
 
         }).reverse();

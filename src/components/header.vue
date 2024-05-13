@@ -22,6 +22,7 @@
         <li><router-link to="/meie">MEIE</router-link></li>
         <li><router-link to="/mänguMenüü">Mängu menüü</router-link></li>
         <li><router-link to="/mänguLõpp">Testimine</router-link></li>
+        <li><router-link to="/postitus">Postitus</router-link></li>
       </ul>
     </div>
     
@@ -46,6 +47,7 @@
               <router-link to="/">Mäng 2</router-link>
               <router-link to="/">Mäng 3</router-link>
               <RouterLink to="/mänguLõpp">Testimine</RouterLink>
+              <li><router-link to="/postitus">Postitus</router-link></li>
             </div>
           </li>
       </ul>
