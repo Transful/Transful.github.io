@@ -4,41 +4,47 @@
         "pilt": "postitus1.png",
         "filter": "Mälutehnikad",
         "kuupäev": "september 9, 2023",
-        "pealkiri": "KUIDAS KEHAOSADE ABIL POENIMEKIRJA MEELDE JÄTTA?"
+        "pealkiri": "KUIDAS KEHAOSADE ABIL POENIMEKIRJA MEELDE JÄTTA?",
+        "postitus": "postitus1.vue"
     },
     {
         "id": 2,
         "pilt": "postitus2.png",
         "filter": "Mälutehnikad",
         "kuupäev": "november 3, 2023",
-        "pealkiri": "KREEKA TÄHESTIKU MEELDE JÄTMINE KASUTADES OMAENDA KODU"
+        "pealkiri": "KREEKA TÄHESTIKU MEELDE JÄTMINE KASUTADES OMAENDA KODU",
+        "postitus": "postitus2.vue"
     },
     {
         "id": 3,
         "pilt": "postitus3.png",
         "filter": "Ettevõtlus",
         "kuupäev": "november 7, 2023",
-        "pealkiri": "RAAMATUKOGUS MÕTISKLEMISEST TÖÖTA KORRALDAMISENI"
+        "pealkiri": "RAAMATUKOGUS MÕTISKLEMISEST TÖÖTA KORRALDAMISENI",
+        "postitus": "postitus3.vue"
     },
     {
         "id": 4,
         "pilt": "postitus4.png",
         "filter": "Ettevõtlus",
         "kuupäev": "november 24, 2023",
-        "pealkiri": "\"PROTOTÜÜBI PROOV NUMBER 123\" EHK EDTECH HACK 2023"
+        "pealkiri": "\"PROTOTÜÜBI PROOV NUMBER 123\" EHK EDTECH HACK 2023",
+        "postitus": "postitus4.vue"
     },
     {
         "id": 5,
         "pilt": "postitus5.png",
         "filter": "Mälutehnikad",
         "kuupäev": "veebruar 9, 2024",
-        "pealkiri": "MISSION POSSIBLE: 195+ PEALINNA MEELDEJÄTMINE"
+        "pealkiri": "MISSION POSSIBLE: 195+ PEALINNA MEELDEJÄTMINE",
+        "postitus": "postitus5.vue"
     },
     {
         "id": 6,
         "pilt": "postitus6.png",
         "filter": "Mälutehnikad",
         "kuupäev": "märts 16, 2024",
-        "pealkiri": "TÕSISELT? SA ÕPPISID 100 PII KOMAKOHTA PÄHE? YEAHHH."
+        "pealkiri": "TÕSISELT? SA ÕPPISID 100 PII KOMAKOHTA PÄHE? YEAHHH.",
+        "postitus": "postitus6.vue"
     }
 ]
