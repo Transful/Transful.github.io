@@ -104,6 +104,7 @@
     display: grid;
     grid-template-columns: 0.5fr 10fr 0.5fr;
     grid-template-rows: auto;
+    margin-bottom: 5ch;
 }
 
 .columnLayout2{

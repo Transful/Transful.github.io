@@ -63,9 +63,9 @@ const routes = [{
         component: mänguLõpp,
     },
     {
-        path: "/postitus",
-        name: "Postitus",
-        component: Postitus,
+        path: "/postitus/:id",
+        name: "postitus",
+        component: () => import("../views/postitus.vue"),
     },
     { //will route to Avaleht view if none of the previous routes apply
         path: "/:catchAll(.*)",
