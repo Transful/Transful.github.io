@@ -1,7 +1,26 @@
 <template>
-    <div>
-        <p>Pealinnad</p>
-        <table class="table">
+    <div class="mainContent">
+        <div class="tabeliMenüü">
+            <div>
+                <h1>PEALINNAD</h1>
+            </div>
+            <div></div>
+            <div class="tabeliMenüüFiltrid">
+                <div class="tabeliMenüüInner">
+                    <label class="labelAsukoht">Filtreeri asukoha järgi</label>
+                    <select class="valiAsukoht" v-model="asukohtFilter">
+                        <option value="">Kõik asukohad ({{ andmed.length }})</option>
+                        <option v-for="option in asukohtOptions" :value="option">{{ option }} ({{ asukohtCounts[option] }})</option>
+                    </select>
+                </div>
+                <div class="tabeliMenüüInner">
+                    <label class="labelNimi">Filtreeri riigi nime järgi</label>
+                    <input class="valiRiik" type="text" placeholder="Filtreeri riigi nime järgi..." v-model="filter"/>
+                </div>
+            </div>
+        </div>
+
+        <v-table class="table">
             <thead>
                 <tr>
                     <th>LIPP</th>
@@ -11,21 +30,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, index) in andmed" :key="index">
+                <tr v-for="(item, index) in filteredRows" :key="index">
                     <td>
-                        <img :src="require(`@/assets/lipud/${item.lipp}`)" height="100" alt="Riigi lipp">
+                        <img class="lipuJaSeosePilt" :src="require(`@/assets/lipud/${item.lipp}`)" height="100" alt="Riigi lipp">
                     </td>
-                    <td>{{ item.riik }}</td>
+                    <td v-html="highlightMatches(item.riik)"></td>
                     <td>
-                        <span><p>{{ item.pealinn }}: </p><p v-html="item.seosJutt"></p></span>
-                        <img :src="require(`@/assets/seosed/${item.seosPilt}`)" height="250" alt="Seos Pilt">
+                        <span class="seoseJutt">
+                            <p class="pealinn">{{ item.pealinn }}:</p>
+                            <p v-html="item.seosJutt"></p>
+                        </span>
+                        <img class="lipuJaSeosePilt" :src="require(`@/assets/seosed/${item.seosPilt}`)" height="250" alt="Seos Pilt">
                     </td>
-                    <!--
-                    <td>{{ item.pealinnAsukoht }}</td>
-                    -->
+                    <td>{{ item.asukoht }}</td>
                 </tr>
             </tbody>
-        </table>
+        </v-table>
     </div>
 </template>
 
@@ -33,19 +53,59 @@
 import { mapState } from 'vuex';
 
 export default {
+    data() {
+        return {
+            andmed: [],
+            filter: '',
+            rows: [],
+            asukohtFilter: '',
+        }
+    },
+
     computed: {
         ...mapState({
             ajutineData: state => state.kõikRiigid
-        })
+        }),
+
+        asukohtOptions() {
+            const options = new Set();
+            this.andmed.forEach(item => options.add(item.asukoht));
+            return Array.from(options);
+        },
+
+        asukohtCounts() {
+            const counts = {};
+            this.andmed.forEach(item => {
+                if (!counts[item.asukoht]) {
+                    counts[item.asukoht] = 0;
+                }
+                counts[item.asukoht]++;
+            });
+            return counts;
+        },
+
+        filteredRows(){
+        return this.andmed.filter(item => {
+            const riik = item.riik.toLowerCase();
+            const searchTerm = this.filter.toLowerCase();
+            const asukohtMatch = !this.asukohtFilter || item.asukoht === this.asukohtFilter;
+            return riik.includes(searchTerm) && asukohtMatch;
+        });
+        }
     },
-    data() {
-        return {
-            andmed: []
+
+    methods: {
+        highlightMatches(text) {
+            const matchExists = text.toLowerCase().includes(this.filter.toLowerCase());
+            if (!matchExists) return text;
+
+            const re = new RegExp(this.filter, 'ig');
+            return text.replace(re, matchedText => `<strong>${matchedText}</strong>`);
         }
     },
     created() {
         this.andmed = this.ajutineData.map(item => {  
-            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.seosPealinnPilt || !item.lipp) {
+            if(!item.nimi || !item.pealinn || !item.seosPealinn || !item.seosPealinnPilt || !item.lipp || !item.asukoht) {
                 console.log('Andmed on puudulikud');
             }
             return {
@@ -54,30 +114,104 @@ export default {
                 seosJutt: item.seosPealinn,
                 seosPilt: item.seosPealinnPilt,
                 lipp: item.lipp,
+                asukoht: item.asukoht
             }
         });
+        this.rows = this.andmed.map(item => item.nimi);
     }
 }
 </script>
 
 <style scoped>
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
-    margin: 20px;
+    border: 1px solid black;
 }
 
 .table th {
-    background-color: lightblue;
+    background-color: #55E0E5;
     color: black;
+    font-size: 25px;
 }
 
 .table td {
     background-color: white;
+    font-size: 20px;
 }
 
 .table th, .table td {
     padding: 10px;
     border: 1px solid black;
 }
+
+.lipuJaSeosePilt{
+    border: 1px solid black;
+}
+
+.tabeliMenüü {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5ch;
+    width: 90%;
+}
+
+.tabeliMenüüInner {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabeliMenüüFiltrid{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.tabeliMenüüFiltrid > div{
+    margin: 10px;
+}
+
+.labelAsukoht {
+    align-items: flex-start;
+}
+.labelAsukoht, .labelNimi {
+    color:  #55E0E5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.valiAsukoht {
+    padding-left: 20px;
+}
+
+.valiRiik {
+    align-self: flex-start;
+}
+.valiAsukoht, .valiRiik {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.seoseJutt {
+    display: flex;
+    align-items: center;
+}
+
+.pealinn {
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
 </style>
